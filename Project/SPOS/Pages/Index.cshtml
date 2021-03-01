@@ -1,10 +1,66 @@
 ﻿@page
 @model IndexModel
+
+@section Styles{
+    <link rel="stylesheet" href="~/css/keypad.css" />
+}
+
 @{
     ViewData["Title"] = "Home page";
 }
 
-@*<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>*@
+<form method="post">
+    <input class="text" id="code" asp-for="Code">
+
+    <table>
+        <tbody>
+
+            <tr>
+                <td>
+                    <button type="button" , value="1" onclick="addToCode('1')">1</button>
+                </td>
+                <td>
+                    <button type="button" , value="2" onclick="addToCode('2')">2</button>
+                </td>
+                <td>
+                    <button type="button" , value="3" onclick="addToCode('3')">3</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" , value="4" onclick="addToCode('4')">4</button>
+                </td>
+                <td>
+                    <button type="button" , value="5" onclick="addToCode('5')">5</button>
+                </td>
+                <td>
+                    <button type="button" , value="6" onclick="addToCode('6')">6</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" , value="7" onclick="addToCode('7')">7</button>
+                </td>
+                <td>
+                    <button type="button" , value="8" onclick="addToCode('8')">8</button>
+                </td>
+                <td>
+                    <button type="button" , value="9" onclick="addToCode('9')">9</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" , value="Clear" onclick="clearCode()">Clear</button>
+                </td>
+                <td>
+                    <button type="button" , value="0" onclick="addToCode('0')">0</button>
+                </td>
+                <td>
+                    <button type="submit" onclick="checkCode()", value="Enter">Enter</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</form>
+
+<script src="~/js/keypad.js"></script>
