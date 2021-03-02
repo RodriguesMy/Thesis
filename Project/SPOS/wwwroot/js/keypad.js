@@ -5,5 +5,8 @@ function addToCode(valueToAdd) {
 
 function clearCode() {
     document.getElementById('code').value = "";
-    console.log("Added");
+}
+
+window.onload = function() {
+    clearCode();
 }

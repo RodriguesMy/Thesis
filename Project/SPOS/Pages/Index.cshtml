@@ -2,65 +2,35 @@
 @model IndexModel
 
 @section Styles{
-    <link rel="stylesheet" href="~/css/keypad.css" />
+    <link rel="stylesheet" href="@Url.Content("~/css/keypad.css")" rel ="stylesheet" type="text/css"/>
 }
 
 @{
     ViewData["Title"] = "Home page";
 }
 
-<form method="post">
-    <input class="text" id="code" asp-for="Code">
-
-    <table>
-        <tbody>
-
-            <tr>
-                <td>
-                    <button type="button" , value="1" onclick="addToCode('1')">1</button>
-                </td>
-                <td>
-                    <button type="button" , value="2" onclick="addToCode('2')">2</button>
-                </td>
-                <td>
-                    <button type="button" , value="3" onclick="addToCode('3')">3</button>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <button type="button" , value="4" onclick="addToCode('4')">4</button>
-                </td>
-                <td>
-                    <button type="button" , value="5" onclick="addToCode('5')">5</button>
-                </td>
-                <td>
-                    <button type="button" , value="6" onclick="addToCode('6')">6</button>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <button type="button" , value="7" onclick="addToCode('7')">7</button>
-                </td>
-                <td>
-                    <button type="button" , value="8" onclick="addToCode('8')">8</button>
-                </td>
-                <td>
-                    <button type="button" , value="9" onclick="addToCode('9')">9</button>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <button type="button" , value="Clear" onclick="clearCode()">Clear</button>
-                </td>
-                <td>
-                    <button type="button" , value="0" onclick="addToCode('0')">0</button>
-                </td>
-                <td>
-                    <button type="submit" onclick="checkCode()", value="Enter">Enter</button>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-</form>
+<div class="area">
+    <form method="post">
+        <div class="table">
+            <input class="text" id="code" asp-for="Code">
+            <br />
+            <button type="button" , value="1" onclick="addToCode('1')">1</button>
+            <button type="button" , value="2" onclick="addToCode('2')">2</button>
+            <button type="button" , value="3" onclick="addToCode('3')">3</button>
+            <br />
+            <button type="button" , value="4" onclick="addToCode('4')">4</button>
+            <button type="button" , value="5" onclick="addToCode('5')">5</button>
+            <button type="button" , value="6" onclick="addToCode('6')">6</button>
+            <br />
+            <button type="button" , value="7" onclick="addToCode('7')">7</button>
+            <button type="button" , value="8" onclick="addToCode('8')">8</button>
+            <button type="button" , value="9" onclick="addToCode('9')">9</button>
+            <br />
+            <button type="button" , value="Clear" onclick="clearCode()">Clear</button>
+            <button type="button" , value="0" onclick="addToCode('0')">0</button>
+            <button type="submit" , value="Enter">Enter</button>
+        </div>
+    </form>
+</div>
 
 <script src="~/js/keypad.js"></script>

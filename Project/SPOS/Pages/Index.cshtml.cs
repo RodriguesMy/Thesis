@@ -18,12 +18,9 @@ namespace SPOS.Pages
         [BindProperty]
         public string Code { get; set; }
 
-        public void OnGet()
-        {
+        public void OnGet(){}
 
-        }
-
-        public void OnPost()
+        public ActionResult OnPost()
         {
             string url = "https://localhost:5001/checkPassword/"+Code;
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
@@ -37,15 +34,14 @@ namespace SPOS.Pages
                 
                 status = response.StatusCode;
 
-                if (status == HttpStatusCode.OK)//direct to menu
-                {
-                    int a = 0;
-                }
+                if (status == HttpStatusCode.OK) return Redirect("./MainPage"); //direct to main page
             }
             catch
             {
-                int a = 0;
+                return Page(); //user with this password does not exist
             }
+
+            return Page();
         }
     }
 }
