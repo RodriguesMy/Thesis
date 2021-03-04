@@ -3,3 +3,16 @@
 @{
 }
 
+@section Styles{
+    <link rel="stylesheet" href="@Url.Content("~/css/mainPage.css")" rel="stylesheet" type="text/css" />
+}
+    
+<section class="receipt">
+        
+</section>
+
+<section class="selection">
+    @if (Model.CategoriesHtmlContext != null)
+        @Html.Raw(Model.CategoriesHtmlContext)
+</section>
+
