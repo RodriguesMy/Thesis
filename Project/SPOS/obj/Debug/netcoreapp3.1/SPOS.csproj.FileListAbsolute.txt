@@ -8,7 +8,6 @@ C:\Users\rodri\OneDrive\YEAR 4\Assignments 4th year\DoubleProject\Project\SPOS\b
 C:\Users\rodri\OneDrive\YEAR 4\Assignments 4th year\DoubleProject\Project\SPOS\bin\Debug\netcoreapp3.1\SPOS.pdb
 C:\Users\rodri\OneDrive\YEAR 4\Assignments 4th year\DoubleProject\Project\SPOS\bin\Debug\netcoreapp3.1\SPOS.Views.dll
 C:\Users\rodri\OneDrive\YEAR 4\Assignments 4th year\DoubleProject\Project\SPOS\bin\Debug\netcoreapp3.1\SPOS.Views.pdb
-C:\Users\rodri\OneDrive\YEAR 4\Assignments 4th year\DoubleProject\Project\SPOS\obj\Debug\netcoreapp3.1\SPOS.csprojAssemblyReference.cache
 C:\Users\rodri\OneDrive\YEAR 4\Assignments 4th year\DoubleProject\Project\SPOS\obj\Debug\netcoreapp3.1\SPOS.AssemblyInfoInputs.cache
 C:\Users\rodri\OneDrive\YEAR 4\Assignments 4th year\DoubleProject\Project\SPOS\obj\Debug\netcoreapp3.1\SPOS.AssemblyInfo.cs
 C:\Users\rodri\OneDrive\YEAR 4\Assignments 4th year\DoubleProject\Project\SPOS\obj\Debug\netcoreapp3.1\SPOS.csproj.CoreCompileInputs.cache
@@ -76,3 +75,4 @@ C:\Users\rodri\OneDrive\YEAR 4\Assignments 4th year\DoubleProject\Project\SPOS\b
 C:\Users\rodri\OneDrive\YEAR 4\Assignments 4th year\DoubleProject\Project\SPOS\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
 C:\Users\rodri\OneDrive\YEAR 4\Assignments 4th year\DoubleProject\Project\SPOS\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Users\rodri\OneDrive\YEAR 4\Assignments 4th year\DoubleProject\Project\SPOS\obj\Debug\netcoreapp3.1\Razor\Pages\MainPage.cshtml.g.cs
+C:\Users\rodri\OneDrive\YEAR 4\Assignments 4th year\DoubleProject\Project\SPOS\obj\Debug\netcoreapp3.1\SPOS.csprojAssemblyReference.cache

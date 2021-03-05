@@ -9,5 +9,6 @@ namespace SPOS.Classes
     {
         public int type_id { get; set; }
         public string type_name { get; set; }
+        public int type_category { get; set; }
     }
 }

@@ -6,13 +6,23 @@
 @section Styles{
     <link rel="stylesheet" href="@Url.Content("~/css/mainPage.css")" rel="stylesheet" type="text/css" />
 }
-    
-<section class="receipt">
-        
-</section>
 
 <section class="selection">
-    @if (Model.CategoriesHtmlContext != null)
-        @Html.Raw(Model.CategoriesHtmlContext)
+    <div class="selectionArea">
+
+        @if (Model.CategorySelection == null)
+        {
+        <form asp-page-handler="button" method="post">
+            <input id="CategorySelection" asp-for="CategorySelection" hidden />
+                @Html.Raw(Model.HtmlContext)
+      </form>
+        } else {
+            <form asp-page-handler="button" method="post">
+                @Html.Raw(Model.HtmlContext)
+            </form>
+        }
+</div>
 </section>
+
+<script src="~/js/mainPage.js"></script>
 

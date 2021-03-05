@@ -1,4 +1,6 @@
-﻿body {
+﻿
+/*GENERAL PAGE BELOW*/
+body {
     height:100%;
     margin:0;
 }
@@ -35,3 +37,32 @@ section {
     top: 0;
     z-index: 10;
 }
+.selectionArea{
+    top:5px;
+}
+/*GENERAL PAGE ABOVE*/
+
+/*SELECTION AREA BELOW*/
+button {
+    background-color: #008CBA; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 64px;
+    margin: 10px 5px;
+    cursor: pointer;
+    width: 23%;
+    border-radius: 8px;
+    box-shadow: 0 4px rgba(0,0,0,0.2);
+}
+
+header {
+    /*text-align: center;*/
+    padding: 8px 16px;
+    color: black;
+    font-size: 42px;
+}
+/*SELECTION AREA ABOVE*/
