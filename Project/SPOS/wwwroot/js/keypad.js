@@ -9,4 +9,5 @@ function clearCode() {
 
 window.onload = function() {
     clearCode();
+    localStorage.clear();
 }

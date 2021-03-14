@@ -76,3 +76,4 @@ C:\Users\rodri\OneDrive\YEAR 4\Assignments 4th year\DoubleProject\Project\Rest\R
 C:\Users\rodri\OneDrive\YEAR 4\Assignments 4th year\DoubleProject\Project\Rest\Rest\obj\Debug\net5.0\ref\Rest.dll
 C:\Users\rodri\OneDrive\YEAR 4\Assignments 4th year\DoubleProject\Project\Rest\Rest\obj\Debug\net5.0\Rest.pdb
 C:\Users\rodri\OneDrive\YEAR 4\Assignments 4th year\DoubleProject\Project\Rest\Rest\obj\Debug\net5.0\Rest.genruntimeconfig.cache
+C:\Users\rodri\OneDrive\YEAR 4\Assignments 4th year\DoubleProject\Project\Rest\Rest\obj\Debug\net5.0\Rest.csprojAssemblyReference.cache
