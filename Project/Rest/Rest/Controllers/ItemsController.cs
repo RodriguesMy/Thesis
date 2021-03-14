@@ -13,6 +13,7 @@ namespace Rest.Controllers
     {
         List<ItemType> types = new List<ItemType>();
         List<ItemCategory> categories = new List<ItemCategory>();
+        List<Item> items = new List<Item>();
         public IActionResult Index()
         {
             return View();
@@ -50,7 +51,7 @@ namespace Rest.Controllers
         [Route("getItemTypes")]
         public ActionResult getItemTypes()
         {
-            if (types == null || types.Count == 0) {
+            if (items == null || items.Count == 0) {
                 //create connection to the database
                 SqlConnection sqlConnection = new SqlConnection(Configurations.GetConfiguration("DBConnectionString"));
                 String query = "exec dbo.getAllItemTypes";
@@ -72,6 +73,37 @@ namespace Rest.Controllers
             }
 
             return Ok(types);
+        }
+
+        [HttpGet]
+        [Route("getItems/{item_type}")]
+        public ActionResult getItems(int item_type)
+        {
+            if (types == null || types.Count == 0) {
+                //create connection to the database
+                SqlConnection sqlConnection = new SqlConnection(Configurations.GetConfiguration("DBConnectionString"));
+                String query = "exec dbo.getItemsOfType "+item_type;
+                sqlConnection.Open();
+
+                SqlCommand command = new SqlCommand(query, sqlConnection);
+
+                //execute query
+                SqlDataReader sqlDataReader = command.ExecuteReader();
+
+                while (sqlDataReader.Read()) {
+                        int ID = sqlDataReader.GetInt32(0);
+                        string name = sqlDataReader.GetString(1);
+                        Decimal price = sqlDataReader.GetDecimal(2);
+                        int item_category = sqlDataReader.GetInt16(4);
+                        items.Add(new Item(ID, name, price, item_type, item_category));
+                }
+
+                //close all connections
+                sqlDataReader.Close();
+                command.Dispose();
+                sqlConnection.Close();
+            }
+            return Ok(items);
         }
     }
 }

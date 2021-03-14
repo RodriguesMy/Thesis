@@ -21,5 +21,15 @@ namespace SPOS.Classes
             }
             return context;
         }
+
+        public static string GenerateMenuHTMLContextForItems(List<Item> items)
+        {
+            string context = "";
+            foreach (var item in items)
+            {
+                    context += "<button name=\"" + item.name.Trim() + "\" onclick=\"addToReceipt('" + item.name.Trim()+"',"+item.ID+","+item.price + ")\">" + item.name.Trim() + "</button>";
+            }
+            return context;
+        }
     }
 }

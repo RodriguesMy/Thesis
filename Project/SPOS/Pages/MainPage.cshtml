@@ -7,21 +7,48 @@
     <link rel="stylesheet" href="@Url.Content("~/css/mainPage.css")" rel="stylesheet" type="text/css" />
 }
 
+<section class="receipt_area">
+    <div class="inside_receipt_area">
+        <div class="receipt">
+            <table id="receipt_table">
+                <tr style="background-color:lightblue">
+                    <th style="width:10%;"></th>
+                    <th style="width:60%;"></th>
+                    <th style="width:15%;"></th>
+                    <th style="width:15%;">Staff ID</th>
+                </tr>
+                <tr style="border-bottom: 2px solid black;">
+                    <th class="id">ID</th>
+                    <th class="description">Description</th>
+                    <th class="cost">Cost</th>
+                    <th class="qty">Qty</th>
+                </tr>
+            </table>
+        </div>
+        <div class="payment">
+            <div id="total_price"> Total Price: 0.00</div>
+        </div>
+    </div>
+</section>
+
 <section class="selection">
     <div class="selectionArea">
 
         @if (Model.CategorySelection == null)
         {
-        <form asp-page-handler="button" method="post">
-            <input id="CategorySelection" asp-for="CategorySelection" hidden />
-                @Html.Raw(Model.HtmlContext)
-      </form>
-        } else {
             <form asp-page-handler="button" method="post">
+                <input id="CategorySelection" asp-for="CategorySelection" hidden />
                 @Html.Raw(Model.HtmlContext)
             </form>
         }
-</div>
+        else
+        {
+            @Html.Raw(Model.HtmlContext)
+        }
+
+        <form asp-page-handler="button" method="post">
+        </form>
+    </div>
 </section>
 
 <script src="~/js/mainPage.js"></script>

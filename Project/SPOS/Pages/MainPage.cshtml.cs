@@ -32,10 +32,14 @@ namespace SPOS.Pages
 
         public async void OnPostButton()
         {
+           
+            int item_type = FunctionHelpers.getItemTypeFromName(CategorySelection);
+            
             //get items of that category
+            List<Item> items = Requests.Requests.GetItemsFromType(item_type);//call rest
 
             //display the items of that category
-            HtmlContext = "hello";
+            HtmlContext = GenerateHTMLContext.GenerateMenuHTMLContextForItems(items);
         }
     }
 }

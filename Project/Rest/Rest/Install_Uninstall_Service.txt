@@ -1,0 +1,13 @@
+﻿To Install:
+-----------
+sc create RestService binPath= "C:\Users\rodri\OneDrive\Desktop\REST\Rest.exe --service"  DisplayName="POS Rest" start=auto
+
+To Uninstall:
+-------------
+sc delete RestService
+
+-------------
+In the service folder you will need: 
+1) Released version of the project
+
+Note: Modify appSettings.json

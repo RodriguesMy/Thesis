@@ -11,7 +11,7 @@ namespace SPOS.Requests
     {
         public static List<ItemType> GetItemTypes()
         {
-            string url = "https://localhost:5001/getItemTypes";
+            string url = Configurations.GetConfiguration("RestURL") + "/getItemTypes";
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
             request.Method = "GET";
             List<ItemType> results = new List<ItemType>();
@@ -39,7 +39,7 @@ namespace SPOS.Requests
 
         public static List<ItemCategory> GetItemCategories()
         {
-            string url = "https://localhost:5001/getCategories";
+            string url = Configurations.GetConfiguration("RestURL") + "/getCategories";
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
             request.Method = "GET";
             List<ItemCategory> results = new List<ItemCategory>();
@@ -57,6 +57,34 @@ namespace SPOS.Requests
                     {
                         var json = streamReader.ReadToEnd();
                         results = JsonConvert.DeserializeObject<List<ItemCategory>>(json);
+                    }
+                }
+            }
+            catch { }
+
+            return results;
+        }
+
+        public static List<Item> GetItemsFromType(int item_type)
+        {
+            string url = Configurations.GetConfiguration("RestURL") + "/getItems/" + item_type;
+            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
+            request.Method = "GET";
+            List<Item> results = new List<Item>();
+            HttpStatusCode status = HttpStatusCode.NotFound;
+
+            try
+            {
+                using HttpWebResponse response = request.GetResponse() as HttpWebResponse;
+
+                status = response.StatusCode;
+
+                if (status == HttpStatusCode.OK)
+                {
+                    using (var streamReader = new StreamReader(response.GetResponseStream()))
+                    {
+                        var json = streamReader.ReadToEnd();
+                        results = JsonConvert.DeserializeObject<List<Item>>(json);
                     }
                 }
             }

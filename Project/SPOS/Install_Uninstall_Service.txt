@@ -1,0 +1,14 @@
+﻿To Install:
+-----------
+sc create POSService binPath= "C:\Users\rodri\OneDrive\Desktop\SPOS\SPOS.exe --service"  DisplayName="POS" start=auto
+
+To Uninstall:
+-------------
+sc delete POSService
+
+-------------
+In the service folder you will need: 
+1) Released version of the project
+2) 'wwwroot' folder. 
+
+Note: Modify appSettings.json 
