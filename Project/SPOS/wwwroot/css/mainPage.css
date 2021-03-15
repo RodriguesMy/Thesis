@@ -115,4 +115,8 @@ table {
 td, th {
     text-align: left;
 }
+
+#active {
+    background: lightblue;
+}
 /*RECEIPT AREA ABOVE*/

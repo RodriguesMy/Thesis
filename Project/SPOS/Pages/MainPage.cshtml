@@ -14,22 +14,24 @@
         <div class="receipt">
             <table id="receipt_table">
                 <tr style="background-color:lightblue">
-                    <th style="width:10%;"></th>
-                    <th style="width:60%;"></th>
-                    <th style="width:15%;"></th>
-                    <th style="width:15%;">Staff ID</th>
+                    <td style="width:10%;"></td>
+                    <td style="width:60%;"></td>
+                    <td style="width:15%;"></td>
+                    <td style="width:15%;">Staff ID</td>
                 </tr>
-                <tr style="border-bottom: 2px solid black;">
-                    <th class="id">ID</th>
-                    <th class="description">Description</th>
-                    <th class="cost">Cost</th>
-                    <th class="qty">Qty</th>
+                <tr style="border-bottom: 2px solid black;background-color:lightblue">
+                    <td class="id">ID</td>
+                    <td class="description">Description</td>
+                    <td class="cost">Cost</td>
+                    <td class="qty">Qty</td>
                 </tr>
             </table>
         </div>
         <div class="payment">
             <div id="total_price"> Total Price: 0.00</div>
+            <button id="removeBtn" style="font-size:small" onclick="removeSelectedItem()">Remove</button>
         </div>
+        
     </div>
 </section>
 
@@ -53,5 +55,3 @@
         </form>
     </div>
 </section>
-
-

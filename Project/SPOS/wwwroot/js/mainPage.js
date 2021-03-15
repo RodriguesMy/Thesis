@@ -24,10 +24,14 @@ class Receipt {
         return this.items.some(x => x.id === item_id);
     }
 
-    increaseQuantityAndCost(id) {
+    increaseQuantity(id) {
         var index = this.items.findIndex(x => x.id === id);
         this.items[index].qty = this.items[index].qty + 1;
-        this.items[index].price = this.items[index].price * 2;
+    }
+
+    deleteItem(id) {
+        var index = this.items.findIndex(x => x.id === id);
+        this.items.splice(index,1);
     }
 }
 
@@ -59,7 +63,7 @@ function updateReceipt() {
 
         id.innerHTML = receipt.items[i].id;
         description.innerHTML = receipt.items[i].description;
-        price.innerHTML = receipt.items[i].price;
+        price.innerHTML = receipt.items[i].price * receipt.items[i].qty;
         qty.innerHTML = receipt.items[i].qty;
     }
 }
@@ -82,7 +86,7 @@ function addToReceipt(item_name, item_id, item_price) {
     
     //check if item already exists in table
     if (receipt.exists(item_id)) {
-        receipt.increaseQuantityAndCost(item_id);
+        receipt.increaseQuantity(item_id);
     }
     else {
         //if item does not exist in table, add it into the list
@@ -94,20 +98,77 @@ function addToReceipt(item_name, item_id, item_price) {
 
     //update html context 
     updateReceipt();
-    updateTotalPrice();
-   
-}
+    updateTotalPrice();  
 
-function removeFromReceipt() {
-
+    //function updates and highlights the selected row of 
+    //the table when clicked
+    $(function () {
+        $('td').click(function () {
+            $('tr').removeAttr('id');
+            $(this).parent().attr('id', 'active');
+        });
+    });
 }
 
 function back() {
-
     location.replace('/MainPage');
+}
+
+function removeSelectedItem() {
+    var item_id = document.getElementById("receipt_table").rows.namedItem("active").cells[0].innerHTML;
+
+    //remove item from list--
+    //receiving the recept from the local storage
+    let receipt = new Receipt(JSON.parse(localStorage.getItem("receipt")));
+
+    //checking if the item has more than one quantity
+    //deleting item
+    receipt.deleteItem(item_id);
+
+    //update array to local database
+    localStorage.setItem("receipt", JSON.stringify(receipt.items));
+
+    //update html context 
+    updateReceipt();
+    updateTotalPrice();  
+
+    //function updates and highlights the selected row of 
+    //the table when clicked
+    $(function () {
+        $('td').click(function () {
+            $('tr').removeAttr('id');
+            $(this).parent().attr('id', 'active');
+        });
+    });
 }
 
 window.onload = function () {
     updateReceipt();
     updateTotalPrice();
 }
+
+$(function () {
+    $('td').click(function () {
+        $('tr').removeAttr('id');
+        $(this).parent().attr('id','active');
+    });
+});
+
+var checkForSelectedRow = setInterval(function () {
+    if (document.getElementById("active") != null) {
+        //Check if its a valid row
+        var item_id = document.getElementById("receipt_table").rows.namedItem("active").cells[0].innerHTML;
+        var num = parseInt(item_id);
+
+        if (!isNaN(num)) {
+            //make remove button visible
+            document.getElementById("removeBtn").style.visibility = "visible";
+            return;
+        }
+
+    }
+
+    //hide 'remove' button
+    document.getElementById("removeBtn").style.visibility = "hidden";
+});
+
