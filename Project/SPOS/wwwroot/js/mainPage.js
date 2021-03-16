@@ -33,6 +33,25 @@ class Receipt {
         var index = this.items.findIndex(x => x.id === id);
         this.items.splice(index,1);
     }
+
+    quantityIsMoreThanOne(id) {
+        var index = this.items.findIndex(x => x.id === id);
+        if (this.items[index].qty > 1) return true;
+        return false;
+    }
+
+    getQuantity(id) {
+        var index = this.items.findIndex(x => x.id === id);
+        return this.items[index].qty;
+        
+    }
+
+    deleteRange(id, totalToDelete) {
+        var index = this.items.findIndex(x => x.id === id);
+        this.items[index].qty = this.items[index].qty - totalToDelete;
+
+        if (this.items[index].qty <= 0) this.deleteItem(id);
+    }
 }
 
 function update(type_name) {
@@ -114,23 +133,68 @@ function back() {
     location.replace('/MainPage');
 }
 
-function removeSelectedItem() {
-    var item_id = document.getElementById("receipt_table").rows.namedItem("active").cells[0].innerHTML;
+function openModal() {
 
-    //remove item from list--
+    //First we check if the item's quantity is more than 1. If it is, we bring up the modal,
+    //otherwise, we just remove the item from the receipt
+
+    //getting the selected row to receive the selected item_id
+    var item_id = parseInt(document.getElementById("receipt_table").rows.namedItem("active").cells[0].innerHTML);
+
     //receiving the recept from the local storage
     let receipt = new Receipt(JSON.parse(localStorage.getItem("receipt")));
 
-    //checking if the item has more than one quantity
-    //deleting item
-    receipt.deleteItem(item_id);
+    if (receipt.quantityIsMoreThanOne(item_id)) {
+        /*MODAL BELOW */
+        // Get the modal
+        var modal = document.getElementById("myModal");
 
-    //update array to local database
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        modal.style.display = "block";
+        document.getElementById("numberToDelete").value = receipt.getQuantity(item_id);
+        document.getElementById("numberToDelete").setAttribute("max", receipt.getQuantity(item_id));
+    } else {
+        deleteSelectedFromRecept()
+    }
+}
+
+function deleteSelectedFromRecept() {
+
+    //getting the selected row to receive the selected item_id
+    var item_id = parseInt(document.getElementById("receipt_table").rows.namedItem("active").cells[0].innerHTML);
+
+    //receiving the recept from the local storage
+    let receipt = new Receipt(JSON.parse(localStorage.getItem("receipt")));
+
+    //check how many items to delete(if the items are more than 1)
+    var numberToDelete = parseInt(document.getElementById("numberToDelete").value);
+    if (numberToDelete) {
+        receipt.deleteRange(item_id, numberToDelete);
+        document.getElementById("myModal").style.display = "none";
+    } else {
+        receipt.deleteItem(item_id);
+    }
+
+    //saving receipt on localstorage
     localStorage.setItem("receipt", JSON.stringify(receipt.items));
 
     //update html context 
     updateReceipt();
-    updateTotalPrice();  
+    updateTotalPrice();
 
     //function updates and highlights the selected row of 
     //the table when clicked
@@ -171,4 +235,3 @@ var checkForSelectedRow = setInterval(function () {
     //hide 'remove' button
     document.getElementById("removeBtn").style.visibility = "hidden";
 });
-

@@ -9,49 +9,63 @@
 
 <script src="~/js/mainPage.js"></script>
 
-<section class="receipt_area">
-    <div class="inside_receipt_area">
-        <div class="receipt">
-            <table id="receipt_table">
-                <tr style="background-color:lightblue">
-                    <td style="width:10%;"></td>
-                    <td style="width:60%;"></td>
-                    <td style="width:15%;"></td>
-                    <td style="width:15%;">Staff ID</td>
-                </tr>
-                <tr style="border-bottom: 2px solid black;background-color:lightblue">
-                    <td class="id">ID</td>
-                    <td class="description">Description</td>
-                    <td class="cost">Cost</td>
-                    <td class="qty">Qty</td>
-                </tr>
-            </table>
+    <section class="receipt_area">
+        <div class="inside_receipt_area">
+            <div class="receipt">
+                <table id="receipt_table">
+                    <tr style="background-color:lightblue">
+                        <td style="width:10%;"></td>
+                        <td style="width:60%;"></td>
+                        <td style="width:15%;"></td>
+                        <td style="width:15%;">Staff ID</td>
+                    </tr>
+                    <tr style="border-bottom: 2px solid black;background-color:lightblue">
+                        <td class="id">ID</td>
+                        <td class="description">Description</td>
+                        <td class="cost">Cost</td>
+                        <td class="qty">Qty</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="payment">
+                <div id="total_price"> Total Price: 0.00</div>
+                <button id="removeBtn" style="font-size:small" onclick="openModal()">Remove</button>
+            </div>
         </div>
-        <div class="payment">
-            <div id="total_price"> Total Price: 0.00</div>
-            <button id="removeBtn" style="font-size:small" onclick="removeSelectedItem()">Remove</button>
-        </div>
-        
-    </div>
-</section>
+    </section>
 
-<section class="selection">
-    <div class="selectionArea">
+    <section class="selection">
+        <div class="selectionArea">
 
-        @if (Model.CategorySelection == null)
+            @if (Model.CategorySelection == null)
         {
-        <form asp-page-handler="button" method="post">
-            <input id="CategorySelection" asp-for="CategorySelection" hidden />
-            @Html.Raw(Model.HtmlContext)
-        </form>
+            <form asp-page-handler="button" method="post">
+                <input id="CategorySelection" asp-for="CategorySelection" hidden />
+                @Html.Raw(Model.HtmlContext)
+            </form>
         }
         else
         {
-        @Html.Raw(Model.HtmlContext)
-        <button onclick="back()">Back</button>
+            @Html.Raw(Model.HtmlContext)
+            <button onclick="back()">Back</button>
         }
 
-        <form asp-page-handler="button" method="post">
-        </form>
-    </div>
-</section>
+            <form asp-page-handler="button" method="post">
+            </form>
+        </div>
+
+        <!--MODAL FOR SELECTING NUMBER OF ITEMS TO REMOVE FROM RECEIPT- Shows on 'RemoveBtn'-->
+        <div id="myModal" class="modal">
+            <!--Modal content-->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div>
+                    <input type="number" id="numberToDelete" style="font-size:42px;" min="1">
+                    <br />
+                    <button style="font-size:24px;" onclick="deleteSelectedFromRecept()">Remove</button>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
