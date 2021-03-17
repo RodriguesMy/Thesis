@@ -73,3 +73,4 @@ C:\Users\rodri\OneDrive\YEAR 4\Assignments 4th year\DoubleProject\Project\SPOS\o
 C:\Users\rodri\OneDrive\YEAR 4\Assignments 4th year\DoubleProject\Project\SPOS\obj\Debug\net5.0\SPOS.genruntimeconfig.cache
 C:\Users\rodri\OneDrive\YEAR 4\Assignments 4th year\DoubleProject\Project\SPOS\bin\Debug\net5.0\log4net.config
 C:\Users\rodri\OneDrive\YEAR 4\Assignments 4th year\DoubleProject\Project\SPOS\obj\Debug\net5.0\SPOS.csprojAssemblyReference.cache
+C:\Users\rodri\OneDrive\YEAR 4\Assignments 4th year\DoubleProject\Project\SPOS\obj\Debug\net5.0\Razor\Pages\Payment.cshtml.g.cs

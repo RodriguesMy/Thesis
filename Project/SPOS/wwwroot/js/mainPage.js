@@ -46,11 +46,18 @@ class Receipt {
         
     }
 
-    deleteRange(id, totalToDelete) {
+    deleteMultiple(id, totalToDelete) {
         var index = this.items.findIndex(x => x.id === id);
         this.items[index].qty = this.items[index].qty - totalToDelete;
 
         if (this.items[index].qty <= 0) this.deleteItem(id);
+    }
+
+    getTotalPrice() {
+        var total = 0;
+        for (i = 0; i < this.items.length; i++) {
+            total += this.items[i].price * this.items[i].qty;
+        }
     }
 }
 
@@ -82,7 +89,7 @@ function updateReceipt() {
 
         id.innerHTML = receipt.items[i].id;
         description.innerHTML = receipt.items[i].description;
-        price.innerHTML = receipt.items[i].price * receipt.items[i].qty;
+        price.innerHTML = "€"+(receipt.items[i].price * receipt.items[i].qty).toFixed(2);
         qty.innerHTML = receipt.items[i].qty;
     }
 }
@@ -93,9 +100,9 @@ function updateTotalPrice() {
     //add up to total price
     var total = 0;
     for (i = 0; i < receipt.items.length; i++) {
-        total += receipt.items[i].price;
+        total += receipt.items[i].price * receipt.items[i].qty;
     }
-    document.getElementById("total_price").innerHTML = "Total Price: " + total;
+    document.getElementById("total_price").innerHTML = "€" + total.toFixed(2);
 }
 
 function addToReceipt(item_name, item_id, item_price) {
@@ -129,12 +136,7 @@ function addToReceipt(item_name, item_id, item_price) {
     });
 }
 
-function back() {
-    location.replace('/MainPage');
-}
-
 function openModal() {
-
     //First we check if the item's quantity is more than 1. If it is, we bring up the modal,
     //otherwise, we just remove the item from the receipt
 
@@ -168,11 +170,11 @@ function openModal() {
         document.getElementById("numberToDelete").value = receipt.getQuantity(item_id);
         document.getElementById("numberToDelete").setAttribute("max", receipt.getQuantity(item_id));
     } else {
-        deleteSelectedFromRecept()
+        deleteSelectedFromReceipt()
     }
 }
 
-function deleteSelectedFromRecept() {
+function deleteSelectedFromReceipt() {
 
     //getting the selected row to receive the selected item_id
     var item_id = parseInt(document.getElementById("receipt_table").rows.namedItem("active").cells[0].innerHTML);
@@ -183,7 +185,7 @@ function deleteSelectedFromRecept() {
     //check how many items to delete(if the items are more than 1)
     var numberToDelete = parseInt(document.getElementById("numberToDelete").value);
     if (numberToDelete) {
-        receipt.deleteRange(item_id, numberToDelete);
+        receipt.deleteMultiple(item_id, numberToDelete);
         document.getElementById("myModal").style.display = "none";
     } else {
         receipt.deleteItem(item_id);
@@ -206,6 +208,12 @@ function deleteSelectedFromRecept() {
     });
 }
 
+function getTotalPrice() {
+    let receipt = new Receipt(JSON.parse(localStorage.getItem("receipt")));
+
+    return receipt.getTotalPrice();
+}
+
 window.onload = function () {
     updateReceipt();
     updateTotalPrice();
@@ -226,12 +234,36 @@ var checkForSelectedRow = setInterval(function () {
 
         if (!isNaN(num)) {
             //make remove button visible
-            document.getElementById("removeBtn").style.visibility = "visible";
+            if (document.getElementById("removeBtn"))
+                document.getElementById("removeBtn").style.visibility = "visible";
             return;
         }
 
     }
-
     //hide 'remove' button
-    document.getElementById("removeBtn").style.visibility = "hidden";
+    if (document.getElementById("removeBtn"))
+        document.getElementById("removeBtn").style.visibility = "hidden";
 });
+
+function openModalForCash() {
+    /*MODAL BELOW */
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
+    modal.style.display = "block";
+}

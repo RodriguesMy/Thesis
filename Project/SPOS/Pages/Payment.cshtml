@@ -1,0 +1,111 @@
+﻿@page
+@model SPOS.Pages.PaymentModel
+@{
+}
+
+@section Styles{
+    <link rel="stylesheet" href="@Url.Content("~/css/mainPage.css")" rel="stylesheet" type="text/css" />
+}
+
+<script src="~/js/mainPage.js"></script>
+
+<section class="receipt_area">
+    <div class="inside_receipt_area">
+        
+        <div class="receipt" style="height:100%;padding:5%;">
+            <div class="center">*Company Name*</div>
+            <br />
+            Location: COFFEE PLACE
+            <br />
+            Cashier:
+            <br />
+            Order#:
+            <br />
+            <div class="date">Date & Time: @DateTime.Now</div>
+            <br /><br />
+            <table id="receipt_table">
+                <tr style="background-color:lightblue" hidden>
+                    <td style="width:10%;"></td>
+                    <td style="width:60%;"></td>
+                    <td style="width:15%;"></td>
+                    <td style="width:15%;">Staff ID</td>
+                </tr>
+                <tr style="border-bottom: 2px solid black;">
+                    <td class="id">ID</td>
+                    <td class="description">Description</td>
+                    <td class="cost">Cost</td>
+                    <td class="qty">Qty</td>
+                </tr>
+            </table>
+            <br /><br />
+            <b>TOTAL EUR:</b>
+            <b style="float:right;" id="total_price"></b>
+            <br /><br />
+            <b>AMOUNT RECEIVED:</b>
+            <b style="float:right;" id="amount_received"></b>
+            <br /><br />
+            <b>CHANGE:</b>
+            <b style="float:right;" id="change_to_give"></b>
+            <br /><br />
+            <b>PAYMENT METHOD:</b><b style="float:right;" id="total_price">CASH</b>
+            <hr />
+            <br />
+            <div class="center">
+                ALL CHARGES ARE INCLUDED IN PRICE<br /><br />
+                Wifi Key: 12345<br /><br />
+
+                THANK YOU FOR YOUR PURCHASE!<br />
+                COME AGAIN SOON!<br /><br />
+
+                ***Purchase Closed***
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="selection">
+    <div class="selectionArea">
+        //DISCOUNTS
+        <hr />
+        Payment Method:
+        <br />
+        <form asp-page-handler="button" method="post">
+            <button onclick="openModalForCash('CASH')">CASH</button>
+            <button type="submit">VISA</button>
+            <button type="submit">MASTER</button>
+            <button type="submit">AMEX</button>
+        </form>
+    </div>
+
+    <button class="backBtn" onclick="location.replace('/MainPage');">Back</button>
+
+    <div id="myModal" class="modal">
+        <!--Modal content-->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form method="post">
+                <div class="table">
+                    <input class="text" id="code">
+                    <br />
+                    <button type="button" , value="1" onclick="addToCode('1')">1</button>
+                    <button type="button" , value="2" onclick="addToCode('2')">2</button>
+                    <button type="button" , value="3" onclick="addToCode('3')">3</button>
+                    <br />
+                    <button type="button" , value="4" onclick="addToCode('4')">4</button>
+                    <button type="button" , value="5" onclick="addToCode('5')">5</button>
+                    <button type="button" , value="6" onclick="addToCode('6')">6</button>
+                    <br />
+                    <button type="button" , value="7" onclick="addToCode('7')">7</button>
+                    <button type="button" , value="8" onclick="addToCode('8')">8</button>
+                    <button type="button" , value="9" onclick="addToCode('9')">9</button>
+                    <br />
+                    <button type="button" , value="Clear" onclick="clearCode()">Clear</button>
+                    <button type="button" , value="0" onclick="addToCode('0')">0</button>
+                    <button type="submit" , value="Enter">Enter</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</section>
+

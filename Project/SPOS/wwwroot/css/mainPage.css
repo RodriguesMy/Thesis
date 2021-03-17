@@ -79,6 +79,7 @@ section {
 
 /*SELECTION AREA BELOW*/
 button {
+    white-space: nowrap;
     background-color: #008CBA; /* Green */
     border: none;
     color: white;
@@ -89,7 +90,7 @@ button {
     font-size: xx-large;
     margin: 10px 5px;
     cursor: pointer;
-    width: 23%;
+    width: fit-content;
     border-radius: 8px;
     box-shadow: 0 4px rgba(0,0,0,0.2);
 }
@@ -99,6 +100,29 @@ header {
     padding: 8px 16px;
     color: black;
     font-size: 42px;
+}
+
+.backBtn {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.total_price {
+    position: absolute;
+    right: 15%;
+    bottom: 30%;
+}
+
+.removeBtn {
+    position: absolute;
+    right: 0;
+}
+
+.paymentBtn {
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 /*SELECTION AREA ABOVE*/
 
@@ -119,16 +143,19 @@ td, th {
 #active {
     background: lightblue;
 }
+
+.center {
+    text-align: center;
+}
+
+.date{
+    float:left;
+}
+
 /*RECEIPT AREA ABOVE*/
-
 /*PAYMENT AREA BELOW*/
-
-
-
 /*PAYMENT AREA ABOVE*/
-
 /*MODAL AREA BELOW*/
-
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
