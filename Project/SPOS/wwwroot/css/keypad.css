@@ -1,6 +1,7 @@
 ﻿body{
     background-color: lightblue;
 }
+
 .area {
     margin: auto;
     top: 50%;
@@ -9,7 +10,7 @@
     position: absolute;
 }
 
-table {
+keypad {
     margin: auto;
     width: 500px;
     height: 600px;
@@ -19,7 +20,7 @@ table {
     justify-content: center;
 }
 
-button {
+.keypad_button {
     outline: 0;
     position: relative;
     left: 5px;
@@ -32,10 +33,11 @@ button {
     margin: 5px;
     font-size: 36px;
     box-shadow: 0 4px rgba(0,0,0,0.2);
+    text-align:center;
 }
 
-button:active{
-    background-color:lightgray;
+.keypad_button:active {
+    background-color: lightgray;
 }
 
 input {

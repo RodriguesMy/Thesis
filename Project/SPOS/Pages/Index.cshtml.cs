@@ -29,35 +29,13 @@ namespace SPOS.Pages
         public void OnGet(){}
 
         public ActionResult OnPost()
-        { 
-            //used for loggin information and errors
-            XmlConfigurator.ConfigureAndWatch(new FileInfo(Configurations.GetConfiguration("log4netFilename")));
+        {
+            if (Requests.Requests.validateUser(int.Parse(Code)))
+            {
+                HttpContext.Session.SetString("userName",Requests.Requests.getNameOfUser(int.Parse(Code)));
+                return Redirect("./MainPage"); //direct to main page
+            }
         
-            string url = Configurations.GetConfiguration("RestURL")+"/checkPassword/" +Code;
-            LoggingMessage = $"Calling: {url} . Result: ";
-            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
-            request.Method = "GET";
-
-            HttpStatusCode status = HttpStatusCode.NotFound;
-
-            try
-            {
-                using HttpWebResponse response = request.GetResponse() as HttpWebResponse;
-                
-                status = response.StatusCode;
-
-                if (status == HttpStatusCode.OK)
-                {
-                    logger.Info(LoggingMessage + status);
-                    return Redirect("./MainPage"); //direct to main page
-                }
-            }
-            catch(Exception e)
-            {
-                logger.Error(LoggingMessage + e.Message);
-                return Page(); //user failed to login
-            }
-
             return Page();
         }
     }

@@ -20,6 +20,9 @@ namespace SPOS
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+            services.AddMvc(options => options.EnableEndpointRouting = false);
+            services.AddDistributedMemoryCache();
+            services.AddSession();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -28,6 +31,7 @@ namespace SPOS
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                
             }
             else
             {
@@ -42,11 +46,14 @@ namespace SPOS
             app.UseRouting();
 
             app.UseAuthorization();
-
+            app.UseSession();
+            app.UseMvcWithDefaultRoute();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapRazorPages();
             });
+
+            
         }
     }
 }

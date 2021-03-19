@@ -52,5 +52,42 @@ namespace Rest.Controllers
                 return BadRequest();
             }      
         }
+
+        [HttpGet]
+        [Route("getUserName/{pin}")]
+        public ActionResult getUserName(String pin)
+        {
+            //used for loggin information and errors
+            XmlConfigurator.ConfigureAndWatch(new FileInfo(Configurations.GetConfiguration("log4netFilename")));
+
+            //create connection to the database
+            try {
+                SqlConnection sqlConnection = new SqlConnection(Configurations.GetConfiguration("DBConnectionString"));
+                String query = "exec dbo.getUserName " + pin;
+                sqlConnection.Open();
+
+                SqlCommand command = new SqlCommand(query, sqlConnection);
+
+                //execute query
+                SqlDataReader sqlDataReader = command.ExecuteReader();
+                string name = "";
+                while (sqlDataReader.Read()) {
+                    name = $"{sqlDataReader.GetString(0).Trim()} {sqlDataReader.GetString(1).Trim()} {sqlDataReader.GetString(2).Trim()}";
+                }
+
+                //close all connections
+                sqlDataReader.Close();
+                command.Dispose();
+                sqlConnection.Close();
+
+                ActionResult res = name != "" ? Ok(name) : NotFound();
+                logger.Info($"Received Request: 'getUserName/{pin}'. Result: {res}");
+                return res;
+            }
+            catch (Exception e) {
+                logger.Error($"Received Request: 'getUserName/{pin}'. Error: {e.Message}");
+                return BadRequest();
+            }
+        }
     }
 }

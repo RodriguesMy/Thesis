@@ -8,22 +8,15 @@
 }
 
 <script src="~/js/mainPage.js"></script>
-
     <section class="receipt_area">
         <div class="inside_receipt_area">
             <div class="receipt">
                 <table id="receipt_table">
-                    <tr style="background-color:lightblue">
-                        <td style="width:10%;"></td>
-                        <td style="width:60%;"></td>
-                        <td style="width:15%;"></td>
-                        <td style="width:15%;">Staff ID</td>
-                    </tr>
                     <tr style="border-bottom: 2px solid black;background-color:lightblue">
-                        <td class="id">ID</td>
-                        <td class="description">Description</td>
-                        <td class="cost">Cost</td>
-                        <td class="qty">Qty</td>
+                        <td style="width:10%;" class="id">ID</td>
+                        <td style="width:60%;" class="description">Description</td>
+                        <td style="width:15%;" class="cost">Cost</td>
+                        <td style="width:15%;" class="qty">Qty</td>
                     </tr>
                 </table>
             </div>
@@ -31,6 +24,7 @@
                 <button class="paymentBtn" onclick="location.replace('/Payment');" style="font-size:small">Proceed to Payment</button>
                 <b class="total_price"> Total Price: <b id="total_price">€0.00</b></b>
                 <button class="removeBtn" id="removeBtn" style="font-size:small" onclick="openModal()">Remove</button>  
+                <div id="name" style=" position: fixed; left: 0; bottom: 5px;">@Model.userName</div>
             </div>
         </div>
     </section>

@@ -67,7 +67,7 @@ function update(type_name) {
 
 function clearTable(table) {
     //clear table except the two rows on top which are the titles and details    
-    for (i = table.rows.length - 1; i >= 2; i--) {
+    for (i = table.rows.length - 1; i >= 1; i--) {
         table.deleteRow(table.rows.length - 1);
     }
 }
@@ -78,7 +78,7 @@ function updateReceipt() {
 
     let receipt = new Receipt(JSON.parse(localStorage.getItem("receipt")));
 
-    var rowCounter = 2;
+    var rowCounter = 1;
     for (i = 0; i < receipt.items.length; i++) {
         var row = table.insertRow(rowCounter++);
 
@@ -103,6 +103,7 @@ function updateTotalPrice() {
         total += receipt.items[i].price * receipt.items[i].qty;
     }
     document.getElementById("total_price").innerHTML = "€" + total.toFixed(2);
+    if (document.getElementById("Total"))document.getElementById("Total").value = total.toFixed(2);
 }
 
 function addToReceipt(item_name, item_id, item_price) {
@@ -266,4 +267,8 @@ function openModalForCash() {
     }
 
     modal.style.display = "block";
+}
+
+function calculateChange() {
+
 }

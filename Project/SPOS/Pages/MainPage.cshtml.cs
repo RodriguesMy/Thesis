@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using SPOS.Classes;
@@ -12,9 +13,12 @@ namespace SPOS.Pages
         List<ItemType> itemTypes = new List<ItemType>();
         List<ItemCategory> itemCategories = new List<ItemCategory>();
         public string HtmlContext;
+        public string userName;
 
         [BindProperty]
         public String CategorySelection { get; set; }
+        [BindProperty]
+        public string Total{ get; set; }
 
         public void OnGet()
         {
@@ -24,6 +28,9 @@ namespace SPOS.Pages
 
             //firstly display the categories
             HtmlContext = GenerateHTMLContext.GenerateMenuHTMLContextForCategoriesAndTypes(itemTypes,itemCategories);
+
+            //get currently logged in user name
+            userName = HttpContext.Session.GetString("userName");
         }
         public ActionResult OnPost()
         {
@@ -32,7 +39,9 @@ namespace SPOS.Pages
 
         public async void OnPostButton()
         {
-           
+            //get currently logged in user name
+            userName = HttpContext.Session.GetString("userName");
+
             int item_type = FunctionHelpers.getItemTypeFromName(CategorySelection);
             
             //get items of that category

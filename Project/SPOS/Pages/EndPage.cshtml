@@ -1,0 +1,14 @@
+﻿@page
+@model SPOS.Pages.EndPageModel
+@{
+}
+
+@section Styles{
+    <link rel="stylesheet" href="@Url.Content("~/css/endPage.css")" rel="stylesheet" type="text/css" />
+}
+
+@using Microsoft.AspNetCore.Http;
+
+<script src="~/js/endPage.js"></script>
+
+<div class="change">Change: @String.Format("{0:C}", Convert.ToDouble(HttpContext.Session.GetString("change")))</div>
