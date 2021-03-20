@@ -1,6 +1,9 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Newtonsoft.Json;
+using SPOS.Models;
+using System.Collections.Generic;
 
 namespace SPOS.Pages
 {
@@ -10,17 +13,32 @@ namespace SPOS.Pages
         public string CashReceived { get; set; }
         [BindProperty]
         public string Total { get; set; }
+        [BindProperty]
+        public string ReceiptContents { get; set; }
+        [BindProperty]
+        public string PaymentMethod { get; set; }
+        List<Receipt> receipt = new List<Receipt>();
         public void OnGet(){}
 
         public ActionResult OnPost()
         {
-            double change = double.Parse(CashReceived) - double.Parse(Total);
-
+            double change = 0;
+            if (PaymentMethod.Equals("CASH"))
+            {
+                change = double.Parse(CashReceived) - double.Parse(Total);
+                //if the change is a negative number, something is wrong, so return same page and refuse to close the order
+                if (change < 0) return Page();
+            }
             HttpContext.Session.SetString("change", change.ToString());
-            return Redirect("./EndPage"); //direct to main page
+
             //receive order
+            receipt = JsonConvert.DeserializeObject<List<Receipt>>(ReceiptContents);
+
+            //send order to database
+            Requests.Requests.SendOrder(receipt);
+
             //insert order to the database
-            //move to endpage
+            return Redirect("./EndPage"); //move to endpage
         }
     }
 }

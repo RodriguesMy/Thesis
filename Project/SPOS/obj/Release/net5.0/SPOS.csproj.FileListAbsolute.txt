@@ -57,9 +57,11 @@ C:\Users\rodri\OneDrive\YEAR 4\Assignments 4th year\DoubleProject\Project\SPOS\o
 C:\Users\rodri\OneDrive\YEAR 4\Assignments 4th year\DoubleProject\Project\SPOS\obj\Release\net5.0\SPOS.TagHelpers.input.cache
 C:\Users\rodri\OneDrive\YEAR 4\Assignments 4th year\DoubleProject\Project\SPOS\obj\Release\net5.0\SPOS.TagHelpers.output.cache
 C:\Users\rodri\OneDrive\YEAR 4\Assignments 4th year\DoubleProject\Project\SPOS\obj\Release\net5.0\SPOS.RazorCoreGenerate.cache
+C:\Users\rodri\OneDrive\YEAR 4\Assignments 4th year\DoubleProject\Project\SPOS\obj\Release\net5.0\Razor\Pages\EndPage.cshtml.g.cs
 C:\Users\rodri\OneDrive\YEAR 4\Assignments 4th year\DoubleProject\Project\SPOS\obj\Release\net5.0\Razor\Pages\Error.cshtml.g.cs
 C:\Users\rodri\OneDrive\YEAR 4\Assignments 4th year\DoubleProject\Project\SPOS\obj\Release\net5.0\Razor\Pages\Index.cshtml.g.cs
 C:\Users\rodri\OneDrive\YEAR 4\Assignments 4th year\DoubleProject\Project\SPOS\obj\Release\net5.0\Razor\Pages\MainPage.cshtml.g.cs
+C:\Users\rodri\OneDrive\YEAR 4\Assignments 4th year\DoubleProject\Project\SPOS\obj\Release\net5.0\Razor\Pages\Payment.cshtml.g.cs
 C:\Users\rodri\OneDrive\YEAR 4\Assignments 4th year\DoubleProject\Project\SPOS\obj\Release\net5.0\Razor\Pages\Shared\_Layout.cshtml.g.cs
 C:\Users\rodri\OneDrive\YEAR 4\Assignments 4th year\DoubleProject\Project\SPOS\obj\Release\net5.0\Razor\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\rodri\OneDrive\YEAR 4\Assignments 4th year\DoubleProject\Project\SPOS\obj\Release\net5.0\Razor\Pages\_ViewImports.cshtml.g.cs

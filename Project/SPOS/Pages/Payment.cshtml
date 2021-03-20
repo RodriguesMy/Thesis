@@ -69,47 +69,48 @@
         Payment Method:
         <br />
         <button onclick="openModalForCash()">CASH</button>
+        <button onclick="selectPaymentMethod('VISA')" type="submit">VISA</button>
+        <button onclick="selectPaymentMethod('MASTER')" type="submit">MASTER</button>
+        <button onclick="selectPaymentMethod('AMEX')" type="submit">AMEX</button>
         <form asp-page-handler="button" method="post">
-            <button type="submit">VISA</button>
-            <button type="submit">MASTER</button>
-            <button type="submit">AMEX</button>
+            <input class="text" id="ReceiptContents" asp-for="ReceiptContents" hidden />
+            <input class="text" id="PaymentMethod" asp-for="PaymentMethod" hidden />
+            <div id="myModal" class="modal">
+                <!--Modal content-->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div class="area">
+                        <div class="keypad">
+                            <input class="text" id="code" asp-for="CashReceived">
+                            <input class="text" id="Total" asp-for="Total" hidden />
+                            <input class="text" id="ReceiptContents" asp-for="ReceiptContents" hidden />
+                            <br />
+                            <button class="keypad_button" type="button" , value="1" onclick="addToCode('1')">1</button>
+                            <button class="keypad_button" type="button" , value="2" onclick="addToCode('2')">2</button>
+                            <button class="keypad_button" type="button" , value="3" onclick="addToCode('3')">3</button>
+                            <br />
+                            <button class="keypad_button" type="button" , value="4" onclick="addToCode('4')">4</button>
+                            <button class="keypad_button" type="button" , value="5" onclick="addToCode('5')">5</button>
+                            <button class="keypad_button" type="button" , value="6" onclick="addToCode('6')">6</button>
+                            <br />
+                            <button class="keypad_button" type="button" , value="7" onclick="addToCode('7')">7</button>
+                            <button class="keypad_button" type="button" , value="8" onclick="addToCode('8')">8</button>
+                            <button class="keypad_button" type="button" , value="9" onclick="addToCode('9')">9</button>
+                            <br />
+                            <button class="keypad_button" type="button" , value="Clear" onclick="clearCode()">Clear</button>
+                            <button class="keypad_button" type="button" , value="0" onclick="addToCode('0')">0</button>
+                            <button class="keypad_button" type="button" , value="0" onclick="addToCode('.')">.</button>
+                            <br />
+                            <button style="align-content:center;" type="submit" , value="Enter">Enter</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button style="display:none;" type="submit" id="submit"></button>
         </form>
     </div>
 
     <button class="backBtn" onclick="location.replace('/MainPage');">Back</button>
-
-    <div id="myModal" class="modal">
-        <!--Modal content-->
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <div class="area">
-                <form method="post">
-                    <div class="keypad">
-                        <input class="text" id="code" asp-for="CashReceived">
-                        <input class="text" id="Total" asp-for="Total" hidden/>
-                        <br />
-                        <button class="keypad_button" type="button" , value="1" onclick="addToCode('1')">1</button>
-                        <button class="keypad_button" type="button" , value="2" onclick="addToCode('2')">2</button>
-                        <button class="keypad_button" type="button" , value="3" onclick="addToCode('3')">3</button>
-                        <br />
-                        <button class="keypad_button" type="button" , value="4" onclick="addToCode('4')">4</button>
-                        <button class="keypad_button" type="button" , value="5" onclick="addToCode('5')">5</button>
-                        <button class="keypad_button" type="button" , value="6" onclick="addToCode('6')">6</button>
-                        <br />
-                        <button class="keypad_button" type="button" , value="7" onclick="addToCode('7')">7</button>
-                        <button class="keypad_button" type="button" , value="8" onclick="addToCode('8')">8</button>
-                        <button class="keypad_button" type="button" , value="9" onclick="addToCode('9')">9</button>
-                        <br />
-                        <button class="keypad_button" type="button" , value="Clear" onclick="clearCode()">Clear</button>
-                        <button class="keypad_button" type="button" , value="0" onclick="addToCode('0')">0</button>
-                        <button class="keypad_button" type="button" , value="0" onclick="addToCode('.')">.</button>
-                        <br />
-                        <button style="align-content:center;" type="submit" , value="Enter">Enter</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
 
 </section>
 

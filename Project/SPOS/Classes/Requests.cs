@@ -48,6 +48,7 @@ namespace SPOS.Requests
 
             return results;
         }
+
         public static List<ItemCategory> GetItemCategories()
         {
             //used for loggin information and errors
@@ -187,6 +188,39 @@ namespace SPOS.Requests
 
             return false;
         }
+        #endregion
+
+        #region Order Requests
+
+        public static void SendOrder(List<Receipt> receipt)
+        {
+            //used for loggin information and errors
+            XmlConfigurator.ConfigureAndWatch(new FileInfo(Configurations.GetConfiguration("log4netFilename")));
+
+            string url = Configurations.GetConfiguration("RestURL") + "/sendOrder";
+            string json = "";
+            string loggingMessage = $"Request sent: {url} .Json Contents: {json} Result:";
+            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
+            request.Method = "POST";
+
+            HttpStatusCode status = HttpStatusCode.NotFound;
+            try
+            {
+                using HttpWebResponse response = request.GetResponse() as HttpWebResponse;
+
+                status = response.StatusCode;
+
+                if (status == HttpStatusCode.OK)
+                {
+                    logger.Info(loggingMessage + " Success");
+                }
+            }
+            catch (System.Exception e)
+            {
+                logger.Error(loggingMessage + " " + e.Message);
+            }
+        }
+
         #endregion
     }
 }

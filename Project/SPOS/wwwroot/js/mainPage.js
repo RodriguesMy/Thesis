@@ -92,6 +92,10 @@ function updateReceipt() {
         price.innerHTML = "€"+(receipt.items[i].price * receipt.items[i].qty).toFixed(2);
         qty.innerHTML = receipt.items[i].qty;
     }
+
+    if (document.getElementById("ReceiptContents")) {
+        document.getElementById("ReceiptContents").value = JSON.stringify(receipt.items);
+    }
 }
 
 function updateTotalPrice() {
@@ -267,8 +271,11 @@ function openModalForCash() {
     }
 
     modal.style.display = "block";
+    selectPaymentMethod("CASH");
 }
 
-function calculateChange() {
-
+function selectPaymentMethod(paymentMethod) {
+    document.getElementById("PaymentMethod").value = paymentMethod;
+    if (paymentMethod != "CASH")
+        document.getElementById("submit").click();
 }
