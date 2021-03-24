@@ -31,5 +31,26 @@ namespace SPOS.Classes
             }
             return context;
         }
+
+        public static string GenerateMenuHTMLContextForUserCheckInOut(Dictionary<int, string> users, bool checkIn)
+        {
+            char check_in_value = checkIn ? '1' : '0'; //if the user is checked in, their saved value is 1
+            string context = "";
+            foreach (var user in users)
+            {
+                context += $"<button class=\"userBtn\" onclick=\"openModalForPassCode('{user.Key}','{check_in_value}')\">{user.Value}</button>";
+            }
+            return context;
+        }
+
+        public static string GenerateMenuHTMLContextForTodaysOrders(Dictionary<int,decimal> orders)
+        {
+            string context = "";
+            foreach (var order in orders)
+            {
+                context += $"<button class=\"receiptBtn\" onclick=\"retrieveOrder('{order.Key}')\">{order.Key} <br /> €{order.Value.ToString("N2")}</button>";
+            }
+            return context;
+        }
     }
 }

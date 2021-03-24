@@ -6,14 +6,16 @@
 @section Styles{
     <link rel="stylesheet" href="@Url.Content("~/css/mainPage.css")" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="@Url.Content("~/css/keypad.css")" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="@Url.Content("~/css/modal.css")" rel="stylesheet" type="text/css" />
 }
 
 <script src="~/js/keypad.js"></script>
+<script src="~/js/ReceiptContents.js"></script>
 <script src="~/js/mainPage.js"></script>
 @using Microsoft.AspNetCore.Http;
 
 <section class="receipt_area">
-    
+
 
     <div class="inside_receipt_area">
 
@@ -64,9 +66,15 @@
 
 <section class="selection">
     <div class="selectionArea">
-        //DISCOUNTS
+        <div style="font-size:24px;">Apply Discount:</div><br />
+        <button onclick="applyDiscount('15')">15%</button>
+        <button onclick="applyDiscount('30')">30%</button>
+        <button onclick="applyDiscount('50')">50%</button>
+        <button onclick="applyDiscount('70')">70%</button>
+        <button onclick="applyDiscount('100')">Complementary</button>
+        <button onclick="removeDiscount()">Remove Discount</button>
         <hr />
-        Payment Method:
+        <div style="font-size:24px;">Select Payment Method:</div>     
         <br />
         <button onclick="openModalForCash()">CASH</button>
         <button onclick="selectPaymentMethod('VISA')" type="submit">VISA</button>
@@ -75,6 +83,8 @@
         <form asp-page-handler="button" method="post">
             <input class="text" id="ReceiptContents" asp-for="ReceiptContents" hidden />
             <input class="text" id="PaymentMethod" asp-for="PaymentMethod" hidden />
+            <input type="checkbox" id="ModifyOrder" asp-for="ModifyOrder" hidden />
+            <input type="text" id="SelectedOrder" asp-for="SelectedOrder" hidden />
             <div id="myModal" class="modal">
                 <!--Modal content-->
                 <div class="modal-content">
@@ -82,6 +92,7 @@
                     <div class="area">
                         <div class="keypad">
                             <input class="text" id="code" asp-for="CashReceived">
+                            <input class="text" id="discount" asp-for="DiscountApplied" hidden>
                             <input class="text" id="Total" asp-for="Total" hidden />
                             <input class="text" id="ReceiptContents" asp-for="ReceiptContents" hidden />
                             <br />

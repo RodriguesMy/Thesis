@@ -1,4 +1,5 @@
-﻿function openModalForCash() {
+﻿
+function openModalForPassCode(userId, check_in_value) {
     /*MODAL BELOW */
     // Get the modal
     var modal = document.getElementById("myModal");
@@ -19,13 +20,6 @@
     }
 
     modal.style.display = "block";
-}
-
-function calculateChange() {
-    var a = 0;
-}
-
-window.onload = function () {
-    updateReceipt();
-    updateTotalPrice();
+    document.getElementById('userId').value = userId;
+    document.getElementById('check_in_value').value = check_in_value;
 }

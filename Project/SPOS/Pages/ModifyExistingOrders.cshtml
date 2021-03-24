@@ -1,0 +1,42 @@
+﻿@page
+@model SPOS.Pages.ModifyExistingOrdersModel
+@{
+}
+@section Styles{
+    <link rel="stylesheet" href="@Url.Content("~/css/modifyExistingOrders.css")" rel="stylesheet" type="text/css" />
+}
+
+<section class="receipt_area">
+        <div class="inside_receipt_area">
+            <div class="receipt">
+                <table id="receipt_table">
+                    <tr style="border-bottom: 2px solid black;background-color:lightblue">
+                        <td style="width:10%;" class="id">ID</td>
+                        <td style="width:60%;" class="description">Description</td>
+                        <td style="width:15%;" class="cost">Cost</td>
+                        <td style="width:15%;" class="qty">Qty</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="payment">
+                <b class="total_price"> Total Price: <b id="total_price">€0.00</b></b>
+                <button class="receiptBtn" style="width:97%; top:10px;" onclick="modifyOrder()">Modify Order</button>
+            </div>
+        </div>
+        
+</section>
+
+<section class="rightArea">
+    <div class="ordersArea">
+        @Html.Raw(Model.todaysOrdersHtmlContext)
+        <div id="jsonReceiptContents" hidden>@Model.jsonReceipt</div>
+        <form method="post">
+            <input type="text" id="selectedOrder" asp-for="selectedOrderId" hidden />
+            <button type="submit" id="submit" hidden></button>
+        </form>
+        <button class="receiptBtn" style=" position: absolute; right: 0; bottom: 0; font-size:24px;" onclick="location.replace('/MainPage');">Back</button>
+    </div>
+</section>
+
+<script src="~/js/ReceiptContents.js"></script>
+<script src="~/js/modifyExistingOrder.js"></script>

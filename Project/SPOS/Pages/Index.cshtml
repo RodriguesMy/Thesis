@@ -2,7 +2,8 @@
 @model IndexModel
 
 @section Styles{
-    <link rel="stylesheet" href="@Url.Content("~/css/keypad.css")" rel ="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="@Url.Content("~/css/keypad.css")" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="@Url.Content("~/css/modal.css")" rel="stylesheet" type="text/css" />
 }
 
 @{
@@ -33,4 +34,5 @@
     </form>
 </div>
 
+<button class="checkInBtn" onclick="location.replace('/CheckInOut')">Check In/Out</button>
 <script src="~/js/keypad.js"></script>

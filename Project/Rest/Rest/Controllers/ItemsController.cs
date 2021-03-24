@@ -57,7 +57,7 @@ namespace Rest.Controllers
                 return res;
             }catch(Exception e) {
                 logger.Error($"Received Request: 'getCategories'. Result: {e.Message}");
-                return BadRequest();
+                return BadRequest(e.Message);
             }
         }
 
@@ -96,7 +96,7 @@ namespace Rest.Controllers
             }
             catch(Exception e) {
                 logger.Error($"Received Request: 'getItemTypes'. Result: {e.Message}");
-                return BadRequest();
+                return BadRequest(e.Message);
             }
         }
 
@@ -137,7 +137,7 @@ namespace Rest.Controllers
                 return res;
             }catch(Exception e) {
                 logger.Error($"Received Request: 'getItems/{item_type}'. Result: {e.Message}");
-                return BadRequest();
+                return BadRequest(e.Message);
             }
         }
     }

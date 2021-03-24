@@ -20,8 +20,17 @@ namespace SPOS.Pages
         [BindProperty]
         public string Total{ get; set; }
 
-        public void OnGet()
+        public ActionResult OnGet()
         {
+            try
+            {
+                int.Parse(HttpContext.Session.GetString("userId"));
+            }
+            catch(Exception e)
+            {
+                return Redirect("/");
+            }
+
             //validate user
             itemTypes = Requests.Requests.GetItemTypes();
             itemCategories = Requests.Requests.GetItemCategories();
@@ -31,6 +40,8 @@ namespace SPOS.Pages
 
             //get currently logged in user name
             userName = HttpContext.Session.GetString("userName");
+
+            return Page();
         }
         public ActionResult OnPost()
         {

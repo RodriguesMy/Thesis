@@ -1,66 +1,4 @@
 ﻿
-class Item_in_Receipt {
-    constructor(id, description, price, qty) {
-        this.id = id;
-        this.description = description;
-        this.price = price;
-        this.qty = qty;
-    }
-}
-
-class Receipt {
-    constructor(items) {
-        if (items == null)
-            this.items = [];
-        else
-            this.items = items;
-    }
-    addToReceipt(id, description, price, qty) {
-        let item = new Item_in_Receipt(id, description, price, qty);
-        this.items.push(item);
-    }
-
-    exists(item_id) {
-        return this.items.some(x => x.id === item_id);
-    }
-
-    increaseQuantity(id) {
-        var index = this.items.findIndex(x => x.id === id);
-        this.items[index].qty = this.items[index].qty + 1;
-    }
-
-    deleteItem(id) {
-        var index = this.items.findIndex(x => x.id === id);
-        this.items.splice(index,1);
-    }
-
-    quantityIsMoreThanOne(id) {
-        var index = this.items.findIndex(x => x.id === id);
-        if (this.items[index].qty > 1) return true;
-        return false;
-    }
-
-    getQuantity(id) {
-        var index = this.items.findIndex(x => x.id === id);
-        return this.items[index].qty;
-        
-    }
-
-    deleteMultiple(id, totalToDelete) {
-        var index = this.items.findIndex(x => x.id === id);
-        this.items[index].qty = this.items[index].qty - totalToDelete;
-
-        if (this.items[index].qty <= 0) this.deleteItem(id);
-    }
-
-    getTotalPrice() {
-        var total = 0;
-        for (i = 0; i < this.items.length; i++) {
-            total += this.items[i].price * this.items[i].qty;
-        }
-    }
-}
-
 function update(type_name) {
     document.getElementById("CategorySelection").value = type_name; 
 }
@@ -107,7 +45,7 @@ function updateTotalPrice() {
         total += receipt.items[i].price * receipt.items[i].qty;
     }
     document.getElementById("total_price").innerHTML = "€" + total.toFixed(2);
-    if (document.getElementById("Total"))document.getElementById("Total").value = total.toFixed(2);
+    if (document.getElementById("Total")) document.getElementById("Total").value = total.toFixed(2);
 }
 
 function addToReceipt(item_name, item_id, item_price) {
@@ -245,9 +183,37 @@ var checkForSelectedRow = setInterval(function () {
         }
 
     }
+
     //hide 'remove' button
     if (document.getElementById("removeBtn"))
         document.getElementById("removeBtn").style.visibility = "hidden";
+});
+
+var checkIfCurrentlyModifyingOrder = setInterval(function () {
+    if (localStorage.getItem("currentlyModifyingOrder") === "true") {
+        if (document.getElementById("modifyBtn"))
+            document.getElementById("modifyBtn").style.visibility = "hidden";
+
+        if (document.getElementById("modifyingOrderDiv"))
+            document.getElementById("modifyingOrderDiv").style.visibility = "visible";
+
+        if (document.getElementById("ModifyOrder"))
+            document.getElementById("ModifyOrder").checked = true;
+
+        if (document.getElementById("SelectedOrder"))
+            document.getElementById("SelectedOrder").value = localStorage.getItem("selectedOrder");
+        return;
+    }
+
+    localStorage.removeItem("currentlyModifyingOrder");
+    if (document.getElementById("modifyBtn"))
+        document.getElementById("modifyBtn").style.visibility = "visible";
+
+    if (document.getElementById("modifyingOrderDiv"))
+        document.getElementById("modifyingOrderDiv").style.visibility = "hidden";
+
+    if (document.getElementById("ModifyOrder"))
+        document.getElementById("ModifyOrder").checked = false;
 });
 
 function openModalForCash() {
@@ -278,4 +244,18 @@ function selectPaymentMethod(paymentMethod) {
     document.getElementById("PaymentMethod").value = paymentMethod;
     if (paymentMethod != "CASH")
         document.getElementById("submit").click();
+}
+
+function applyDiscount(discount) {
+    var current = parseFloat(localStorage.getItem('total'));
+    var final = current - (current * discount / 100);
+    document.getElementById("total_price").innerHTML = "€" + final.toFixed(2);
+    document.getElementById("Total").value = final.toFixed(2);
+    document.getElementById("discount").value = discount;
+}
+
+function removeDiscount() {
+    document.getElementById("total_price").innerHTML = "€" + localStorage.getItem('total');  
+    document.getElementById("Total").value = localStorage.getItem('total');
+    document.getElementById("discount").value = 0;
 }

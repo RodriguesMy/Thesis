@@ -31,7 +31,7 @@ namespace SPOS
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                
+
             }
             else
             {
@@ -52,8 +52,6 @@ namespace SPOS
             {
                 endpoints.MapRazorPages();
             });
-
-            
         }
     }
 }

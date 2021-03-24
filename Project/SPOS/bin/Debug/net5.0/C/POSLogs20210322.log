@@ -1,0 +1,9 @@
+2021-03-22 11:49:01,194 [5] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-22 11:49:01,328 [5] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-22 11:49:01,362 [5] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-22 11:49:01,466 [5] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-22 11:49:02,180 [5] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-22 14:42:56,198 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/0 .Result: Success
+2021-03-22 14:43:03,506 [4] ERROR SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/1 .Result: The remote server returned an error: (404) Not Found.
+2021-03-22 14:47:15,507 [10] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/0 .Result: Success
+2021-03-22 14:47:16,329 [10] ERROR SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/1 .Result: The remote server returned an error: (404) Not Found.

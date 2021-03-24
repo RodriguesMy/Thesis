@@ -1,0 +1,1006 @@
+2021-03-23 13:05:31,027 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 13:05:31,078 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 13:05:31,110 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 13:05:31,168 [10] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 13:05:31,352 [10] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 13:05:35,534 [17] ERROR SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/1 .Result: The remote server returned an error: (404) Not Found.
+2021-03-23 13:05:35,546 [17] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/0 .Result: Success
+2021-03-23 13:06:45,873 [14] ERROR SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/1 .Result: The remote server returned an error: (404) Not Found.
+2021-03-23 13:06:45,903 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/0 .Result: Success
+2021-03-23 13:10:05,852 [13] ERROR SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/1 .Result: The remote server returned an error: (404) Not Found.
+2021-03-23 13:10:05,887 [13] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/0 .Result: Success
+2021-03-23 13:10:56,639 [15] ERROR SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/1 .Result: The remote server returned an error: (404) Not Found.
+2021-03-23 13:10:56,675 [15] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/0 .Result: Success
+2021-03-23 13:11:55,425 [17] ERROR SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/1 .Result: The remote server returned an error: (404) Not Found.
+2021-03-23 13:11:55,455 [17] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/0 .Result: Success
+2021-03-23 13:12:57,178 [16] ERROR SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/1 .Result: The remote server returned an error: (404) Not Found.
+2021-03-23 13:12:57,214 [16] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/0 .Result: Success
+2021-03-23 13:13:12,825 [16] ERROR SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/1 .Result: The remote server returned an error: (404) Not Found.
+2021-03-23 13:13:12,865 [16] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/0 .Result: Success
+2021-03-23 13:16:47,671 [9] ERROR SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/1 .Result: The remote server returned an error: (404) Not Found.
+2021-03-23 13:16:47,703 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/0 .Result: Success
+2021-03-23 13:17:30,091 [13] ERROR SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/1 .Result: The remote server returned an error: (404) Not Found.
+2021-03-23 13:17:30,132 [13] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/0 .Result: Success
+2021-03-23 13:23:52,170 [5] ERROR SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/1 .Result: The remote server returned an error: (404) Not Found.
+2021-03-23 13:23:52,204 [5] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/0 .Result: Success
+2021-03-23 13:24:19,477 [8] ERROR SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/1 .Result: The remote server returned an error: (404) Not Found.
+2021-03-23 13:24:19,531 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/0 .Result: Success
+2021-03-23 13:26:33,915 [8] ERROR SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/1 .Result: The remote server returned an error: (404) Not Found.
+2021-03-23 13:26:33,956 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/0 .Result: Success
+2021-03-23 13:26:56,962 [13] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 13:26:57,004 [13] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 13:26:57,018 [13] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 13:26:57,054 [17] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 13:26:57,242 [17] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 13:26:58,971 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 13:26:58,991 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItems/3 .Result: Success
+2021-03-23 13:27:38,177 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 13:27:38,218 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 13:27:38,233 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 13:27:38,273 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 13:27:38,439 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 13:27:39,772 [13] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 13:27:39,783 [13] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItems/3 .Result: Success
+2021-03-23 13:27:47,365 [19] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 13:27:47,378 [19] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 13:27:51,919 [17] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/createOrder/1/CASH . Result: Success
+2021-03-23 13:27:56,096 [17] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 13:27:56,108 [17] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 13:27:56,118 [17] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 13:27:56,137 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 13:27:56,149 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 13:27:57,205 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 13:27:57,214 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItems/1 .Result: Success
+2021-03-23 13:28:04,002 [19] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 13:28:04,013 [19] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 13:28:06,049 [15] ERROR SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/1 .Result: The remote server returned an error: (404) Not Found.
+2021-03-23 13:28:06,058 [15] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/0 .Result: Success
+2021-03-23 13:43:24,892 [13] ERROR SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/1 .Result: No connection could be made because the target machine actively refused it. [::ffff:127.0.0.1]:5000 (localhost:5000)
+2021-03-23 13:43:29,045 [13] ERROR SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/0 .Result: No connection could be made because the target machine actively refused it. [::ffff:127.0.0.1]:5000 (localhost:5000)
+2021-03-23 13:43:49,906 [20] ERROR SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/1 .Result: The remote server returned an error: (404) Not Found.
+2021-03-23 13:43:49,978 [20] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/0 .Result: Success
+2021-03-23 13:44:48,815 [8] ERROR SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/1 .Result: The remote server returned an error: (404) Not Found.
+2021-03-23 13:44:48,858 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/0 .Result: Success
+2021-03-23 13:45:14,632 [9] ERROR SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/1 .Result: The remote server returned an error: (404) Not Found.
+2021-03-23 13:45:14,689 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/0 .Result: Success
+2021-03-23 13:45:18,406 [4] ERROR SPOS.Requests.Requests - Request sent: http://localhost:5000/validateUserByIdAndPin/1/123 .Result: The remote server returned an error: (400) Bad Request.
+2021-03-23 13:45:58,923 [13] ERROR SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/1 .Result: The remote server returned an error: (404) Not Found.
+2021-03-23 13:45:58,956 [13] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/0 .Result: Success
+2021-03-23 13:46:01,604 [14] ERROR SPOS.Requests.Requests - Request sent: http://localhost:5000/validateUserByIdAndPin/1/123 .Result: The remote server returned an error: (400) Bad Request.
+2021-03-23 13:46:12,796 [14] ERROR SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/1 .Result: The remote server returned an error: (404) Not Found.
+2021-03-23 13:46:12,812 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/0 .Result: Success
+2021-03-23 13:46:43,376 [16] ERROR SPOS.Requests.Requests - Request sent: http://localhost:5000/validateUserByIdAndPin/1/123 .Result: No connection could be made because the target machine actively refused it. [::ffff:127.0.0.1]:5001 (localhost:5001)
+2021-03-23 13:48:13,463 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 13:48:13,525 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 13:48:13,555 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 13:48:13,610 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 13:48:13,806 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 13:48:18,020 [8] ERROR SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/1 .Result: The remote server returned an error: (404) Not Found.
+2021-03-23 13:48:18,034 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/0 .Result: Success
+2021-03-23 13:48:20,547 [21] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/validateUserByIdAndPin/1/123 .Result: Success
+2021-03-23 13:48:24,653 [18] ERROR SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/1 .Result: The remote server returned an error: (404) Not Found.
+2021-03-23 13:48:24,665 [18] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/0 .Result: Success
+2021-03-23 13:48:26,931 [9] ERROR SPOS.Requests.Requests - Request sent: http://localhost:5000/validateUserByIdAndPin/1/145 .Result: The remote server returned an error: (404) Not Found.
+2021-03-23 13:49:17,113 [10] ERROR SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/1 .Result: The remote server returned an error: (404) Not Found.
+2021-03-23 13:49:17,158 [10] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/0 .Result: Success
+2021-03-23 13:49:19,834 [13] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/validateUserByIdAndPin/1/123 .Result: Success
+2021-03-23 13:49:25,118 [13] ERROR SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/1 .Result: The remote server returned an error: (404) Not Found.
+2021-03-23 13:49:25,546 [13] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/0 .Result: Success
+2021-03-23 13:49:36,017 [8] ERROR SPOS.Requests.Requests - Request sent: http://localhost:5000/validateUserByIdAndPin/1/23 .Result: The remote server returned an error: (404) Not Found.
+2021-03-23 13:50:36,536 [13] ERROR SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/1 .Result: The remote server returned an error: (404) Not Found.
+2021-03-23 13:50:36,576 [13] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/0 .Result: Success
+2021-03-23 13:50:39,436 [12] ERROR SPOS.Requests.Requests - Request sent: http://localhost:5000/validateUserByIdAndPin/1/23 .Result: The remote server returned an error: (404) Not Found.
+2021-03-23 13:50:39,484 [12] ERROR SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/1 .Result: The remote server returned an error: (404) Not Found.
+2021-03-23 13:50:39,494 [12] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/0 .Result: Success
+2021-03-23 13:50:41,580 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/validateUserByIdAndPin/1/123 .Result: Success
+2021-03-23 13:50:41,624 [8] ERROR SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/1 .Result: The remote server returned an error: (404) Not Found.
+2021-03-23 13:50:41,633 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/0 .Result: Success
+2021-03-23 14:01:16,476 [9] ERROR SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/1 .Result: The remote server returned an error: (404) Not Found.
+2021-03-23 14:01:16,558 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/0 .Result: Success
+2021-03-23 14:01:19,623 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/validateUserByIdAndPin/1/123 .Result: Success
+2021-03-23 14:01:19,669 [8] ERROR SPOS.Requests.Requests - Request sent: http://localhost:5000/checkInOutUser/1,1 .Result: The remote server returned an error: (404) Not Found.
+2021-03-23 14:01:19,715 [8] ERROR SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/1 .Result: The remote server returned an error: (404) Not Found.
+2021-03-23 14:01:19,725 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/0 .Result: Success
+2021-03-23 14:01:49,816 [12] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/validateUserByIdAndPin/1/123 .Result: Success
+2021-03-23 14:02:20,376 [13] ERROR SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/1 .Result: The remote server returned an error: (404) Not Found.
+2021-03-23 14:02:20,413 [13] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/0 .Result: Success
+2021-03-23 14:02:24,807 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/validateUserByIdAndPin/1/123 .Result: Success
+2021-03-23 14:02:27,835 [8] ERROR SPOS.Requests.Requests - Request sent: http://localhost:5000/checkInOutUser/1/1 .Result: The remote server returned an error: (405) Method Not Allowed.
+2021-03-23 14:02:31,961 [8] ERROR SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/1 .Result: The remote server returned an error: (404) Not Found.
+2021-03-23 14:02:31,974 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/0 .Result: Success
+2021-03-23 14:02:43,636 [20] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/validateUserByIdAndPin/1/123 .Result: Success
+2021-03-23 14:02:59,000 [20] ERROR SPOS.Requests.Requests - Request sent: http://localhost:5000/checkInOutUser/1/1 .Result: The remote server returned an error: (405) Method Not Allowed.
+2021-03-23 14:03:18,814 [9] ERROR SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/1 .Result: The remote server returned an error: (404) Not Found.
+2021-03-23 14:03:18,849 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/0 .Result: Success
+2021-03-23 14:03:21,275 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/validateUserByIdAndPin/1/123 .Result: Success
+2021-03-23 14:03:29,946 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkInOutUser/1/1 .Result: Success
+2021-03-23 14:03:31,246 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/1 .Result: Success
+2021-03-23 14:03:31,321 [9] ERROR SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/0 .Result: The remote server returned an error: (404) Not Found.
+2021-03-23 14:03:46,358 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/validateUserByIdAndPin/1/123 .Result: Success
+2021-03-23 14:03:49,346 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkInOutUser/0/1 .Result: Success
+2021-03-23 14:03:49,404 [9] ERROR SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/1 .Result: The remote server returned an error: (404) Not Found.
+2021-03-23 14:03:49,414 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/0 .Result: Success
+2021-03-23 14:04:07,422 [20] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/validateUserByIdAndPin/1/123 .Result: Success
+2021-03-23 14:04:07,438 [20] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkInOutUser/1/1 .Result: Success
+2021-03-23 14:04:07,451 [20] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/1 .Result: Success
+2021-03-23 14:04:07,498 [20] ERROR SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/0 .Result: The remote server returned an error: (404) Not Found.
+2021-03-23 14:04:10,459 [16] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/validateUserByIdAndPin/1/123 .Result: Success
+2021-03-23 14:04:10,471 [16] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkInOutUser/0/1 .Result: Success
+2021-03-23 14:04:10,524 [16] ERROR SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/1 .Result: The remote server returned an error: (404) Not Found.
+2021-03-23 14:04:10,533 [16] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/0 .Result: Success
+2021-03-23 14:10:44,742 [4] ERROR SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/1 .Result: The remote server returned an error: (404) Not Found.
+2021-03-23 14:10:44,787 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/0 .Result: Success
+2021-03-23 14:10:47,369 [4] ERROR SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/1 .Result: The remote server returned an error: (404) Not Found.
+2021-03-23 14:10:47,379 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/0 .Result: Success
+2021-03-23 14:10:48,470 [13] ERROR SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/1 .Result: The remote server returned an error: (404) Not Found.
+2021-03-23 14:10:48,478 [13] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/0 .Result: Success
+2021-03-23 14:10:54,140 [9] ERROR SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/1 .Result: The remote server returned an error: (404) Not Found.
+2021-03-23 14:10:54,148 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/0 .Result: Success
+2021-03-23 14:10:54,766 [10] ERROR SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/1 .Result: The remote server returned an error: (404) Not Found.
+2021-03-23 14:10:54,773 [10] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/0 .Result: Success
+2021-03-23 14:13:16,607 [4] ERROR SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/1 .Result: The remote server returned an error: (404) Not Found.
+2021-03-23 14:13:16,645 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/0 .Result: Success
+2021-03-23 14:14:23,014 [4] ERROR SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/1 .Result: The remote server returned an error: (404) Not Found.
+2021-03-23 14:14:23,056 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/0 .Result: Success
+2021-03-23 14:14:26,533 [10] ERROR SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/1 .Result: The remote server returned an error: (404) Not Found.
+2021-03-23 14:14:26,544 [10] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/0 .Result: Success
+2021-03-23 14:15:12,568 [8] ERROR SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/1 .Result: The remote server returned an error: (404) Not Found.
+2021-03-23 14:15:12,597 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/0 .Result: Success
+2021-03-23 14:15:30,452 [15] ERROR SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/1 .Result: The remote server returned an error: (404) Not Found.
+2021-03-23 14:15:30,487 [15] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/0 .Result: Success
+2021-03-23 14:15:40,890 [9] ERROR SPOS.Requests.Requests - Request sent: http://localhost:5000/validateUserByIdAndPin/1/145 .Result: The remote server returned an error: (404) Not Found.
+2021-03-23 14:15:40,947 [9] ERROR SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/1 .Result: The remote server returned an error: (404) Not Found.
+2021-03-23 14:15:40,959 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/0 .Result: Success
+2021-03-23 14:15:43,454 [19] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/validateUserByIdAndPin/1/123 .Result: Success
+2021-03-23 14:15:43,468 [19] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkInOutUser/1/1 .Result: Success
+2021-03-23 14:15:43,482 [19] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/1 .Result: Success
+2021-03-23 14:15:43,526 [19] ERROR SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/0 .Result: The remote server returned an error: (404) Not Found.
+2021-03-23 14:15:46,699 [17] ERROR SPOS.Requests.Requests - Request sent: http://localhost:5000/validateUserByIdAndPin/1/145 .Result: The remote server returned an error: (404) Not Found.
+2021-03-23 14:15:46,708 [17] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/1 .Result: Success
+2021-03-23 14:15:46,753 [17] ERROR SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/0 .Result: The remote server returned an error: (404) Not Found.
+2021-03-23 14:15:48,851 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/validateUserByIdAndPin/1/123 .Result: Success
+2021-03-23 14:15:48,863 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkInOutUser/0/1 .Result: Success
+2021-03-23 14:15:48,905 [4] ERROR SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/1 .Result: The remote server returned an error: (404) Not Found.
+2021-03-23 14:15:48,914 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/0 .Result: Success
+2021-03-23 14:17:05,611 [19] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 14:17:05,653 [19] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 14:17:05,676 [19] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 14:17:05,731 [10] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 14:17:05,893 [10] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 14:17:15,532 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 14:17:15,551 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItems/1 .Result: Success
+2021-03-23 14:17:34,037 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/createOrder/1/CASH . Result: Success
+2021-03-23 14:17:34,052 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/insertItemInOrder/18/2/1 . Result: Success
+2021-03-23 14:17:34,061 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/insertItemInOrder/18/3/1 . Result: Success
+2021-03-23 14:17:34,070 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/insertItemInOrder/18/4/1 . Result: Success
+2021-03-23 14:17:38,851 [9] ERROR SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/1 .Result: The remote server returned an error: (404) Not Found.
+2021-03-23 14:17:38,860 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllUsersByCheckIn/0 .Result: Success
+2021-03-23 14:31:08,370 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 14:31:08,406 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 14:31:08,419 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 14:31:08,459 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 14:31:08,648 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 14:31:12,019 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 14:31:12,032 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItems/1 .Result: Success
+2021-03-23 14:38:57,591 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 14:38:57,646 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 14:38:57,663 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 14:38:57,709 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 14:38:57,916 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 14:38:59,486 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 14:38:59,496 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItems/1 .Result: Success
+2021-03-23 14:40:19,262 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 14:40:19,297 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 14:40:19,310 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 14:40:19,346 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 14:40:19,520 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 14:40:20,324 [12] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 14:40:20,333 [12] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 14:40:21,823 [21] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 14:40:21,845 [21] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItems/3 .Result: Success
+2021-03-23 14:42:23,119 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 14:42:23,160 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 14:42:23,175 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 14:42:23,209 [18] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 14:42:23,397 [18] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 14:42:24,145 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 14:42:24,156 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItems/3 .Result: Success
+2021-03-23 14:42:45,637 [13] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 14:42:45,685 [13] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 14:42:45,700 [13] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 14:42:45,747 [15] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 14:42:45,938 [15] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 14:42:47,059 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 14:42:47,073 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItems/1 .Result: Success
+2021-03-23 14:42:56,041 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/createOrder/1/CASH . Result: Success
+2021-03-23 14:42:56,058 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/insertItemInOrder/19/1/1 . Result: Success
+2021-03-23 14:42:56,070 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/insertItemInOrder/19/2/1 . Result: Success
+2021-03-23 14:44:36,645 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 14:44:36,686 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 14:44:36,702 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 14:44:36,743 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 14:44:36,939 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 14:44:37,884 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 14:44:37,896 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItems/1 .Result: Success
+2021-03-23 14:44:44,690 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/createOrder/1/CASH . Result: Success
+2021-03-23 14:44:44,708 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/insertItemInOrder/20/1/1 . Result: Success
+2021-03-23 14:44:44,725 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/insertItemInOrder/20/2/1 . Result: Success
+2021-03-23 14:45:32,764 [18] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 14:45:32,819 [18] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 14:45:32,840 [18] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 14:45:32,882 [18] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 14:45:33,070 [18] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 14:45:33,789 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 14:45:33,801 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItems/1 .Result: Success
+2021-03-23 14:45:39,435 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/createOrder/1/CASH . Result: Success
+2021-03-23 14:45:39,450 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/insertItemInOrder/21/1/1 . Result: Success
+2021-03-23 14:45:39,462 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/insertItemInOrder/21/2/1 . Result: Success
+2021-03-23 14:51:20,827 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 14:51:20,884 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 14:51:20,919 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 14:51:20,972 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 14:51:21,154 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 14:51:22,443 [12] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 14:51:22,460 [12] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItems/1 .Result: Success
+2021-03-23 14:51:31,118 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/createOrder/1/VISA/50 . Result: Success
+2021-03-23 14:51:31,135 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/insertItemInOrder/22/1/2 . Result: Success
+2021-03-23 14:52:09,083 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 14:52:09,123 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 14:52:09,143 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 14:52:09,193 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 14:52:09,365 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 14:52:09,860 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 14:52:09,875 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItems/1 .Result: Success
+2021-03-23 14:53:24,415 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 14:53:24,454 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 14:53:24,472 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 14:53:24,511 [15] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 14:53:24,705 [15] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 14:53:25,884 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 14:53:25,896 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItems/1 .Result: Success
+2021-03-23 14:53:49,279 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/createOrder/1/VISA/0 . Result: Success
+2021-03-23 14:53:49,299 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/insertItemInOrder/23/1/1 . Result: Success
+2021-03-23 14:53:49,311 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/insertItemInOrder/23/2/1 . Result: Success
+2021-03-23 15:11:26,929 [6] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 15:11:26,983 [6] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 15:11:27,006 [6] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 15:11:27,053 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 15:11:27,238 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 15:11:27,969 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 15:11:27,981 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItems/1 .Result: Success
+2021-03-23 15:11:31,967 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/createOrder/1/VISA/0 . Result: Success
+2021-03-23 15:11:31,982 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/insertItemInOrder/24/1/1 . Result: Success
+2021-03-23 15:11:31,993 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/insertItemInOrder/24/2/1 . Result: Success
+2021-03-23 15:12:09,832 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 15:12:09,884 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 15:12:09,901 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 15:12:09,941 [17] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 15:12:10,138 [17] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 15:12:11,902 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 15:12:11,915 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItems/1 .Result: Success
+2021-03-23 15:12:18,815 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/createOrder/1/VISA/0 . Result: Success
+2021-03-23 15:12:18,833 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/insertItemInOrder/25/1/2 . Result: Success
+2021-03-23 15:12:56,754 [16] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 15:12:56,794 [16] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 15:12:56,810 [16] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 15:12:56,860 [19] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 15:12:57,052 [19] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 15:12:57,564 [20] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 15:12:57,576 [20] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItems/2 .Result: Success
+2021-03-23 15:13:00,518 [15] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/createOrder/1/VISA/0 . Result: Success
+2021-03-23 15:13:00,530 [15] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/insertItemInOrder/26/6/1 . Result: Success
+2021-03-23 15:14:00,982 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 15:14:01,021 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 15:14:01,035 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 15:14:01,073 [13] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 15:14:01,263 [13] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 15:14:01,960 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 15:14:01,972 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItems/1 .Result: Success
+2021-03-23 15:14:04,256 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/createOrder/1/VISA/0 . Result: Success
+2021-03-23 15:14:04,267 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/insertItemInOrder/27/1/1 . Result: Success
+2021-03-23 15:14:56,308 [17] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 15:14:56,355 [17] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 15:14:56,371 [17] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 15:14:56,419 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 15:14:56,622 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 15:14:57,138 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 15:14:57,152 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItems/1 .Result: Success
+2021-03-23 15:15:49,918 [6] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 15:15:49,961 [6] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 15:15:49,975 [6] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 15:15:50,017 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 15:15:50,202 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 15:15:50,944 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 15:15:50,955 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItems/1 .Result: Success
+2021-03-23 15:15:55,065 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/createOrder/1/CASH/0 . Result: Success
+2021-03-23 15:15:55,082 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/insertItemInOrder/28/1/1 . Result: Success
+2021-03-23 15:16:09,244 [15] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 15:16:09,256 [15] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 15:16:09,268 [15] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 15:16:09,288 [15] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 15:16:09,300 [15] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 15:16:10,168 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 15:16:10,188 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItems/3 .Result: Success
+2021-03-23 15:16:11,364 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 15:16:11,377 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 17:48:31,045 [11] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 17:48:31,136 [11] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 17:48:31,179 [11] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 17:48:31,260 [13] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 17:48:31,466 [13] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 17:50:28,580 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 17:50:28,628 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 17:50:28,646 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 17:50:28,695 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 17:50:28,895 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 17:51:58,532 [10] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 17:51:58,586 [10] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 17:51:58,607 [10] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 17:51:58,653 [10] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 17:51:58,893 [10] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 17:53:08,492 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 17:53:08,544 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 17:53:08,564 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 17:53:08,616 [12] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 17:53:08,829 [12] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 17:53:11,429 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 17:53:11,462 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItems/3 .Result: Success
+2021-03-23 17:53:18,353 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 17:53:18,369 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 17:53:19,287 [12] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 17:53:19,303 [12] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItems/1 .Result: Success
+2021-03-23 17:54:42,230 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 17:54:42,273 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 17:54:42,289 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 17:54:42,336 [5] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 17:54:42,523 [5] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 17:54:50,758 [10] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 17:54:50,775 [10] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 17:54:56,718 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 17:54:56,738 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItems/1 .Result: Success
+2021-03-23 17:56:09,471 [13] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 17:56:09,526 [13] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 17:56:09,542 [13] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 17:56:09,588 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 17:56:09,779 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 17:56:11,943 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 17:56:11,958 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItems/1 .Result: Success
+2021-03-23 17:57:21,395 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 17:57:21,423 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 17:57:59,189 [13] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 17:57:59,236 [13] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 17:57:59,259 [13] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 17:57:59,317 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 17:57:59,549 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 17:58:00,834 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 17:58:00,860 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItems/3 .Result: Success
+2021-03-23 17:58:21,973 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 17:58:22,022 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 17:58:22,039 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 17:58:22,086 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 17:58:22,311 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 17:58:23,141 [13] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 17:58:23,157 [13] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItems/1 .Result: Success
+2021-03-23 18:00:10,863 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 18:00:10,892 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 19:10:51,831 [5] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 19:10:51,922 [5] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 19:10:51,970 [5] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 19:10:52,052 [15] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 19:10:52,269 [15] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 19:10:53,333 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 19:10:53,360 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItems/1 .Result: Success
+2021-03-23 19:11:04,876 [17] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/createOrder/1/CASH/0 . Result: Success
+2021-03-23 19:11:04,897 [17] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/insertItemInOrder/29/1/5 . Result: Success
+2021-03-23 19:11:05,007 [17] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/insertItemInOrder/29/2/6 . Result: Success
+2021-03-23 19:11:05,020 [17] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/insertItemInOrder/29/3/2 . Result: Success
+2021-03-23 19:48:52,072 [9] ERROR SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: No connection could be made because the target machine actively refused it. [::ffff:127.0.0.1]:5000 (localhost:5000)
+2021-03-23 19:49:09,005 [19] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 19:49:09,084 [19] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 19:49:09,129 [19] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 19:49:09,208 [19] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 19:49:09,441 [19] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 19:49:10,781 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 19:53:44,182 [16] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 19:53:44,243 [16] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 19:53:44,266 [16] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 19:53:44,323 [19] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 19:53:44,606 [19] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 19:53:45,578 [19] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 19:56:00,895 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 19:56:00,973 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 19:56:01,000 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 19:56:01,089 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 19:56:01,401 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 19:56:03,863 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 20:02:26,414 [13] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 20:02:26,478 [13] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 20:02:26,501 [13] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 20:02:26,552 [13] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 20:02:26,793 [13] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 20:02:27,987 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 20:03:04,906 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 20:03:04,976 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 20:03:04,999 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 20:03:05,056 [7] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 20:03:05,308 [7] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 20:03:06,627 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 20:03:57,373 [13] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 20:03:57,431 [13] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 20:03:57,452 [13] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 20:03:57,507 [13] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 20:03:57,795 [13] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 20:03:58,888 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 20:04:17,123 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 20:04:17,188 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 20:04:17,204 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 20:04:17,253 [10] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 20:04:17,486 [10] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 20:04:18,484 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 20:05:37,884 [16] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 20:05:37,970 [16] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 20:05:37,996 [16] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 20:05:38,035 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 20:05:38,271 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 20:05:38,925 [5] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 20:08:18,045 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 20:08:18,098 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 20:08:18,119 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 20:08:18,173 [10] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 20:08:18,412 [10] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 20:08:19,608 [12] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 20:09:22,494 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 20:09:22,560 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 20:09:22,583 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 20:09:22,639 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 20:09:22,896 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 20:09:24,538 [15] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 20:09:43,802 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 20:09:43,855 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 20:09:43,873 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 20:09:43,919 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 20:09:44,117 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 20:09:45,047 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 20:17:00,937 [16] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 20:17:01,024 [16] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 20:17:01,062 [16] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 20:17:01,132 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 20:17:01,388 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 20:17:03,898 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 21:15:48,450 [10] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 21:15:48,557 [10] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 21:15:48,602 [10] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 21:15:48,716 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 21:15:49,028 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 21:15:50,659 [6] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 21:16:35,731 [20] ERROR SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: No connection could be made because the target machine actively refused it. [::ffff:127.0.0.1]:5000 (localhost:5000)
+2021-03-23 21:16:40,532 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 21:16:40,574 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 21:16:40,625 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 21:16:40,689 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 21:16:40,926 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 21:16:42,092 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 21:18:34,542 [5] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 21:18:34,606 [5] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 21:18:34,630 [5] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 21:18:34,691 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 21:18:34,919 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 21:18:35,655 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 21:31:43,916 [10] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 21:31:43,973 [10] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 21:31:43,998 [10] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 21:31:44,130 [18] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 21:31:44,362 [18] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 21:31:45,722 [13] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 21:32:43,588 [5] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 21:32:43,634 [5] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 21:32:43,656 [5] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 21:32:43,713 [13] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 21:32:43,939 [13] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 21:32:45,056 [5] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 21:32:45,072 [5] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 21:32:46,337 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 21:33:23,758 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 21:33:23,827 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 21:33:23,844 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 21:33:23,897 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 21:33:24,111 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 21:33:24,863 [12] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 21:35:50,299 [5] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 21:35:50,369 [5] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 21:35:50,388 [5] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 21:35:50,447 [12] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 21:35:50,689 [12] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 21:35:52,008 [5] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 21:36:19,776 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 21:36:19,835 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 21:36:19,852 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 21:36:19,898 [10] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 21:36:20,113 [10] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 21:36:21,613 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 21:40:57,371 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 21:40:57,466 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 21:40:57,506 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 21:40:57,583 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 21:40:57,927 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 21:40:58,837 [13] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 21:44:37,928 [17] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 21:44:38,030 [17] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 21:44:38,073 [17] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 21:44:38,136 [18] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 21:44:38,366 [18] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 21:44:39,346 [7] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 21:45:52,087 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 21:45:52,170 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 21:45:52,208 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 21:45:52,271 [5] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 21:45:52,460 [5] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 21:45:53,922 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 21:52:54,461 [4] ERROR SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: No connection could be made because the target machine actively refused it. [::ffff:127.0.0.1]:5000 (localhost:5000)
+2021-03-23 21:53:11,673 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 21:53:11,796 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 21:53:11,824 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 21:53:11,887 [17] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 21:53:12,091 [17] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 21:53:13,648 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 21:59:36,526 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 21:59:36,572 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 21:59:36,590 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 21:59:36,644 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 21:59:36,845 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 21:59:38,944 [15] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 22:00:19,720 [5] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 22:00:19,766 [5] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 22:00:19,787 [5] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 22:00:19,843 [17] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 22:00:20,053 [17] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 22:00:21,386 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 22:00:22,238 [19] ERROR SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/18 . Result: The remote server returned an error: (500) Internal Server Error.
+2021-03-23 22:00:40,828 [5] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 22:00:41,862 [19] ERROR SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/19 . Result: The remote server returned an error: (500) Internal Server Error.
+2021-03-23 22:00:54,832 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 22:01:51,925 [4] ERROR SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/18 . Result: Cannot deserialize the current JSON array (e.g. [1,2,3]) into type 'SPOS.Models.Receipt' because the type requires a JSON object (e.g. {"name":"value"}) to deserialize correctly.
+To fix this error either change the JSON to a JSON object (e.g. {"name":"value"}) or change the deserialized type to an array or a type that implements a collection interface (e.g. ICollection, IList) like List<T> that can be deserialized from a JSON array. JsonArrayAttribute can also be added to the type to force it to deserialize from a JSON array.
+Path '', line 1, position 1.
+2021-03-23 22:02:02,032 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 22:02:13,075 [11] ERROR SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/19 . Result: Cannot deserialize the current JSON array (e.g. [1,2,3]) into type 'SPOS.Models.Receipt' because the type requires a JSON object (e.g. {"name":"value"}) to deserialize correctly.
+To fix this error either change the JSON to a JSON object (e.g. {"name":"value"}) or change the deserialized type to an array or a type that implements a collection interface (e.g. ICollection, IList) like List<T> that can be deserialized from a JSON array. JsonArrayAttribute can also be added to the type to force it to deserialize from a JSON array.
+Path '', line 1, position 1.
+2021-03-23 22:03:43,135 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 22:03:43,195 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 22:03:43,215 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 22:03:43,265 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 22:03:43,497 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 22:03:44,186 [12] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 22:03:45,200 [10] ERROR SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/19 . Result: Cannot deserialize the current JSON array (e.g. [1,2,3]) into type 'SPOS.Models.Receipt' because the type requires a JSON object (e.g. {"name":"value"}) to deserialize correctly.
+To fix this error either change the JSON to a JSON object (e.g. {"name":"value"}) or change the deserialized type to an array or a type that implements a collection interface (e.g. ICollection, IList) like List<T> that can be deserialized from a JSON array. JsonArrayAttribute can also be added to the type to force it to deserialize from a JSON array.
+Path '', line 1, position 1.
+2021-03-23 22:04:05,744 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 22:12:30,206 [5] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 22:12:30,289 [5] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 22:12:30,338 [5] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 22:12:30,413 [12] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 22:12:30,650 [12] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 22:12:31,404 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 22:12:51,278 [12] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 22:13:43,150 [5] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 22:13:43,220 [5] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 22:13:43,251 [5] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 22:13:43,343 [10] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 22:13:43,567 [10] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 22:13:44,483 [10] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 22:13:45,188 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/18 . Result: Success
+2021-03-23 22:13:53,257 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 22:13:54,025 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/20 . Result: Success
+2021-03-23 22:15:01,007 [17] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 22:15:01,094 [17] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 22:15:01,138 [17] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 22:15:01,215 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 22:15:01,461 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 22:15:02,729 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 22:15:03,313 [13] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/19 . Result: Success
+2021-03-23 22:15:11,394 [12] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 22:15:12,969 [5] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/29 . Result: Success
+2021-03-23 22:33:54,655 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 22:33:54,724 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 22:33:54,750 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 22:33:54,796 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 22:33:55,029 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 22:33:56,549 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 22:34:38,450 [10] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 22:34:38,501 [10] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 22:34:38,523 [10] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 22:34:38,572 [15] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 22:34:38,771 [15] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 22:34:40,131 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 22:34:40,776 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/19 . Result: Success
+2021-03-23 22:34:40,806 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 22:35:21,155 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 22:35:21,210 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 22:35:21,231 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 22:35:21,284 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 22:35:21,524 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 22:35:22,495 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 22:35:42,771 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/21 . Result: Success
+2021-03-23 22:35:42,821 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 22:36:59,853 [19] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 22:36:59,909 [19] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 22:36:59,928 [19] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 22:36:59,970 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 22:37:00,215 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 22:37:01,511 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 22:37:06,564 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/20 . Result: Success
+2021-03-23 22:37:06,613 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 22:37:34,062 [19] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/29 . Result: Success
+2021-03-23 22:37:34,085 [19] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 22:38:30,309 [12] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 22:38:30,363 [12] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 22:38:30,382 [12] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 22:38:30,431 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 22:38:30,644 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 22:38:32,227 [12] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 22:38:40,905 [16] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/19 . Result: Success
+2021-03-23 22:38:40,960 [16] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 22:38:48,859 [16] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/27 . Result: Success
+2021-03-23 22:38:48,878 [16] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 22:39:09,070 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 22:39:09,121 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 22:39:09,139 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 22:39:09,187 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 22:39:09,442 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 22:39:10,599 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 22:39:49,482 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 22:39:49,541 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 22:39:49,563 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 22:39:49,630 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 22:39:49,873 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 22:39:51,519 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 22:40:04,989 [5] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/21 . Result: Success
+2021-03-23 22:40:05,034 [5] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 22:45:02,539 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 22:45:02,596 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 22:45:02,614 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 22:45:02,662 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 22:45:02,851 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 22:45:03,790 [6] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 22:45:03,809 [6] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItems/1 .Result: Success
+2021-03-23 22:45:13,720 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 22:45:13,736 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItems/1 .Result: Success
+2021-03-23 22:45:16,945 [6] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 22:45:16,966 [6] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItems/1 .Result: Success
+2021-03-23 22:45:18,216 [13] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 22:45:18,231 [13] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 22:45:22,090 [20] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 22:45:22,110 [20] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 22:45:22,125 [20] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 22:45:22,149 [6] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 22:45:22,161 [6] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 22:45:22,820 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 22:45:22,832 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItems/-1 .Result: Success
+2021-03-23 22:45:24,923 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 22:45:24,939 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 22:45:49,494 [16] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 22:45:49,557 [16] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 22:45:49,576 [16] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 22:45:49,623 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 22:45:49,789 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 22:45:49,801 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 22:45:49,814 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 22:45:49,834 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 22:45:49,851 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 22:45:49,859 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 22:45:50,676 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 22:45:50,692 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 22:45:52,165 [13] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 22:45:52,182 [13] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 22:45:53,377 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 22:45:53,391 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItems/-1 .Result: Success
+2021-03-23 22:45:54,566 [19] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 22:45:54,580 [19] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 22:45:55,184 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 22:45:55,201 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItems/-1 .Result: Success
+2021-03-23 22:47:17,987 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 22:47:18,034 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 22:47:18,053 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 22:47:18,107 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 22:47:18,294 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 22:47:19,622 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 22:47:19,642 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItems/-1 .Result: Success
+2021-03-23 22:47:20,516 [12] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 22:47:20,528 [12] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 22:49:10,015 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 22:49:10,084 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 22:49:10,111 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 22:49:10,180 [13] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 22:49:10,398 [13] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 22:49:11,380 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 22:49:11,399 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItems/1 .Result: Success
+2021-03-23 22:49:16,458 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 22:49:16,479 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItems/1 .Result: Success
+2021-03-23 22:49:22,477 [20] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 22:49:23,474 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/19 . Result: Success
+2021-03-23 22:49:23,511 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 22:51:03,222 [15] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 22:51:03,282 [15] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 22:51:03,300 [15] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 22:51:03,353 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 22:51:03,571 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 22:51:04,769 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 22:51:04,786 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItems/1 .Result: Success
+2021-03-23 22:51:06,813 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 22:51:13,095 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/29 . Result: Success
+2021-03-23 22:51:13,138 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 22:52:03,886 [13] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 22:52:03,941 [13] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 22:52:03,960 [13] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 22:52:04,011 [10] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 22:52:04,210 [10] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 22:52:04,798 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 22:52:05,754 [16] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/29 . Result: Success
+2021-03-23 22:52:05,790 [16] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 22:53:32,414 [13] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 22:53:32,477 [13] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 22:53:32,501 [13] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 22:53:32,563 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 22:53:32,805 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 22:53:33,670 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 22:53:33,686 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItems/1 .Result: Success
+2021-03-23 22:53:34,522 [15] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 22:53:35,195 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/19 . Result: Success
+2021-03-23 22:53:35,226 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 22:53:36,297 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/28 . Result: Success
+2021-03-23 22:53:36,310 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 22:53:36,878 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/29 . Result: Success
+2021-03-23 22:53:36,890 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 22:53:37,904 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/27 . Result: Success
+2021-03-23 22:53:37,922 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 22:53:38,467 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/19 . Result: Success
+2021-03-23 22:53:38,488 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 22:53:38,925 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/21 . Result: Success
+2021-03-23 22:53:38,948 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 22:53:39,322 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/22 . Result: Success
+2021-03-23 22:53:39,344 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 22:53:39,680 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/23 . Result: Success
+2021-03-23 22:53:39,692 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 22:53:40,087 [13] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/24 . Result: Success
+2021-03-23 22:53:40,111 [13] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 22:53:40,471 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/25 . Result: Success
+2021-03-23 22:53:40,492 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 22:53:41,071 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/29 . Result: Success
+2021-03-23 22:53:41,093 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 22:53:41,583 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/20 . Result: Success
+2021-03-23 22:53:41,607 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 22:53:42,032 [16] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/19 . Result: Success
+2021-03-23 22:53:42,051 [16] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 22:53:42,452 [13] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/18 . Result: Success
+2021-03-23 22:53:42,467 [13] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 22:53:42,872 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/27 . Result: Success
+2021-03-23 22:53:42,891 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 22:53:43,722 [16] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/28 . Result: Success
+2021-03-23 22:53:43,736 [16] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 22:53:44,140 [12] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/20 . Result: Success
+2021-03-23 22:53:44,158 [12] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 22:53:44,515 [13] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/21 . Result: Success
+2021-03-23 22:53:44,528 [13] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 22:56:04,762 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 22:56:04,809 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 22:56:04,826 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 22:56:04,870 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 22:56:05,066 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 22:56:14,081 [15] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 22:56:14,096 [15] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 22:56:14,111 [15] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 22:56:14,136 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 22:56:14,151 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 22:56:40,371 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 22:56:40,420 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 22:56:40,436 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 22:56:40,484 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 22:56:40,686 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 22:56:42,147 [15] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 22:57:18,149 [10] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 22:57:18,211 [10] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 22:57:18,230 [10] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 22:57:18,278 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 22:57:18,516 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 22:57:19,502 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 23:02:39,077 [16] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 23:02:39,133 [16] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 23:02:39,150 [16] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 23:02:39,194 [16] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 23:02:39,432 [16] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 23:02:40,655 [12] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 23:02:41,362 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/19 . Result: Success
+2021-03-23 23:02:41,397 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 23:02:54,562 [20] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/19 . Result: Success
+2021-03-23 23:02:54,580 [20] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 23:04:59,025 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 23:04:59,083 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 23:04:59,102 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 23:04:59,150 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 23:04:59,362 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 23:05:00,666 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 23:05:01,573 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/19 . Result: Success
+2021-03-23 23:05:01,604 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 23:05:02,441 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/27 . Result: Success
+2021-03-23 23:05:02,452 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 23:05:03,031 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/20 . Result: Success
+2021-03-23 23:05:03,052 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 23:05:06,232 [12] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/24 . Result: Success
+2021-03-23 23:05:06,247 [12] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 23:05:06,737 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/23 . Result: Success
+2021-03-23 23:05:06,750 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 23:05:07,449 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/22 . Result: Success
+2021-03-23 23:05:07,461 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 23:05:08,024 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/23 . Result: Success
+2021-03-23 23:05:08,035 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 23:05:08,550 [13] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/23 . Result: Success
+2021-03-23 23:05:08,561 [13] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 23:05:09,008 [10] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/23 . Result: Success
+2021-03-23 23:05:09,018 [10] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 23:05:09,248 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/23 . Result: Success
+2021-03-23 23:05:09,261 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 23:05:09,498 [16] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/23 . Result: Success
+2021-03-23 23:05:09,510 [16] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 23:06:05,594 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 23:06:05,694 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 23:06:05,715 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 23:06:05,827 [13] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 23:06:06,085 [13] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 23:06:06,846 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 23:06:07,724 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/19 . Result: Success
+2021-03-23 23:06:07,826 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 23:06:09,152 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/28 . Result: Success
+2021-03-23 23:06:09,167 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 23:06:10,357 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/29 . Result: Success
+2021-03-23 23:06:10,371 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 23:06:56,269 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 23:06:56,325 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 23:06:56,342 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 23:06:56,401 [15] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 23:06:56,635 [15] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 23:06:57,370 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 23:07:00,605 [15] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 23:07:00,618 [15] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 23:07:00,644 [15] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 23:07:00,664 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 23:07:00,677 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 23:07:01,272 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 23:07:02,342 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/28 . Result: Success
+2021-03-23 23:07:02,645 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 23:07:33,608 [5] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 23:07:33,658 [5] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 23:07:33,674 [5] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 23:07:33,719 [5] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 23:07:33,958 [5] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 23:07:35,396 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 23:07:36,182 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/20 . Result: Success
+2021-03-23 23:07:36,225 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 23:07:36,881 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/21 . Result: Success
+2021-03-23 23:07:36,896 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 23:07:38,044 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/23 . Result: Success
+2021-03-23 23:07:38,056 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 23:07:38,797 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/29 . Result: Success
+2021-03-23 23:07:38,809 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 23:07:40,147 [17] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/28 . Result: Success
+2021-03-23 23:07:40,158 [17] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 23:07:41,426 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/27 . Result: Success
+2021-03-23 23:07:41,437 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 23:07:42,364 [5] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/18 . Result: Success
+2021-03-23 23:07:42,378 [5] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 23:07:42,848 [5] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/19 . Result: Success
+2021-03-23 23:07:42,863 [5] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 23:07:43,454 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/22 . Result: Success
+2021-03-23 23:07:43,468 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 23:07:44,258 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/23 . Result: Success
+2021-03-23 23:07:44,268 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 23:07:44,639 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/24 . Result: Success
+2021-03-23 23:07:44,650 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 23:07:45,144 [5] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/25 . Result: Success
+2021-03-23 23:07:45,157 [5] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 23:09:01,849 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 23:09:01,912 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 23:09:01,931 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 23:09:01,982 [13] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 23:09:02,220 [13] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 23:09:03,158 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 23:10:25,404 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 23:10:25,463 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 23:10:25,479 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 23:10:25,584 [5] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 23:10:25,825 [5] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 23:10:26,859 [10] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 23:10:50,936 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 23:10:50,995 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 23:10:51,015 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 23:10:51,062 [10] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 23:10:51,279 [10] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 23:10:52,656 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 23:11:18,007 [17] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 23:11:18,059 [17] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 23:11:18,083 [17] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 23:11:18,129 [17] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 23:11:18,322 [17] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 23:11:19,112 [17] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 23:11:34,362 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 23:11:34,407 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 23:11:34,427 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 23:11:34,480 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 23:11:34,681 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 23:11:36,376 [12] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 23:11:38,546 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/28 . Result: Success
+2021-03-23 23:11:38,586 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 23:11:39,361 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/29 . Result: Success
+2021-03-23 23:11:39,373 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 23:12:40,612 [22] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 23:12:40,676 [22] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 23:12:40,695 [22] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 23:12:40,755 [22] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 23:12:41,007 [22] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 23:12:42,527 [10] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 23:12:45,346 [20] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 23:12:46,458 [17] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 23:12:46,816 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 23:14:07,003 [17] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 23:14:07,053 [17] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 23:14:07,070 [17] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 23:14:07,110 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 23:14:07,339 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 23:14:09,644 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 23:14:12,095 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 23:14:12,535 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 23:14:53,945 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 23:14:53,993 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 23:14:54,009 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 23:14:54,051 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 23:14:54,256 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 23:14:55,358 [15] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 23:15:01,031 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 23:15:01,046 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 23:15:01,060 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 23:15:01,080 [15] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 23:15:01,094 [15] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 23:15:24,043 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 23:15:24,091 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 23:15:24,111 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 23:15:24,159 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 23:15:24,381 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 23:15:25,839 [8] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 23:16:50,943 [5] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/123 .Result: Success
+2021-03-23 23:16:50,992 [5] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/123 .Result: Success
+2021-03-23 23:16:51,010 [5] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/123 .Result: Success
+2021-03-23 23:16:51,059 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-23 23:16:51,263 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-23 23:16:53,018 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 23:17:01,813 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/28 . Result: Success
+2021-03-23 23:17:01,856 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 23:17:02,354 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/29 . Result: Success
+2021-03-23 23:17:02,367 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 23:17:02,851 [13] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/20 . Result: Success
+2021-03-23 23:17:02,863 [13] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 23:17:03,292 [5] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/22 . Result: Success
+2021-03-23 23:17:03,304 [5] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 23:17:03,776 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/24 . Result: Success
+2021-03-23 23:17:03,787 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 23:17:04,265 [13] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/25 . Result: Success
+2021-03-23 23:17:04,283 [13] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 23:17:04,839 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/20 . Result: Success
+2021-03-23 23:17:04,854 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 23:17:05,202 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/19 . Result: Success
+2021-03-23 23:17:05,215 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 23:17:05,780 [5] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/27 . Result: Success
+2021-03-23 23:17:05,792 [5] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 23:17:06,127 [13] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/18 . Result: Success
+2021-03-23 23:17:06,143 [13] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 23:17:06,513 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/29 . Result: Success
+2021-03-23 23:17:06,524 [14] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 23:17:06,909 [13] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/28 . Result: Success
+2021-03-23 23:17:06,921 [13] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 23:17:07,671 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/20 . Result: Success
+2021-03-23 23:17:07,683 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 23:17:08,043 [13] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/23 . Result: Success
+2021-03-23 23:17:08,058 [13] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 23:17:08,446 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/25 . Result: Success
+2021-03-23 23:17:08,458 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success
+2021-03-23 23:17:10,208 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getOrderById/29 . Result: Success
+2021-03-23 23:17:10,218 [9] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getAllTodaysOrders . Result: Success

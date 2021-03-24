@@ -33,9 +33,9 @@ namespace SPOS.Pages
             if (Requests.Requests.validateUser(int.Parse(Code)))
             {
                 HttpContext.Session.SetString("userName",Requests.Requests.getNameOfUser(int.Parse(Code)));
+                HttpContext.Session.SetString("userId", Requests.Requests.getIdOfUser(int.Parse(Code)));
                 return Redirect("./MainPage"); //direct to main page
             }
-        
             return Page();
         }
     }
