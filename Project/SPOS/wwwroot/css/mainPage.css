@@ -114,6 +114,14 @@ header {
     width:70%;
 }
 
+.undoBtn {
+    position: absolute;
+    float: left;
+    font-size: medium;
+    width: 30%;
+    top:25%;
+}
+
 .total_price {
     position: absolute;
     right: 15%;

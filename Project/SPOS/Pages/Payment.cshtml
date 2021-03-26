@@ -12,52 +12,23 @@
 <script src="~/js/keypad.js"></script>
 <script src="~/js/ReceiptContents.js"></script>
 <script src="~/js/mainPage.js"></script>
-@using Microsoft.AspNetCore.Http;
 
 <section class="receipt_area">
     <div class="inside_receipt_area">
+        <div class="receipt">
+         
+                <table id="receipt_table">
+                    <tr style="border-bottom: 2px solid black;background-color:lightblue">
+                        <td style="width:10%;" class="id">ID</td>
+                        <td style="width:60%;" class="description">Description</td>
+                        <td style="width:15%;" class="cost">Cost</td>
+                        <td style="width:15%;" class="qty">Qty</td>
+                    </tr>
+                </table>
 
-        <div class="receipt" style="height:100%;padding:5%;">
-            <div class="center">*Company Name*</div>
-            <br />
-            Location: COFFEE PLACE
-            <br />
-            Cashier: @HttpContext.Session.GetString("userName")
-            <br />
-            Order#:
-            <br />
-            <div class="date">Date & Time: @DateTime.Now</div>
-            <br /><br />
-            <table id="receipt_table">
-                <tr style="border-bottom: 2px solid black;">
-                    <td style="width:10%;" class="id">ID</td>
-                    <td style="width:60%;" class="description">Description</td>
-                    <td style="width:15%;" class="cost">Cost</td>
-                    <td style="width:15%;" class="qty">Qty</td>
-                </tr>
-            </table>
-            <br /><br />
-            <b>TOTAL EUR:</b>
-            <b style="float:right;" id="total_price"></b>
-            <br /><br />
-            <b>AMOUNT RECEIVED:</b>
-            <b style="float:right;" id="amount_received"></b>
-            <br /><br />
-            <b>CHANGE:</b>
-            <b style="float:right;" id="change_to_give"></b>
-            <br /><br />
-            <b>PAYMENT METHOD:</b><b style="float:right;" id="total_price">CASH</b>
-            <hr />
-            <br />
-            <div class="center">
-                ALL CHARGES ARE INCLUDED IN PRICE<br /><br />
-                Wifi Key: 12345<br /><br />
-
-                THANK YOU FOR YOUR PURCHASE!<br />
-                COME AGAIN SOON!<br /><br />
-
-                ***Purchase Closed***
-            </div>
+        </div>
+        <div class="payment">
+            <b class="total_price"> Total Price: <b id="total_price">€0.00</b></b>
         </div>
     </div>
 </section>

@@ -27,6 +27,7 @@
             <b class="total_price"> Total Price: <b id="total_price">€0.00</b></b>
             <button class="removeBtn" id="removeBtn" style="font-size:medium" onclick="openModal()">Remove</button>
             <button class="modifyBtn" id="modifyBtn" onclick="location.replace('/ModifyExistingOrders');">Modify Existing Orders</button>
+            <button class="undoBtn" id="undoBtn" onclick="undo()">Undo</button>
             <div class="modifyingOrderDiv" id="modifyingOrderDiv" style="font-size:x-large">Currently Modifying Order</div>
             <div id="name" style=" position: fixed; left: 0; bottom: 5px;">@Model.userName</div>
         </div>

@@ -49,18 +49,20 @@ function updateTotalPrice() {
     if (document.getElementById("Total")) document.getElementById("Total").value = total.toFixed(2);
 }
 
-function addToReceipt(item_name, item_id, item_price) {
+function addToReceipt(item_name, item_id, item_price, qty) {
+
+    if (qty == null) qty = 1;
 
     //receiving the recept from the local storage
     let receipt = new Receipt(JSON.parse(localStorage.getItem("receipt")));
     
     //check if item already exists in table
     if (receipt.exists(item_id)) {
-        receipt.increaseQuantity(item_id);
+        receipt.increaseQuantity(item_id, qty);
     }
     else {
         //if item does not exist in table, add it into the list
-        receipt.addToReceipt(item_id, item_name, item_price, 1);
+        receipt.addToReceipt(item_id, item_name, item_price, qty);
     }
 
     //update array to local database
@@ -78,6 +80,11 @@ function addToReceipt(item_name, item_id, item_price) {
             $(this).parent().attr('id', 'active');
         });
     });
+
+    itemsIdHistoryOfSelection.push(item_id);
+    itemsDescriptionHistoryOfSelection.push(item_name); //saves the history of the item id, wether it has been added or deleted, works in parallel 
+    itemsPriceOfAdditionDeletion.push(item_price); //saves the history wether the item was inserted or deleted from the receipt, works in parallel 
+    itemsHistoryOfAdditionDeletion.push("added");
 }
 
 function openModal() {
@@ -131,8 +138,10 @@ function deleteSelectedFromReceipt() {
     if (numberToDelete) {
         receipt.deleteMultiple(item_id, numberToDelete);
         document.getElementById("myModal").style.display = "none";
+        itemsHistoryOfDeletionCounter.push(numberToDelete);
     } else {
         receipt.deleteItem(item_id);
+        itemsHistoryOfDeletionCounter.push(1);
     }
 
     //saving receipt on localstorage
@@ -150,6 +159,9 @@ function deleteSelectedFromReceipt() {
             $(this).parent().attr('id', 'active');
         });
     });
+
+    itemsIdHistoryOfSelection.push(item_id);
+    itemsHistoryOfAdditionDeletion.push("removed"); 
 }
 
 function getTotalPrice() {
@@ -260,3 +272,58 @@ function removeDiscount() {
     document.getElementById("Total").value = localStorage.getItem('total');
     document.getElementById("discount").value = 0;
 }
+
+/*UNDO-REDO BELOW*/
+var itemsIdHistoryOfSelection = []; //saves the history of the item id, wether it has been added or deleted, works in parallel 
+var itemsDescriptionHistoryOfSelection = [];
+var itemsPriceOfAdditionDeletion = [];
+var itemsHistoryOfAdditionDeletion = [];//saves the history wether the item was inserted or deleted from the receipt, works in parallel 
+var itemsHistoryOfDeletionCounter = []; // saves the quantity of the item when the item is deleted
+
+function undo() {
+
+    if (itemsIdHistoryOfSelection.length > 0) {
+        let receipt = new Receipt(JSON.parse(localStorage.getItem("receipt")));
+        var item_id = itemsIdHistoryOfSelection[itemsIdHistoryOfSelection.length - 1];
+        var item_name = itemsDescriptionHistoryOfSelection[itemsDescriptionHistoryOfSelection.length - 1];
+        var item_price = itemsPriceOfAdditionDeletion[itemsPriceOfAdditionDeletion.length - 1];
+
+        //find if the last move was insertion or removal
+
+        //if the last item was inserted
+        if (itemsHistoryOfAdditionDeletion[itemsHistoryOfAdditionDeletion.length - 1] == "added") {
+            //we want to remove the last inserted item
+
+            receipt.deleteOneItem(item_id);
+            itemsIdHistoryOfSelection.pop();
+            itemsDescriptionHistoryOfSelection.pop();
+            itemsPriceOfAdditionDeletion.pop();
+
+            //update array to local database
+            localStorage.setItem("receipt", JSON.stringify(receipt.items));
+            //update html context 
+            updateReceipt();
+            updateTotalPrice();
+
+        }
+
+        //if the last item was removed
+        if (itemsHistoryOfAdditionDeletion[itemsHistoryOfAdditionDeletion.length - 1] == "removed") {
+            //we want to add the last removed item
+            var qty = itemsHistoryOfDeletionCounter[itemsHistoryOfDeletionCounter.length - 1];
+            addToReceipt(item_name, item_id, item_price, qty);
+            itemsHistoryOfDeletionCounter.pop();
+        }
+    }
+
+    //function updates and highlights the selected row of 
+    //the table when clicked
+    $(function () {
+        $('td').click(function () {
+            $('tr').removeAttr('id');
+            $(this).parent().attr('id', 'active');
+        });
+    });
+}
+
+/*UNDO-REDO ABOVE*/

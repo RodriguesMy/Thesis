@@ -24,9 +24,12 @@ class Receipt {
         return this.items.some(x => x.id === item_id);
     }
 
-    increaseQuantity(id) {
+    increaseQuantity(id, qty) {
         var index = this.items.findIndex(x => parseInt(x.id) === id);
-        this.items[index].qty = this.items[index].qty + 1;
+        if(qty == null)
+            this.items[index].qty = this.items[index].qty + 1;
+        else
+            this.items[index].qty = this.items[index].qty + qty;
     }
 
     deleteItem(id) {
@@ -59,5 +62,14 @@ class Receipt {
             total += this.items[i].price * this.items[i].qty;
         }
         return total;
+    }
+
+    deleteOneItem(id) {
+        var index = this.items.findIndex(x => parseInt(x.id) === id);
+        if (this.quantityIsMoreThanOne(id)) {
+            this.items[index].qty = this.items[index].qty - 1;
+        } else {
+            this.deleteItem(id);
+        }
     }
 }
