@@ -17,8 +17,8 @@ window.onload = function() {
 
     $(printWindow).bind("load", function () {
         printWindow.print();
-        sleep(5000);
-        printWindow.close();
+        //sleep(5000);
+        //printWindow.close();
     });
     
 }

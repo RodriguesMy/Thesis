@@ -37,12 +37,13 @@ namespace SPOS.Pages
         public bool calcualteChange()
         {
 
-            double change = 0;
+            String change = "0";
             if (PaymentMethod.Equals("CASH"))
             {
                 try
                 {
-                    change = double.Parse(CashReceived) - double.Parse(Total);
+                    change = Math.Round(double.Parse(CashReceived) - double.Parse(Total), 2, MidpointRounding.AwayFromZero).ToString("N2");
+                    
                 }
                 catch
                 {
@@ -50,7 +51,7 @@ namespace SPOS.Pages
                 }
 
                 //if the change is a negative number, something is wrong, so return same page and refuse to close the order
-                if (change < 0) return false;
+                if (double.Parse(change) < 0) return false;
             }
             HttpContext.Session.SetString("change", change.ToString());
             return true;
@@ -69,8 +70,11 @@ namespace SPOS.Pages
 
         public ActionResult OnPost()
         {
-            if (String.IsNullOrEmpty(DiscountApplied)) DiscountApplied = "0";
+            if (String.IsNullOrEmpty(DiscountApplied)) DiscountApplied = "0";            
+            if (string.IsNullOrEmpty(CashReceived)){ CashReceived = "0"; }
 
+            HttpContext.Session.SetString("total", Total);
+            HttpContext.Session.SetString("amountReceived", double.Parse(CashReceived).ToString("N2"));
             //receive order from ui
             receipt = JsonConvert.DeserializeObject<List<Receipt>>(ReceiptContents);
 
@@ -85,6 +89,10 @@ namespace SPOS.Pages
                 Requests.Requests.removeReceiptContents(SelectedOrder);
 
                 insertItemsInReceipt(int.Parse(SelectedOrder)); //re-write them again
+
+                //Save sessions
+                HttpContext.Session.SetString("orderId", SelectedOrder);
+                HttpContext.Session.SetString("modified", "true");
             }
             else
             {
@@ -93,7 +101,16 @@ namespace SPOS.Pages
                 int receipt_id = Requests.Requests.CreateOrder(int.Parse(HttpContext.Session.GetString("userId")), PaymentMethod, int.Parse(DiscountApplied));
 
                 insertItemsInReceipt(receipt_id);
+
+                //save sessions
+                HttpContext.Session.SetString("orderId", receipt_id.ToString());
+                HttpContext.Session.SetString("modified", "false");
             }
+
+            //save sessions
+            HttpContext.Session.SetString("paymentMethod", PaymentMethod);
+            HttpContext.Session.SetString("discount", DiscountApplied);
+
             //redirect to page to display the change(money)
             return Redirect("./endPage"); //move to endpage
         }

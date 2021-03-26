@@ -215,6 +215,9 @@ var checkIfCurrentlyModifyingOrder = setInterval(function () {
 
         if (document.getElementById("SelectedOrder"))
             document.getElementById("SelectedOrder").value = localStorage.getItem("selectedOrder");
+
+        if (document.getElementById("undoBtn"))
+            document.getElementById("undoBtn").style.visibility = "hidden";
         return;
     }
 

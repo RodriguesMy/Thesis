@@ -1,10 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using SPOS_ManagerView.Classes;
 
 namespace SPOS_ManagerView.Pages
 {
@@ -15,20 +12,31 @@ namespace SPOS_ManagerView.Pages
         public string Username { get; set; }
         [BindProperty]
         public string Password { get; set; }
+        public string ErrorMessage { get; set; }
 
         public IndexModel(ILogger<IndexModel> logger)
         {
             _logger = logger;
         }
 
-        public void OnGet()
-        {
-
-        }
+        public void OnGet(){}
         public ActionResult OnPost()
         {
-            //save cookies
-            return Redirect("control/index");
+            if(string.IsNullOrEmpty(Username) || string.IsNullOrEmpty(Password))
+            {
+                ErrorMessage = "Invalid Credentials";
+                return Page();
+            }
+            if (Requests.validateManager(Username, Password))
+            {
+                //save cookies
+                return Redirect("control/index");
+            }
+            else
+            {
+                ErrorMessage = "Invalid Credentials";
+            }
+            return Page();
         }
     }
 }

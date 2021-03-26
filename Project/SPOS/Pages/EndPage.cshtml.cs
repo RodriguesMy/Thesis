@@ -12,13 +12,11 @@ namespace SPOS.Pages
             try
             {
                 change = @String.Format("{0:C}", Convert.ToDouble(HttpContext.Session.GetString("change")));
-
-                //kill session
-                HttpContext.Session.Clear();
-
             }
             catch (Exception e)
             {
+                //kill session
+                HttpContext.Session.Clear();
                 return Redirect("/");
             }
 

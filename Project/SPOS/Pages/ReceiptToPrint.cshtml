@@ -18,7 +18,7 @@
     <br />
     Cashier: @HttpContext.Session.GetString("userName")
     <br />
-    Order#:
+    Order#: @HttpContext.Session.GetString("orderId")
     <br />
     <div class="date">Date & Time: @DateTime.Now</div>
     <br /><br />
@@ -34,21 +34,43 @@
     <hr />
     <br />
     <b>TOTAL EUR:</b>
-    <b style="float:right;" id="total_price"></b>
+    <b style="float:right;" id="total_price">€@HttpContext.Session.GetString("total")</b>
     <br /><br />
-    <b>DISCOUNT APPLIED:</b>
-    <b style="float:right;" id="discount"></b>
-    <br /><br />
-    <b>AMOUNT RECEIVED:</b>
-    <b style="float:right;" id="amount_received"></b>
-    <br /><br />
-    <b>CHANGE:</b>
-    <b style="float:right;" id="change_to_give"></b>
-    <br /><br />
-    <b>PAYMENT METHOD:</b><b style="float:right;" id="total_price"></b>
+    @if (HttpContext.Session.GetString("discount") != "0")
+    {
+        var current = double.Parse(HttpContext.Session.GetString("total"));
+        var discount = int.Parse(HttpContext.Session.GetString("discount"));
+        var originalPrice = current / (1 - discount * 0.01);
+        var total = Math.Round(originalPrice - (originalPrice * discount / 100), 2, MidpointRounding.AwayFromZero).ToString("N2");
+        var savings = (originalPrice - double.Parse(total)).ToString("N2");
+
+        <b>DISCOUNT:</b>
+        <b style="float:right;" id="discount">@HttpContext.Session.GetString("discount")%</b>
+        <br /><br />
+        <b>AFTER DISCOUNT:</b>
+        <b style="float:right;" id="discount">€@total</b>
+        <br /><br />
+        <b>SAVINGS:</b>
+        <b style="float:right;" id="savings">€@savings</b>
+        <br /><br />
+    }
+    @if (HttpContext.Session.GetString("paymentMethod") == "CASH")
+    {
+        <b>AMOUNT RECEIVED:</b>
+        <b style="float:right;" id="amount_received">€@HttpContext.Session.GetString("amountReceived")</b>
+        <br /><br />
+        <b>CHANGE:</b>
+        <b style="float:right;" id="change_to_give">€@HttpContext.Session.GetString("change")</b>
+        <br /><br />
+    }
+    <b>PAYMENT METHOD:</b><b style="float:right;" id="total_price">@HttpContext.Session.GetString("paymentMethod")</b>
     <hr />
     <br />
     <div class="center">
+        @if (HttpContext.Session.GetString("modified") == "true")
+        {
+            <div>*RECEIPT MODIFIED*</div><br /><br />
+        }
         ALL CHARGES ARE INCLUDED IN PRICE<br /><br />
         Wifi Key: 12345<br /><br />
 
