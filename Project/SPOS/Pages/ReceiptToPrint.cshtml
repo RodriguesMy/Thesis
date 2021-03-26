@@ -1,0 +1,60 @@
+﻿@page
+@model SPOS.Pages.ReceiptToPrintModel
+@{
+}
+
+@section Styles{
+    <link rel="stylesheet" href="@Url.Content("~/css/receiptToPrint.css")" rel="stylesheet" type="text/css" />
+}
+<script src="~/js/ReceiptContents.js"></script>
+<script src="~/js/receiptToPrint.js"></script>
+
+@using Microsoft.AspNetCore.Http;
+
+<div class="receipt" style="height:100%; width:100%">
+    <div class="center">*Company Name*</div>
+    <br />
+    Location: COFFEE PLACE
+    <br />
+    Cashier: @HttpContext.Session.GetString("userName")
+    <br />
+    Order#:
+    <br />
+    <div class="date">Date & Time: @DateTime.Now</div>
+    <br /><br />
+    <table id="receipt_table">
+        <tr style="border-bottom: 2px solid black;">
+            <td style="width:10%;" class="id">ID</td>
+            <td style="width:60%;" class="description">Description</td>
+            <td style="width:15%;" class="cost">Cost</td>
+            <td style="width:15%;" class="qty">Qty</td>
+        </tr>
+    </table>
+    <br />
+    <hr />
+    <br />
+    <b>TOTAL EUR:</b>
+    <b style="float:right;" id="total_price"></b>
+    <br /><br />
+    <b>DISCOUNT APPLIED:</b>
+    <b style="float:right;" id="discount"></b>
+    <br /><br />
+    <b>AMOUNT RECEIVED:</b>
+    <b style="float:right;" id="amount_received"></b>
+    <br /><br />
+    <b>CHANGE:</b>
+    <b style="float:right;" id="change_to_give"></b>
+    <br /><br />
+    <b>PAYMENT METHOD:</b><b style="float:right;" id="total_price"></b>
+    <hr />
+    <br />
+    <div class="center">
+        ALL CHARGES ARE INCLUDED IN PRICE<br /><br />
+        Wifi Key: 12345<br /><br />
+
+        THANK YOU FOR YOUR PURCHASE!<br />
+        COME AGAIN SOON!<br /><br />
+
+        ***Purchase Closed***
+    </div>
+</div>

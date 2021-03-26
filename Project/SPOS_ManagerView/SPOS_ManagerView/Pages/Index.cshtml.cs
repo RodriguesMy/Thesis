@@ -11,6 +11,10 @@ namespace SPOS_ManagerView.Pages
     public class IndexModel : PageModel
     {
         private readonly ILogger<IndexModel> _logger;
+        [BindProperty]
+        public string Username { get; set; }
+        [BindProperty]
+        public string Password { get; set; }
 
         public IndexModel(ILogger<IndexModel> logger)
         {
@@ -20,6 +24,11 @@ namespace SPOS_ManagerView.Pages
         public void OnGet()
         {
 
+        }
+        public ActionResult OnPost()
+        {
+            //save cookies
+            return Redirect("control/index");
         }
     }
 }

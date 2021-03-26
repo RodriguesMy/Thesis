@@ -4,7 +4,7 @@ function addToCode(valueToAdd) {
 }
 
 function clearCode() {
-    document.getElementById('code').value = "";
+    if (document.getElementById('code'))document.getElementById('code').value = "";
 }
 
 window.onload = function() {

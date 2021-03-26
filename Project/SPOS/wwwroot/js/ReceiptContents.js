@@ -25,29 +25,29 @@ class Receipt {
     }
 
     increaseQuantity(id) {
-        var index = this.items.findIndex(x => x.id === id);
+        var index = this.items.findIndex(x => parseInt(x.id) === id);
         this.items[index].qty = this.items[index].qty + 1;
     }
 
     deleteItem(id) {
-        var index = this.items.findIndex(x => x.id === id);
+        var index = this.items.findIndex(x => parseInt(x.id) === id);
         this.items.splice(index, 1);
     }
 
     quantityIsMoreThanOne(id) {
-        var index = this.items.findIndex(x => x.id === id);
+        var index = this.items.findIndex(x => parseInt(x.id) === id);
         if (this.items[index].qty > 1) return true;
         return false;
     }
 
     getQuantity(id) {
-        var index = this.items.findIndex(x => x.id === id);
+        var index = this.items.findIndex(x => parseInt(x.id) === id);
         return this.items[index].qty;
 
     }
 
     deleteMultiple(id, totalToDelete) {
-        var index = this.items.findIndex(x => x.id === id);
+        var index = this.items.findIndex(x => parseInt(x.id) === id);
         this.items[index].qty = this.items[index].qty - totalToDelete;
 
         if (this.items[index].qty <= 0) this.deleteItem(id);
@@ -58,5 +58,6 @@ class Receipt {
         for (i = 0; i < this.items.length; i++) {
             total += this.items[i].price * this.items[i].qty;
         }
+        return total;
     }
 }

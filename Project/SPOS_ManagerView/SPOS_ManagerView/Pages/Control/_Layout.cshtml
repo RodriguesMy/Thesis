@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/lib/font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="~/css/sidebar.css">
+</head>
+<body>
+
+    <div class="wrapper d-flex align-items-stretch">
+        <nav id="sidebar">
+            <div class="content">
+                <div id="jquery-accordion-menu" class="jquery-accordion-menu black">
+                    <ul>
+                        <li id="Index"><a href="/control/index"><i class="fa fa-home"></i>Home </a></li>
+                        <li id="ReadOnlyMode"><a href="/control/users/readonlymode">Generate Reports</a></li> <!--Sales--><!--revenue-->
+                        <li id="ReadOnlyMode"><a href="/control/users/readonlymode">Stock Management</a></li>
+                        <li id="ReadOnlyMode"><a href="/control/users/readonlymode">Staff</a></li> <!--hours worked-->
+                        <li id="LogOut"><a href="/logout"><i class="fa fa-sign-out"></i>Log Out </a></li> 
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div id="content" class="p-4 p-md-5 pt-5">
+            @RenderBody()
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("@ViewData["Title"]").classList.add('active');
+        document.getElementById("@ViewData["Title"]").parentElement.style = "display: block;";
+    </script>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/sidebar.js"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

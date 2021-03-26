@@ -33,6 +33,28 @@ namespace SPOS.Pages
                 Requests.Requests.insertItemInOrder(receipt_id, int.Parse(item.id), int.Parse(item.qty));
             }
         }
+
+        public bool calcualteChange()
+        {
+
+            double change = 0;
+            if (PaymentMethod.Equals("CASH"))
+            {
+                try
+                {
+                    change = double.Parse(CashReceived) - double.Parse(Total);
+                }
+                catch
+                {
+                    return false;
+                }
+
+                //if the change is a negative number, something is wrong, so return same page and refuse to close the order
+                if (change < 0) return false;
+            }
+            HttpContext.Session.SetString("change", change.ToString());
+            return true;
+        }
         public ActionResult OnGet(){
             try
             {
@@ -54,8 +76,9 @@ namespace SPOS.Pages
 
             if (ModifyOrder)
             {
-                //update columns of the existing order 
+                if (!calcualteChange()) return Page();
 
+                //update columns of the existing order 
                 Requests.Requests.modifyReceipt(SelectedOrder, PaymentMethod, int.Parse(DiscountApplied));
 
                 //delete all items inside items_receipt that are in that orderid (deleteReceiptContents)
@@ -65,22 +88,14 @@ namespace SPOS.Pages
             }
             else
             {
-                double change = 0;
-                if (PaymentMethod.Equals("CASH"))
-                {
-                    change = double.Parse(CashReceived) - double.Parse(Total);
-                    //if the change is a negative number, something is wrong, so return same page and refuse to close the order
-                    if (change < 0) return Page();
-                }
-                HttpContext.Session.SetString("change", change.ToString());
-
+                if (!calcualteChange()) return Page();
                 //create order in database
                 int receipt_id = Requests.Requests.CreateOrder(int.Parse(HttpContext.Session.GetString("userId")), PaymentMethod, int.Parse(DiscountApplied));
 
                 insertItemsInReceipt(receipt_id);
             }
             //redirect to page to display the change(money)
-            return Redirect("./EndPage"); //move to endpage
+            return Redirect("./endPage"); //move to endpage
         }
     }
 }

@@ -45,6 +45,7 @@ function updateTotalPrice() {
         total += receipt.items[i].price * receipt.items[i].qty;
     }
     document.getElementById("total_price").innerHTML = "€" + total.toFixed(2);
+    localStorage.setItem('total', total.toFixed(2));
     if (document.getElementById("Total")) document.getElementById("Total").value = total.toFixed(2);
 }
 
