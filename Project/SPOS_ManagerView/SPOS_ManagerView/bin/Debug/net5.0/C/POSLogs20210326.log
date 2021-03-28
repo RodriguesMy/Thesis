@@ -1,0 +1,5 @@
+2021-03-26 15:47:20,603 [15] ERROR SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/rodriguesmy/123 .Result: No connection could be made because the target machine actively refused it. [::ffff:127.0.0.1]:5000 (localhost:5000)
+2021-03-26 15:48:18,170 [19] ERROR SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/rodriguesmy/my .Result: The remote server returned an error: (400) Bad Request.
+2021-03-26 15:57:50,071 [18] ERROR SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/rodriguesmy/g .Result: The remote server returned an error: (404) Not Found.
+2021-03-26 15:57:56,675 [16] ERROR SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/rodriguesmy/123 .Result: The remote server returned an error: (404) Not Found.
+2021-03-26 15:58:17,412 [4] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success

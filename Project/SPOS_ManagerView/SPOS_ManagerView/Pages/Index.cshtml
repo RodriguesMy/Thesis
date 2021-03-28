@@ -7,11 +7,15 @@
 <h1>Login</h1>
 
 <form method="post">
-    <input type="text" asp-for="Username" placeholder="Username" />
-    <input type="password" asp-for="Password" placeholder="Password" />
+        <input type="text" asp-for="Username" placeholder="Username" />
+        <input type="password" asp-for="Password" placeholder="Password" />
 
     <br /><br />
-    <button type="submit">Sign in</button>
+    <button type="submit" class="btn btn-primary">Sign in</button>
     <br /><br />
-    @Html.Raw(Model.ErrorMessage)
+    @if(Model.ErrorMessage != null)
+    {
+        <div class="alert-danger d-inline-flex p-2 bd-highlight" role="alert">@Html.Raw(Model.ErrorMessage)</div>
+    }
+    
 </form>

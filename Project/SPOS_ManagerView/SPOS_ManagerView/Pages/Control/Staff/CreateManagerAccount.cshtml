@@ -1,0 +1,30 @@
+﻿@page
+@model SPOS_ManagerView.Pages.Control.Staff.CreateManagerAccountModel
+@{
+}
+
+<h1>Create Manager Account</h1>
+<div>Note: A user must be a manager to own a manager account</div>
+<form method="post">
+    Enter User Personal ID:
+    <br />
+    <input type="text" asp-for="Personal_Id" />
+    <br />
+    Enter Username:<br />
+    <input type="text" asp-for="Username" /><br />
+    Enter Password:<br />
+    <input type="password" asp-for="Password" />
+    <br /><br />
+    <button class="btn btn-primary">Create Account</button>
+</form>
+<br />
+
+@if (!String.IsNullOrEmpty(Model.ErrorMessage))
+{
+    <div class="alert-danger d-inline-flex p-2 bd-highlight" role="alert">@Html.Raw(Model.ErrorMessage)</div>
+}
+<br />
+@if (!String.IsNullOrEmpty(Model.SuccessMessage))
+{
+    <div class="alert-success d-inline-flex p-2 bd-highlight" role="alert">@Html.Raw(Model.SuccessMessage)</div>
+}

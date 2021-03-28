@@ -1,0 +1,110 @@
+﻿@page
+@model SPOS_ManagerView.Pages.Control.Staff.UpdateStaffMemberModel
+@{
+}
+<h1>Update Staff Member</h1>
+
+
+@if (Model.user == null)
+{
+    <form asp-page-handler="button" method="post">
+        Enter User Personal ID:
+        <br />
+        <input type="text" asp-for="ID" />
+        <br /><br />
+        <button class="btn btn-primary">Retrieve User</button>
+    </form>
+}
+else
+{
+    <form asp-page-handler="post" method="post">
+
+        First Name:<br />
+        <input type="text" asp-for="user.FName" value="@Model.userRetrieved.FName"/>
+        <br />
+        Middle Name:<br />
+        <input type="text" asp-for="user.MName" value="@Model.userRetrieved.MName"/>
+        <br />
+        Last Name:<br />
+        <input type="text" asp-for="user.LName" value="@Model.userRetrieved.LName"/>
+        <br />
+        Personal ID:<br />
+        <input type="text" asp-for="user.personal_id" value="@Model.userRetrieved.personal_id"/>
+        <br />
+        Postal Code:<br />
+        <input type="text" asp-for="user.postal_code" value="@Model.userRetrieved.postal_code"/>
+        <br />
+        Address Street:<br />
+        <input type="text" asp-for="user.address_street" value="@Model.userRetrieved.address_street"/>
+        <br />
+        Address Number:<br />
+        <input type="text" asp-for="user.address_no" value="@Model.userRetrieved.address_no"/>
+        <br />
+        <label for="gender">Select Gender:</label><br />
+        <select name="user.gender" id="gender" asp-for="user.gender" value="@Model.userRetrieved.gender">
+             @{Dictionary<string, string> genders = new Dictionary<string, string>();
+                 genders.Add("F", "Female");
+                 genders.Add("M", "Male");
+                 genders.Add("O", "Other");
+
+                 foreach (var gender in genders)
+                 {
+                     if (gender.Key.Equals(Model.userRetrieved.gender))
+                     {
+                         <option value="@gender.Key" selected>@gender.Value</option>
+                     }
+                     else
+                     {
+                        <option value="@gender.Key">@gender.Value</option>
+                     }
+                 }
+            }
+        </select>
+        <br />
+        Email:<br />
+        <input type="text" asp-for="user.email" value="@Model.userRetrieved.email"/>
+        <br />
+        Date of Birth:<br />
+        <input type="date" asp-for="user.DOB" value="@Model.DOB"/>
+        <br />
+        Telephone:<br />
+        <input type="number" asp-for="user.phone_no" value="@Model.userRetrieved.phone_no"/>
+        <br />
+        Salary Per Hour:<br />
+        <input type="number" asp-for="user.salary_per_hour" step="0.01" value="@Model.userRetrieved.salary_per_hour"/>
+        <br />
+        <input type="checkbox" asp-for="user.is_active" checked="@Model.userRetrieved.is_active"/> Is Active
+        <br />
+        <input type="checkbox" asp-for="user.is_manager" checked="@Model.userRetrieved.is_manager"/> Is Manager
+        <br />
+        <label for="jobTitle">Select Job Title:</label><br />
+        <select name="user.jobTitle" id="jobTitle" asp-for="user.jobTitle">
+            @foreach (var title in Model.jobTitles)
+            {
+                if (title.Key == int.Parse(Model.userRetrieved.jobTitle))
+                {
+                    <option value="@title.Key" selected>@title.Value</option>
+                }
+                else
+                {
+                    <option value="@title.Key">@title.Value</option>
+                }
+            }
+        </select>
+
+        <br /><br />
+        <button type="submit" class="btn btn-primary">Update User</button>
+
+    </form>
+}
+
+<br />
+@if (!String.IsNullOrEmpty(Model.ErrorMessage))
+{
+    <div class="alert-danger d-inline-flex p-2 bd-highlight" role="alert">@Html.Raw(Model.ErrorMessage)</div>
+}
+<br />
+@if (!String.IsNullOrEmpty(Model.SuccessMessage))
+{
+    <div class="alert-success d-inline-flex p-2 bd-highlight" role="alert">@Html.Raw(Model.SuccessMessage)</div>
+}

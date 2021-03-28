@@ -1,0 +1,27 @@
+﻿@page
+@model SPOS_ManagerView.Pages.Control.Staff.CreatePOSAccountModel
+@{
+}
+
+<h1>Create POS Account</h1>
+    <form method="post">
+        Enter User Personal ID:
+        <br />
+        <input type="text" asp-for="Personal_Id" />
+        <br />
+        Enter Pin:<br />
+        <input type="number" asp-for="Password" />
+        <br /><br />
+        <button class="btn btn-primary">Create Account</button>
+    </form>
+<br />
+
+@if (!String.IsNullOrEmpty(Model.ErrorMessage))
+{
+    <div class="alert-danger d-inline-flex p-2 bd-highlight" role="alert">@Html.Raw(Model.ErrorMessage)</div>
+}
+<br />
+@if (!String.IsNullOrEmpty(Model.SuccessMessage))
+{
+    <div class="alert-success d-inline-flex p-2 bd-highlight" role="alert">@Html.Raw(Model.SuccessMessage)</div>
+}

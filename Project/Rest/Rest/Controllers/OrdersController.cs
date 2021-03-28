@@ -194,7 +194,7 @@ namespace Rest.Controllers
                 command.Dispose();
                 sqlConnection.Close();
 
-                ActionResult res = linesReceived > 0 ? Ok() : NotFound();
+                ActionResult res = linesReceived > 0 ? Ok() : BadRequest();
                 logger.Info($"Received Request: 'modifyReceipt/{orderId}/{paymentMethod}/{discount}'. Result: {res}");
                 return res;
             }
@@ -231,7 +231,7 @@ namespace Rest.Controllers
                 command.Dispose();
                 sqlConnection.Close();
 
-                ActionResult res = linesReceived > 0 ? Ok() : NotFound();
+                ActionResult res = linesReceived > 0 ? Ok() : BadRequest();
                 logger.Info($"Received Request: 'removeReceiptContents/{orderId}'. Result: {res}");
                 return res;
             }

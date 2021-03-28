@@ -1,0 +1,15 @@
+2021-03-27 15:57:29,800 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/9999 .Result: Success
+2021-03-27 15:57:29,852 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/9999 .Result: Success
+2021-03-27 15:57:29,895 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/9999 .Result: Success
+2021-03-27 15:57:29,983 [5] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-27 15:57:30,264 [5] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success
+2021-03-27 15:57:33,948 [17] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-27 15:57:33,977 [17] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItems/3 .Result: Success
+2021-03-27 15:57:38,612 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/createOrder/2/CASH/0 . Result: Success
+2021-03-27 15:57:38,640 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/insertItemInOrder/116/10/2 . Result: Success
+2021-03-27 15:57:38,655 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/insertItemInOrder/116/11/1 . Result: Success
+2021-03-27 15:58:34,547 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/checkPassword/4561 .Result: Success
+2021-03-27 15:58:34,702 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserName/4561 .Result: Success
+2021-03-27 15:58:34,723 [4] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getUserId/4561 .Result: Success
+2021-03-27 15:58:34,765 [5] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getItemTypes .Result: Success
+2021-03-27 15:58:34,981 [5] INFO  SPOS.Requests.Requests - Request sent: http://localhost:5000/getCategories .Result: Success

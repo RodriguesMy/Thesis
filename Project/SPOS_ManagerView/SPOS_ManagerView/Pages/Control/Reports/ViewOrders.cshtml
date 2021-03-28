@@ -1,0 +1,35 @@
+﻿@page
+@model SPOS_ManagerView.Pages.Control.Reports.ViewOrdersModel
+@{
+}
+
+<h1>View Orders</h1>
+<br />
+<script src="~/js/downloadFile.js"></script>
+
+<form method="post">
+    Select From:<br />
+    <input type="datetime-local" id="from" asp-for="From"><br />
+    Select To:<br />
+    <input type="datetime-local" id="to" asp-for="To"><br />
+    <br />
+    <button class="btn btn-primary">Submit</button>
+</form>
+<br />
+@if (!String.IsNullOrEmpty(Model.ErrorMessage))
+{
+    <div class="alert-danger d-inline-flex p-2 bd-highlight" role="alert">@Html.Raw(Model.ErrorMessage)</div>
+}
+<br />
+@if (!String.IsNullOrEmpty(Model.SuccessMessage))
+{
+    <div class="alert-success d-inline-flex p-2 bd-highlight" role="alert">@Html.Raw(Model.SuccessMessage)</div>
+    <script>
+        download(@Html.Raw(Json.Serialize(Model.FileName)),@Html.Raw(Json.Serialize(Model.FileContents)));
+    </script>
+}
+
+<script>
+    document.getElementById('from').value = new Date().toISOString().slice(0, 10);
+    document.getElementById('to').value = new Date().toISOString().slice(0, 10);
+</script>

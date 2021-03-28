@@ -1,7 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 using SPOS_ManagerView.Classes;
+using System;
 
 namespace SPOS_ManagerView.Pages
 {
@@ -19,23 +21,34 @@ namespace SPOS_ManagerView.Pages
             _logger = logger;
         }
 
-        public void OnGet(){}
+        public ActionResult OnGet()
+        {
+
+            if (HttpContext.Session.GetString("username") == null)
+            {
+                return Page(); 
+            }
+
+            return Redirect("control/index"); 
+        }
         public ActionResult OnPost()
         {
-            if(string.IsNullOrEmpty(Username) || string.IsNullOrEmpty(Password))
+            if (string.IsNullOrEmpty(Username) || string.IsNullOrEmpty(Password))
             {
                 ErrorMessage = "Invalid Credentials";
                 return Page();
             }
-            if (Requests.validateManager(Username, Password))
+            if (Requests.validateManager(Username, StaticFunctions.GetHash(Password)))
             {
-                //save cookies
+
+                HttpContext.Session.SetString("username", Username);
                 return Redirect("control/index");
             }
             else
             {
                 ErrorMessage = "Invalid Credentials";
             }
+
             return Page();
         }
     }

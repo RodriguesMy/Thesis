@@ -1,0 +1,74 @@
+﻿@page
+@model SPOS_ManagerView.Pages.Control.Staff.CreateStaffMemberModel
+@{
+}
+
+<h1>Create Staff Member</h1>
+<br />
+<form method="post">
+
+    First Name:<br />
+    <input type="text" asp-for="user.FName" />
+    <br />
+    Middle Name:<br />
+    <input type="text" asp-for="user.MName" />
+    <br />
+    Last Name:<br />
+    <input type="text" asp-for="user.LName" />
+    <br />
+    Personal ID:<br />
+    <input type="text" asp-for="user.personal_id" />
+    <br />
+    Postal Code:<br />
+    <input type="text" asp-for="user.postal_code" />
+    <br />
+    Address Street:<br />
+    <input type="text" asp-for="user.address_street" />
+    <br />
+    Address Number:<br />
+    <input type="text" asp-for="user.address_no" />
+    <br />
+    <label for="gender">Select Gender:</label><br />
+    <select name="user.gender" id="gender" asp-for="user.gender">
+        <option value="F">Female</option>
+        <option value="M">Male</option>
+        <option value="O">Other</option>
+    </select>
+    <br />
+    Email:<br />
+    <input type="text" asp-for="user.email" />
+    <br />
+    Date of Birth:<br />
+    <input type="date" asp-for="user.DOB" />
+    <br />
+    Telephone:<br />
+    <input type="number" asp-for="user.phone_no" />
+    <br />
+    Salary Per Hour:<br />
+    <input type="number" asp-for="user.salary_per_hour" step="0.01" />
+    <br />
+    <input type="checkbox" asp-for="user.is_active" /> Is Active
+    <br />
+    <input type="checkbox" asp-for="user.is_manager" /> Is Manager
+    <br />
+    <label for="jobTitle">Select Job Title:</label><br />
+    <select name="user.jobTitle" id="jobTitle" asp-for="user.jobTitle">
+        @foreach (var title in Model.jobTitles)
+        {
+            <option value="@title.Key">@title.Value</option>
+        }
+    </select>
+
+    <br /><br />
+    <button type="submit" class="btn btn-primary">Create User</button>
+    <br />
+    @if (!String.IsNullOrEmpty(Model.ErrorMessage))
+    {
+        <div class="alert-danger d-inline-flex p-2 bd-highlight" role="alert">@Html.Raw(Model.ErrorMessage)</div>
+    }
+    <br />
+    @if (!String.IsNullOrEmpty(Model.SuccessMessage))
+    {
+        <div class="alert-success d-inline-flex p-2 bd-highlight" role="alert">@Html.Raw(Model.SuccessMessage)</div>
+    }
+</form>

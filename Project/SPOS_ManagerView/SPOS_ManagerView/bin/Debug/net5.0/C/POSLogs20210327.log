@@ -1,0 +1,219 @@
+2021-03-27 10:49:15,990 [8] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 10:50:40,049 [8] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 10:50:43,628 [8] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 10:56:49,347 [16] ERROR SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrod/123 .Result: The remote server returned an error: (404) Not Found.
+2021-03-27 10:57:14,879 [4] ERROR SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrig/123 .Result: The remote server returned an error: (404) Not Found.
+2021-03-27 10:59:49,298 [4] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 10:59:53,736 [4] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 11:00:05,443 [4] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 11:00:34,207 [8] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 11:00:52,373 [4] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 11:00:59,266 [16] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 11:06:16,633 [4] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 11:06:20,122 [4] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 11:08:34,106 [17] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 11:08:44,926 [20] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 11:11:14,087 [8] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 11:11:20,945 [19] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 11:16:38,202 [15] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 11:19:31,792 [4] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 11:26:01,287 [8] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 11:26:25,680 [15] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 11:28:23,857 [4] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 11:28:51,418 [13] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 11:36:15,477 [4] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 11:37:27,595 [19] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 11:38:27,349 [8] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 11:38:52,004 [8] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 11:40:12,364 [13] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 11:40:43,743 [19] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 11:41:04,402 [18] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 11:42:17,683 [13] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 11:43:02,145 [8] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 11:44:35,743 [8] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 11:45:32,416 [7] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 11:49:58,644 [22] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 11:52:38,026 [20] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 11:53:29,386 [10] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 12:07:26,500 [18] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 12:08:31,464 [8] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 12:24:02,913 [4] ERROR SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: No connection could be made because the target machine actively refused it. [::ffff:127.0.0.1]:5000 (localhost:5000)
+2021-03-27 12:24:07,791 [10] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 12:24:09,581 [17] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/getJobTitles .Result: Success
+2021-03-27 12:27:51,082 [8] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 12:27:52,284 [10] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/getJobTitles .Result: Success
+2021-03-27 12:28:37,802 [22] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 12:28:39,052 [22] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/getJobTitles .Result: Success
+2021-03-27 12:28:55,117 [5] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 12:28:56,175 [5] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/getJobTitles .Result: Success
+2021-03-27 12:29:27,492 [9] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 12:29:29,060 [4] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/getJobTitles .Result: Success
+2021-03-27 12:31:23,840 [13] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 12:31:25,154 [4] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/getJobTitles .Result: Success
+2021-03-27 12:36:03,181 [19] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 12:36:04,436 [17] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/getJobTitles .Result: Success
+2021-03-27 12:36:33,759 [4] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 12:36:35,185 [4] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/getJobTitles .Result: Success
+2021-03-27 12:37:30,734 [13] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 12:37:31,836 [9] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/getJobTitles .Result: Success
+2021-03-27 12:38:11,736 [8] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 12:38:13,189 [10] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/getJobTitles .Result: Success
+2021-03-27 12:39:39,118 [9] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 12:39:40,534 [4] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/getJobTitles .Result: Success
+2021-03-27 12:45:59,391 [12] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 12:46:00,804 [5] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/getJobTitles .Result: Success
+2021-03-27 12:46:35,794 [4] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 12:46:36,889 [13] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/getJobTitles .Result: Success
+2021-03-27 12:47:05,181 [10] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 12:47:06,444 [13] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/getJobTitles .Result: Success
+2021-03-27 12:56:38,836 [9] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 12:56:40,422 [9] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/getJobTitles .Result: Success
+2021-03-27 12:59:43,921 [6] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 12:59:45,604 [6] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/getJobTitles .Result: Success
+2021-03-27 13:14:53,412 [4] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 13:14:55,204 [4] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/getJobTitles .Result: Success
+2021-03-27 13:16:14,367 [8] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 13:16:15,789 [9] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/getJobTitles .Result: Success
+2021-03-27 13:17:06,915 [8] ERROR SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/createUser/%7B%22jobTitle%22%3Anull%2C%22FName%22%3Anull%2C%22MName%22%3Anull%2C%22LName%22%3Anull%2C%22personal_id%22%3Anull%2C%22address_no%22%3Anull%2C%22postal_code%22%3Anull%2C%22address_street%22%3Anull%2C%22gender%22%3Anull%2C%22email%22%3Anull%2C%22DOB%22%3A%220001-01-01T00%3A00%3A00%22%2C%22salary_per_hour%22%3Anull%2C%22phone_no%22%3Anull%2C%22is_active%22%3Afalse%2C%22is_manager%22%3Afalse%7D .Result: The remote server returned an error: (404) Not Found.
+2021-03-27 13:18:25,146 [12] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 13:18:26,674 [9] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/getJobTitles .Result: Success
+2021-03-27 13:22:33,803 [20] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 13:22:35,198 [16] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/getJobTitles .Result: Success
+2021-03-27 13:24:49,575 [5] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 13:24:51,167 [15] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/getJobTitles .Result: Success
+2021-03-27 13:25:06,783 [5] ERROR SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/createUser/%7B%22jobTitle%22%3Anull%2C%22FName%22%3Anull%2C%22MName%22%3Anull%2C%22LName%22%3Anull%2C%22personal_id%22%3Anull%2C%22address_no%22%3Anull%2C%22postal_code%22%3Anull%2C%22address_street%22%3Anull%2C%22gender%22%3Anull%2C%22email%22%3Anull%2C%22DOB%22%3A%220001-01-01T00%3A00%3A00%22%2C%22salary_per_hour%22%3Anull%2C%22phone_no%22%3Anull%2C%22is_active%22%3Afalse%2C%22is_manager%22%3Afalse%7D .Result: No connection could be made because the target machine actively refused it. [::ffff:127.0.0.1]:5001 (localhost:5001)
+2021-03-27 13:35:06,760 [4] ERROR SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: No connection could be made because the target machine actively refused it. [::ffff:127.0.0.1]:5000 (localhost:5000)
+2021-03-27 13:35:12,777 [9] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 13:35:14,492 [15] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/getJobTitles .Result: Success
+2021-03-27 13:37:56,974 [15] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 13:37:58,604 [13] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/getJobTitles .Result: Success
+2021-03-27 13:40:51,399 [12] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 13:40:52,925 [14] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/getJobTitles .Result: Success
+2021-03-27 13:41:14,736 [10] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 13:41:15,907 [17] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/getJobTitles .Result: Success
+2021-03-27 13:42:38,125 [18] ERROR SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/createUser/%7B%22jobTitle%22%3A%222%22%2C%22FName%22%3A%22Andreas%22%2C%22MName%22%3Anull%2C%22LName%22%3A%22Ioannou%22%2C%22personal_id%22%3A%22432343%22%2C%22address_no%22%3A%2290%22%2C%22postal_code%22%3A%2212%22%2C%22address_street%22%3A%22street%22%2C%22gender%22%3A%22M%22%2C%22email%22%3A%22andreas%40gmail.com%22%2C%22DOB%22%3A%222000-02-27T00%3A00%3A00%22%2C%22salary_per_hour%22%3A%225%22%2C%22phone_no%22%3A%222211563%22%2C%22is_active%22%3Atrue%2C%22is_manager%22%3Afalse%7D .Result: The remote server returned an error: (400) Bad Request.
+2021-03-27 13:42:38,170 [18] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/getJobTitles .Result: Success
+2021-03-27 13:43:35,566 [16] ERROR SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/createUser/%7B%22jobTitle%22%3A%222%22%2C%22FName%22%3A%22Andreas%22%2C%22MName%22%3Anull%2C%22LName%22%3A%22Ioannou%22%2C%22personal_id%22%3A%22432343%22%2C%22address_no%22%3A%2290%22%2C%22postal_code%22%3A%2212%22%2C%22address_street%22%3A%22street%22%2C%22gender%22%3A%22M%22%2C%22email%22%3A%22andreas%40gmail.com%22%2C%22DOB%22%3A%222000-02-27T00%3A00%3A00%22%2C%22salary_per_hour%22%3A%225%22%2C%22phone_no%22%3A%222211563%22%2C%22is_active%22%3Atrue%2C%22is_manager%22%3Afalse%7D .Result: No connection could be made because the target machine actively refused it. [::ffff:127.0.0.1]:5001 (localhost:5001)
+2021-03-27 13:43:39,665 [16] ERROR SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/getJobTitles .Result: No connection could be made because the target machine actively refused it. [::ffff:127.0.0.1]:5000 (localhost:5000)
+2021-03-27 13:56:07,108 [12] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 13:56:08,475 [12] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/getJobTitles .Result: Success
+2021-03-27 13:57:24,995 [5] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/createUser/%7B%22jobTitle%22%3A%222%22%2C%22FName%22%3A%22Maria%22%2C%22MName%22%3A%22Eleni%22%2C%22LName%22%3A%22Christodoulou%22%2C%22personal_id%22%3A%2212431%22%2C%22address_no%22%3A%2243%22%2C%22postal_code%22%3A%2234%22%2C%22address_street%22%3A%22street%22%2C%22gender%22%3A%22F%22%2C%22email%22%3A%22maria%40gmail.com%22%2C%22DOB%22%3A%222001-01-02T00%3A00%3A00%22%2C%22salary_per_hour%22%3A%225%22%2C%22phone_no%22%3A%2222216322%22%2C%22is_active%22%3Atrue%2C%22is_manager%22%3Afalse%7D .Result: Success
+2021-03-27 13:57:25,042 [5] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/getJobTitles .Result: Success
+2021-03-27 14:28:37,869 [5] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 14:28:39,391 [5] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/getJobTitles .Result: Success
+2021-03-27 14:29:12,118 [14] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 14:29:13,970 [9] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/getJobTitles .Result: Success
+2021-03-27 14:47:26,778 [4] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 14:47:28,356 [4] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/getJobTitles .Result: Success
+2021-03-27 14:47:35,616 [8] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/GetUserByPersonalId/980916 .Result: Success
+2021-03-27 14:47:35,734 [8] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/getJobTitles .Result: Success
+2021-03-27 14:49:25,569 [10] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 14:49:31,269 [4] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/GetUserByPersonalId/980916 .Result: Success
+2021-03-27 14:49:31,509 [4] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/getJobTitles .Result: Success
+2021-03-27 14:50:03,932 [20] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 14:50:07,111 [9] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/GetUserByPersonalId/980916 .Result: Success
+2021-03-27 14:50:31,365 [9] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/getJobTitles .Result: Success
+2021-03-27 14:51:40,733 [9] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 14:51:44,091 [9] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/GetUserByPersonalId/980916 .Result: Success
+2021-03-27 14:51:56,679 [9] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/getJobTitles .Result: Success
+2021-03-27 14:53:44,906 [15] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 14:53:48,341 [8] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/GetUserByPersonalId/980916 .Result: Success
+2021-03-27 14:53:50,706 [8] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/getJobTitles .Result: Success
+2021-03-27 14:55:26,151 [14] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 14:55:29,377 [8] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/GetUserByPersonalId/980916 .Result: Success
+2021-03-27 14:55:29,567 [8] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/getJobTitles .Result: Success
+2021-03-27 14:56:14,488 [13] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 14:56:17,591 [9] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/GetUserByPersonalId/980916 .Result: Success
+2021-03-27 14:58:08,947 [4] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 14:58:13,822 [5] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/GetUserByPersonalId/980916 .Result: Success
+2021-03-27 14:58:14,074 [5] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/getJobTitles .Result: Success
+2021-03-27 14:58:51,847 [9] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 14:58:54,935 [7] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/GetUserByPersonalId/980916 .Result: Success
+2021-03-27 14:59:24,363 [9] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 14:59:27,623 [9] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/GetUserByPersonalId/980916 .Result: Success
+2021-03-27 14:59:31,535 [9] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/getJobTitles .Result: Success
+2021-03-27 15:01:10,842 [4] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 15:01:14,780 [10] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/GetUserByPersonalId/980916 .Result: Success
+2021-03-27 15:01:15,034 [10] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/getJobTitles .Result: Success
+2021-03-27 15:01:54,142 [4] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 15:01:57,373 [8] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/GetUserByPersonalId/980916 .Result: Success
+2021-03-27 15:02:22,975 [17] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 15:02:26,431 [10] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/GetUserByPersonalId/980916 .Result: Success
+2021-03-27 15:02:28,723 [10] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/getJobTitles .Result: Success
+2021-03-27 15:03:07,870 [5] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 15:03:11,483 [4] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/GetUserByPersonalId/980916 .Result: Success
+2021-03-27 15:06:36,650 [14] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 15:06:39,846 [16] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/GetUserByPersonalId/980916 .Result: Success
+2021-03-27 15:07:07,987 [17] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/GetUserByPersonalId/432343 .Result: Success
+2021-03-27 15:08:05,666 [14] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 15:08:13,861 [9] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/GetUserByPersonalId/432343 .Result: Success
+2021-03-27 15:08:14,120 [9] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/getJobTitles .Result: Success
+2021-03-27 15:13:18,639 [6] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 15:13:23,579 [10] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/GetUserByPersonalId/432343 .Result: Success
+2021-03-27 15:13:23,847 [10] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/getJobTitles .Result: Success
+2021-03-27 15:14:03,734 [12] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 15:14:07,286 [15] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/GetUserByPersonalId/432343 .Result: Success
+2021-03-27 15:14:07,545 [15] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/getJobTitles .Result: Success
+2021-03-27 15:15:49,348 [4] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 15:15:53,060 [13] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/GetUserByPersonalId/432343 .Result: Success
+2021-03-27 15:15:53,315 [13] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/getJobTitles .Result: Success
+2021-03-27 15:19:40,518 [5] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 15:19:43,831 [4] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/GetUserByPersonalId/432343 .Result: Success
+2021-03-27 15:19:44,089 [4] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/getJobTitles .Result: Success
+2021-03-27 15:19:52,177 [5] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/GetUserByPersonalId/980916 .Result: Success
+2021-03-27 15:19:52,199 [5] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/getJobTitles .Result: Success
+2021-03-27 15:20:04,425 [16] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/GetUserByPersonalId/12431 .Result: Success
+2021-03-27 15:20:04,447 [16] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/getJobTitles .Result: Success
+2021-03-27 15:21:22,233 [4] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 15:21:27,247 [10] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/GetUserByPersonalId/980916 .Result: Success
+2021-03-27 15:21:27,481 [10] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/getJobTitles .Result: Success
+2021-03-27 15:21:28,998 [9] ERROR SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/GetUserByPersonalId/ .Result: The remote server returned an error: (404) Not Found.
+2021-03-27 15:21:29,018 [9] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/getJobTitles .Result: Success
+2021-03-27 15:22:55,938 [9] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 15:22:59,051 [15] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/GetUserByPersonalId/980916 .Result: Success
+2021-03-27 15:22:59,315 [15] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/getJobTitles .Result: Success
+2021-03-27 15:23:00,363 [9] ERROR SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/GetUserByPersonalId/ .Result: The remote server returned an error: (404) Not Found.
+2021-03-27 15:23:00,374 [9] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/getJobTitles .Result: Success
+2021-03-27 15:24:18,772 [4] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 15:24:22,318 [7] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/GetUserByPersonalId/980916 .Result: Success
+2021-03-27 15:24:22,613 [7] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/getJobTitles .Result: Success
+2021-03-27 15:24:24,304 [14] ERROR SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/GetUserByPersonalId/ .Result: The remote server returned an error: (404) Not Found.
+2021-03-27 15:24:24,317 [14] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/getJobTitles .Result: Success
+2021-03-27 15:24:54,717 [7] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/GetUserByPersonalId/980916 .Result: Success
+2021-03-27 15:24:56,552 [7] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/getJobTitles .Result: Success
+2021-03-27 15:24:58,849 [4] ERROR SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/GetUserByPersonalId/ .Result: The remote server returned an error: (404) Not Found.
+2021-03-27 15:25:41,106 [13] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 15:25:45,308 [10] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/GetUserByPersonalId/980916 .Result: Success
+2021-03-27 15:25:45,629 [10] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/getJobTitles .Result: Success
+2021-03-27 15:26:27,461 [13] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 15:26:30,582 [14] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/GetUserByPersonalId/980916 .Result: Success
+2021-03-27 15:26:30,763 [14] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/getJobTitles .Result: Success
+2021-03-27 15:37:29,154 [13] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 15:37:32,872 [10] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/GetUserByPersonalId/980916 .Result: Success
+2021-03-27 15:37:33,118 [10] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/getJobTitles .Result: Success
+2021-03-27 15:37:39,232 [10] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/updateStaffMember/%7B%22jobTitle%22%3A%221%22%2C%22FName%22%3A%22Myriam%22%2C%22MName%22%3A%22Tereza%22%2C%22LName%22%3A%22Rodrigues%22%2C%22personal_id%22%3A%22980916%22%2C%22address_no%22%3A%222%22%2C%22postal_code%22%3A%225543%22%2C%22address_street%22%3A%22Street%22%2C%22gender%22%3A%22F%22%2C%22email%22%3A%22mrodrigues%40gmail.com%22%2C%22DOB%22%3A%221998-09-02T00%3A00%3A00%22%2C%22salary_per_hour%22%3A%222.00%22%2C%22phone_no%22%3A%223444323%22%2C%22is_active%22%3Atrue%2C%22is_manager%22%3Atrue%7D .Result: Success
+2021-03-27 15:38:10,447 [16] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 15:38:14,153 [9] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/GetUserByPersonalId/980916 .Result: Success
+2021-03-27 15:38:14,413 [9] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/getJobTitles .Result: Success
+2021-03-27 15:38:46,444 [9] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/updateStaffMember/%7B%22jobTitle%22%3A%221%22%2C%22FName%22%3A%22Myriam%22%2C%22MName%22%3A%22Tereza%22%2C%22LName%22%3A%22Rodriguez%22%2C%22personal_id%22%3A%22980916%22%2C%22address_no%22%3A%222%22%2C%22postal_code%22%3A%225543%22%2C%22address_street%22%3A%22Street%22%2C%22gender%22%3A%22F%22%2C%22email%22%3A%22mrodrigues%40gmail.com%22%2C%22DOB%22%3A%221998-09-02T00%3A00%3A00%22%2C%22salary_per_hour%22%3A%2210.00%22%2C%22phone_no%22%3A%223444323%22%2C%22is_active%22%3Atrue%2C%22is_manager%22%3Atrue%7D .Result: Success
+2021-03-27 15:40:03,977 [8] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 15:40:07,422 [14] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/GetUserByPersonalId/980916 .Result: Success
+2021-03-27 15:40:07,662 [14] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/getJobTitles .Result: Success
+2021-03-27 15:40:20,358 [9] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/updateStaffMember/%7B%22jobTitle%22%3A%221%22%2C%22FName%22%3A%22Myriam%22%2C%22MName%22%3A%22Tereza%22%2C%22LName%22%3A%22Rodrigues%22%2C%22personal_id%22%3A%22980916%22%2C%22address_no%22%3A%222%22%2C%22postal_code%22%3A%225543%22%2C%22address_street%22%3A%22Street%22%2C%22gender%22%3A%22F%22%2C%22email%22%3A%22mrodrigues%40gmail.com%22%2C%22DOB%22%3A%221998-09-02T00%3A00%3A00%22%2C%22salary_per_hour%22%3A%2210.00%22%2C%22phone_no%22%3A%223444323%22%2C%22is_active%22%3Atrue%2C%22is_manager%22%3Atrue%7D .Result: Success
+2021-03-27 15:52:45,581 [7] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 15:52:56,019 [10] ERROR SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/createPOSAccount/2/1 .Result: The remote server returned an error: (400) Bad Request.
+2021-03-27 15:53:43,662 [8] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/validateManager/mrodrigues/123 .Result: Success
+2021-03-27 15:53:50,205 [8] ERROR SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/createPOSAccount/2/6 .Result: The remote server returned an error: (400) Bad Request.
+2021-03-27 15:53:55,581 [4] ERROR SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/createPOSAccount/980916/6 .Result: The remote server returned an error: (400) Bad Request.
+2021-03-27 15:53:57,461 [8] ERROR SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/createPOSAccount/980916/6 .Result: The remote server returned an error: (400) Bad Request.
+2021-03-27 15:54:16,244 [10] ERROR SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/createPOSAccount/432343/9999 .Result: The remote server returned an error: (400) Bad Request.
+2021-03-27 15:54:36,093 [8] ERROR SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/createPOSAccount/432343/9999 .Result: An error occurred while sending the request.
+2021-03-27 15:54:58,748 [4] ERROR SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/createPOSAccount/1/9999 .Result: No connection could be made because the target machine actively refused it. [::ffff:127.0.0.1]:5000 (localhost:5000)
+2021-03-27 15:55:13,538 [14] ERROR SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/createPOSAccount/1/9999 .Result: The remote server returned an error: (400) Bad Request.
+2021-03-27 15:55:23,232 [8] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/createPOSAccount/980916/9999 .Result: Success
+2021-03-27 15:56:34,296 [16] ERROR SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/createPOSAccount/980916/9999 .Result: The remote server returned an error: (400) Bad Request.
+2021-03-27 15:56:50,891 [22] ERROR SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/createPOSAccount/33/123 .Result: The remote server returned an error: (400) Bad Request.
+2021-03-27 15:56:57,911 [22] ERROR SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/createPOSAccount/432343/123 .Result: The remote server returned an error: (400) Bad Request.
+2021-03-27 15:56:59,672 [8] ERROR SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/createPOSAccount/432343/123 .Result: The remote server returned an error: (400) Bad Request.
+2021-03-27 15:57:05,899 [22] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/createPOSAccount/432343/9999 .Result: Success
+2021-03-27 15:58:19,202 [25] INFO  SPOS_ManagerView.Classes.Requests - Request sent: http://localhost:5000/createPOSAccount/12431/4561 .Result: Success

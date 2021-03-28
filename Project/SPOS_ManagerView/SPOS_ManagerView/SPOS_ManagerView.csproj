@@ -47,6 +47,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Pages\Control\Stock\" />
     <Folder Include="wwwroot\.vs\wwwroot\v16\" />
   </ItemGroup>
 

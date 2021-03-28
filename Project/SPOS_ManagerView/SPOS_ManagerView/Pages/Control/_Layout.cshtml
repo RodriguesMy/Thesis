@@ -6,7 +6,6 @@
     <title>Home Page</title>
 
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="~/lib/font-awesome-4.7.0/css/font-awesome.css">
     <link rel="stylesheet" href="~/css/sidebar.css">
 </head>
 <body>
@@ -17,10 +16,31 @@
                 <div id="jquery-accordion-menu" class="jquery-accordion-menu black">
                     <ul>
                         <li id="Index"><a href="/control/index"><i class="fa fa-home"></i>Home </a></li>
-                        <li id="ReadOnlyMode"><a href="/control/users/readonlymode">Generate Reports</a></li> <!--Sales, revenue-->
-                        <li id="ReadOnlyMode"><a href="/control/users/readonlymode">Stock Management</a></li><!--add new products, check products in stock -->
-                        <li id="ReadOnlyMode"><a href="/control/users/readonlymode">Staff</a></li> <!--hours worked, add new staff member(check->is manager), update staff member-->
-                        <li id="LogOut"><a href="/logout"><i class="fa fa-sign-out"></i>Log Out </a></li> 
+                        <li>
+                            <a href="#">Staff</a>
+                            <ul class="submenu">
+                                <li id="CreateStaffMember"><a href="/control/staff/CreateStaffMember">Create Staff Member</a></li>
+                                <li id="CreatePOSAccount"><a href="/control/staff/CreatePOSAccount">Create POS Account</a></li>
+                                <li id="CreateManagerAccount"><a href="/control/staff/CreateManagerAccount">Create Manager Account</a></li>
+                                <li id="UpdateStaffMember"><a href="/control/staff/UpdateStaffMember">Update Staff Member</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Stock Management</a>
+                            <ul class="submenu">
+                                <li id="UpdateStock"><a href="/control/stock/UpdateStock">Update Stock</a></li>
+                                <li id="ViewStock"><a href="/control/stock/ViewStock">View Stock</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Generate Reports</a>
+                            <ul class="submenu">
+                                <li id="ViewOrders"><a href="/control/reports/ViewOrders">View Orders</a></li>
+                                <li id="ViewHoursWorked"><a href="/control/reports/ViewHoursWorked">View Hours Worked</a></li>
+                                <li id="ViewRevenue"><a href="/control/reports/ViewRevenue">View Revenue</a></li>
+                            </ul>
+                        </li>
+                        <li id="LogOut"><a href="/logout"><i class="fa fa-sign-out"></i>Log Out </a></li>
                     </ul>
                 </div>
             </div>
@@ -31,10 +51,10 @@
         </div>
     </div>
 
-    <script>
+    @*<script>
         document.getElementById("@ViewData["Title"]").classList.add('active');
         document.getElementById("@ViewData["Title"]").parentElement.style = "display: block;";
-    </script>
+    </script>*@
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
