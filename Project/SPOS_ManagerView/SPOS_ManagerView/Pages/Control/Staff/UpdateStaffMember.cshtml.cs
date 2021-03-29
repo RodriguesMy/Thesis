@@ -16,7 +16,7 @@ namespace SPOS_ManagerView.Pages.Control.Staff
         public new User user { get; set; }
         public new User userRetrieved { get; set; }
         [BindProperty]
-        public new string ID { get; set; }
+        public string ID { get; set; }
         public Dictionary<int, string> jobTitles = new Dictionary<int, string>();
         #region Output Messages
         public string ErrorMessage { get; set; }
@@ -43,9 +43,21 @@ namespace SPOS_ManagerView.Pages.Control.Staff
 
         public ActionResult OnPostButton()
         {
-            userRetrieved = Requests.GetUserByPersonalId(ID);
-            string[] dob = userRetrieved.DOB.ToShortDateString().Split('/');
-            DOB = $"{dob[2]}-{dob[1]}-{dob[0]}";
+            string successMessage = "";
+            string errorMessage = "";
+            userRetrieved = Requests.GetUserById(ID, ref errorMessage, ref successMessage);
+            ErrorMessage = errorMessage; SuccessMessage = successMessage;
+
+            if (string.IsNullOrEmpty(ErrorMessage))
+            {
+                DOB = userRetrieved.DOB.ToString("yyyy-MM-dd");
+            }
+            else
+            {
+                user = null;
+                userRetrieved = null;
+                ErrorMessage = "User not found.";
+            }
 
             jobTitles = Requests.getJobTitles();
             return Page();

@@ -49,6 +49,42 @@ namespace SPOS_ManagerView.Classes
             return false;
         }
 
+        public static List<User> getAllStaff(ref string SuccessMessage, ref string ErrorMessage)
+        {
+            //used for loggin information and errors
+            XmlConfigurator.ConfigureAndWatch(new FileInfo(Configurations.GetConfiguration("log4netFilename")));
+
+            string url = Configurations.GetConfiguration("RestURL") + $"/getAllStaff";
+            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
+            request.Method = "GET";
+            HttpStatusCode status = HttpStatusCode.NotFound;
+            string loggingMessage = $"Request sent: {url} .Result:";
+            List<User> result = new List<User>();
+            try
+            {
+                using HttpWebResponse response = request.GetResponse() as HttpWebResponse;
+
+                status = response.StatusCode;
+
+                if (status == HttpStatusCode.OK)
+                {
+                    using (var streamReader = new StreamReader(response.GetResponseStream()))
+                    {
+                        var json = streamReader.ReadToEnd();
+                        result = JsonConvert.DeserializeObject<List<User>>(json);
+                    }
+                    logger.Info(loggingMessage + " Success");
+                    SuccessMessage = $"Successfully retrieved staff data. Download should start shortly.";
+                }
+            }
+            catch (System.Exception e)
+            {
+                logger.Error(loggingMessage + " " + e.Message);
+                ErrorMessage = $"Failed to retrieve staff data with the following error message: " + e.Message;
+            }
+            return result;
+        }
+
         public static Dictionary<long, List<Order>> getOrders(DateTime From, DateTime To, ref string SuccessMessage, ref string ErrorMessage)
         {
             //used for loggin information and errors
@@ -85,12 +121,12 @@ namespace SPOS_ManagerView.Classes
             return result;
         }
 
-        public static void createManagerAccount(string personal_Id, string username, string password, ref string SuccessMessage, ref string ErrorMessage)
+        public static void createManagerAccount(string id, string username, string password, ref string SuccessMessage, ref string ErrorMessage)
         {
             //used for loggin information and errors
             XmlConfigurator.ConfigureAndWatch(new FileInfo(Configurations.GetConfiguration("log4netFilename")));
 
-            string url = Configurations.GetConfiguration("RestURL") + $"/createManagerAccount/{personal_Id}/{username}/{password}";
+            string url = Configurations.GetConfiguration("RestURL") + $"/createManagerAccount/{id}/{username}/{password}";
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
             request.Method = "POST";
             HttpStatusCode status = HttpStatusCode.NotFound;
@@ -279,13 +315,13 @@ namespace SPOS_ManagerView.Classes
             }
             return users;
         }
-        public static User GetUserByPersonalId(String id)
+        public static User GetUserById(String id,ref string ErrorMessage, ref string SuccessMessage)
         {
             
             //used for loggin information and errors
             XmlConfigurator.ConfigureAndWatch(new FileInfo(Configurations.GetConfiguration("log4netFilename")));
 
-            string url = Configurations.GetConfiguration("RestURL") + "/GetUserByPersonalId/"+id;
+            string url = Configurations.GetConfiguration("RestURL") + "/GetUserById/"+id;
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
             request.Method = "GET";
             User user = new User();
@@ -311,16 +347,17 @@ namespace SPOS_ManagerView.Classes
             catch (System.Exception e)
             {
                 logger.Error(loggingMessage + " " + e.Message);
+                ErrorMessage = "User not Found.";
             }
 
             return user;
         }
-        public static void createPOSAccount(string personal_id,string password, ref string SuccessMessage, ref string ErrorMessage)
+        public static void createPOSAccount(string id,string password, ref string SuccessMessage, ref string ErrorMessage)
         {
             //used for loggin information and errors
             XmlConfigurator.ConfigureAndWatch(new FileInfo(Configurations.GetConfiguration("log4netFilename")));
 
-            string url = Configurations.GetConfiguration("RestURL") + $"/createPOSAccount/{personal_id}/{password}";
+            string url = Configurations.GetConfiguration("RestURL") + $"/createPOSAccount/{id}/{password}";
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
             request.Method = "POST";
             HttpStatusCode status = HttpStatusCode.NotFound;

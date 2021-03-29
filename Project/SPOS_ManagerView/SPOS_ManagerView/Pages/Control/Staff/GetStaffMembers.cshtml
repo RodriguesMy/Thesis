@@ -1,0 +1,24 @@
+﻿@page
+@model SPOS_ManagerView.Pages.Control.Staff.GetStaffMembersModel
+@{
+}
+<h1>Get All Staff Members</h1>
+<script src="~/js/downloadFile.js"></script>
+<form method="post">
+    <br />
+    <button class="btn btn-primary">Retrieve Data</button>
+</form>
+<br />
+
+@if (!String.IsNullOrEmpty(Model.ErrorMessage))
+{
+    <div class="alert-danger d-inline-flex p-2 bd-highlight" role="alert">@Html.Raw(Model.ErrorMessage)</div>
+}
+<br />
+@if (!String.IsNullOrEmpty(Model.SuccessMessage))
+{
+    <div class="alert-success d-inline-flex p-2 bd-highlight" role="alert">@Html.Raw(Model.SuccessMessage)</div>
+    <script>
+        download(@Html.Raw(Json.Serialize(Model.FileName)),@Html.Raw(Json.Serialize(Model.FileContents)));
+    </script>
+}

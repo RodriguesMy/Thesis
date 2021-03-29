@@ -8,6 +8,7 @@ namespace Rest.Classes
     public class User
     {
         #region Properties
+        public string ID { get; set; }
         public string jobTitle { get; set; }
         public string FName { get; set; }
         public string MName { get; set; }

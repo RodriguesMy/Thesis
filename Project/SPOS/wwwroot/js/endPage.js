@@ -13,7 +13,7 @@ function sleep(milliseconds) {
 }
 
 window.onload = function() {
-    var printWindow = window.open('/ReceiptToPrint');
+    var printWindow = window.open('https://localhost:8080/ReceiptToPrint');
 
     $(printWindow).bind("load", function () {
         printWindow.print();

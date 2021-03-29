@@ -12,7 +12,7 @@ namespace SPOS_ManagerView.Pages.Control.Staff
     public class CreatePOSAccountModel : PageModel
     {
         [BindProperty]
-        public string Personal_Id { get; set; }
+        public string ID { get; set; }
         [BindProperty]
         public string Password { get; set; }
         #region Output Messages
@@ -30,7 +30,7 @@ namespace SPOS_ManagerView.Pages.Control.Staff
         {
             string successMessage = "";
             string errorMessage = "";
-            Requests.createPOSAccount(Personal_Id, Password, ref successMessage, ref errorMessage);
+            Requests.createPOSAccount(ID, Password, ref successMessage, ref errorMessage);
             ErrorMessage = errorMessage; SuccessMessage = successMessage;
 
             return Page();

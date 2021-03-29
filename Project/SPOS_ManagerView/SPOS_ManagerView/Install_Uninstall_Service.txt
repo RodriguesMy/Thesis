@@ -1,0 +1,14 @@
+﻿To Install:
+-----------
+sc create ManagerViewService binPath= "C:\Users\rodri\OneDrive\Desktop\MANAGER_VIEW\SPOS_ManagerView.exe --service"  DisplayName="POS Manager View" start=auto
+
+To Uninstall:
+-------------
+sc delete ManagerViewService
+
+-------------
+In the service folder you will need: 
+1) Released version of the project
+2) 'wwwroot' folder. 
+
+Note: Modify appSettings.json 

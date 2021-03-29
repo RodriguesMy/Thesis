@@ -107,9 +107,10 @@ namespace Rest.Controllers
             try {
                 SqlConnection sqlConnection = new SqlConnection(Configurations.GetConfiguration("DBConnectionString"));
 
-                //Example: exec dbo.createStaffMember 2,'Andreas','','Ioannou','432343','90','12','street','M','andreas@gmail.com','27-02-2000 12:00:00 AM',5,2211563,1,0
+                string dob = user.DOB.ToString("yyyy/MM/dd");
+                //Example: exec dbo.createStaffMember 2,'Andreas','','Ioannou','432343','90','12','street','M','andreas@gmail.com','27/02/2000',5,2211563,1,0
                 String query = $"exec dbo.createStaffMember {user.jobTitle},'{user.FName}','{user.MName}','{user.LName}','{user.personal_id}','{user.address_no}'," +
-                    $"'{user.postal_code}','{user.address_street}','{user.gender}','{user.email}','{user.DOB}',{user.salary_per_hour},{user.phone_no},{(user.is_active ? '1' : '0')},{(user.is_manager ? '1' : '0')}";
+                    $"'{user.postal_code}','{user.address_street}','{user.gender}','{user.email}','{dob}',{user.salary_per_hour},{user.phone_no},{(user.is_active ? '1' : '0')},{(user.is_manager ? '1' : '0')}";
 
                 sqlConnection.Open();
 
@@ -170,8 +171,8 @@ namespace Rest.Controllers
         }
 
         [HttpGet]
-        [Route("GetUserByPersonalId/{id}")]
-        public ActionResult GetUserByPersonalId(String id)
+        [Route("GetUserById/{id}")]
+        public ActionResult GetUserById(String id)
         {
             //used for loggin information and errors
             XmlConfigurator.ConfigureAndWatch(new FileInfo(Configurations.GetConfiguration("log4netFilename")));
@@ -179,7 +180,7 @@ namespace Rest.Controllers
             //create connection to the database
             try {
                 SqlConnection sqlConnection = new SqlConnection(Configurations.GetConfiguration("DBConnectionString"));
-                String query = $"exec dbo.GetUserByPersonalId {id}";
+                String query = $"exec dbo.GetUserById {id}";
                 sqlConnection.Open();
 
                 SqlCommand command = new SqlCommand(query, sqlConnection);
@@ -188,6 +189,7 @@ namespace Rest.Controllers
                 SqlDataReader sqlDataReader = command.ExecuteReader();
                 User user = new User();
                 while (sqlDataReader.Read()) {
+                    user.ID = sqlDataReader.GetInt32(0).ToString();
                     user.jobTitle = sqlDataReader.GetInt16(1).ToString();
                     user.FName = sqlDataReader.GetString(2).Trim();
                     user.MName = sqlDataReader.GetString(3).Trim();
@@ -220,9 +222,64 @@ namespace Rest.Controllers
             }
         }
 
+        [HttpGet]
+        [Route("getAllStaff")]
+        public ActionResult getAllStaff(String id)
+        {
+            //used for loggin information and errors
+            XmlConfigurator.ConfigureAndWatch(new FileInfo(Configurations.GetConfiguration("log4netFilename")));
+
+            //create connection to the database
+            try {
+                SqlConnection sqlConnection = new SqlConnection(Configurations.GetConfiguration("DBConnectionString"));
+                String query = $"exec dbo.getAllStaff ";
+                sqlConnection.Open();
+
+                SqlCommand command = new SqlCommand(query, sqlConnection);
+
+                //execute query
+                SqlDataReader sqlDataReader = command.ExecuteReader();
+                List<User> users = new List<User>();
+                while (sqlDataReader.Read()) {
+                    users.Add(new User {
+                        ID = sqlDataReader.GetInt32(0).ToString(),
+                        jobTitle = sqlDataReader.GetInt16(1).ToString(),
+                        FName = sqlDataReader.GetString(2).Trim(),
+                        MName = sqlDataReader.GetString(3).Trim(),
+                        LName = sqlDataReader.GetString(4).Trim(),
+                        personal_id = sqlDataReader.GetString(5).Trim(),
+                        address_no = sqlDataReader.GetString(6).Trim(),
+                        postal_code = sqlDataReader.GetString(7).Trim(),
+                        address_street = sqlDataReader.GetString(8).Trim(),
+                        gender = sqlDataReader.GetString(9).Trim(),
+                        email = sqlDataReader.GetString(10).Trim(),
+                        DOB = DateTime.Parse(sqlDataReader.GetString(11)),
+                        salary_per_hour = sqlDataReader.GetDecimal(12).ToString("N2"),
+                        phone_no = sqlDataReader.GetInt32(13).ToString(),
+                        is_active = sqlDataReader.GetByte(14) == 1 ? true : false,
+                        is_manager = sqlDataReader.GetByte(15) == 1 ? true : false
+                    });              
+                }
+
+                //close all connections
+                sqlDataReader.Close();
+                command.Dispose();
+                sqlConnection.Close();
+
+                ActionResult res = users.Count != 0 ? Ok(users) : NotFound();
+                logger.Info($"Received Request: 'getAllStaff'. Result: {res}");
+                return res;
+            }
+            catch (Exception e) {
+                logger.Error($"Received Request: 'getAllStaff'. Error: {e.Message}");
+                return BadRequest(e.Message);
+            }
+        }
+
+
         [HttpPost]
-        [Route("createPOSAccount/{personalId}/{password}")]
-        public ActionResult createPOSAccount(string personalId,string password)
+        [Route("createPOSAccount/{ID}/{password}")]
+        public ActionResult createPOSAccount(string ID,string password)
         {
             //used for loggin information and errors
             XmlConfigurator.ConfigureAndWatch(new FileInfo(Configurations.GetConfiguration("log4netFilename")));
@@ -231,7 +288,7 @@ namespace Rest.Controllers
             try {
                 SqlConnection sqlConnection = new SqlConnection(Configurations.GetConfiguration("DBConnectionString"));
 
-                String query = $"exec dbo.createPOSAccount {personalId},{password}";
+                String query = $"exec dbo.createPOSAccount {ID},{password}";
 
                 sqlConnection.Open();
 
@@ -245,18 +302,18 @@ namespace Rest.Controllers
                 sqlConnection.Close();
 
                 ActionResult res = rowsAffected > 0 ? Ok() : BadRequest();
-                logger.Info($"Received Request: 'createPOSAccount/{personalId}/{password}'. Result: {res}");
+                logger.Info($"Received Request: 'createPOSAccount/{ID}/{password}'. Result: {res}");
                 return res;
             }
             catch (Exception e) {
-                logger.Error($"Received Request: 'createPOSAccount/{personalId}/{password}'. Error: {e.Message}");
+                logger.Error($"Received Request: 'createPOSAccount/{ID}/{password}'. Error: {e.Message}");
                 return BadRequest(e.Message);
             }
         }
 
         [HttpPost]
-        [Route("createManagerAccount/{personalId}/{username}/{password}")]
-        public ActionResult createManagerAccount(string personalId, string username, string password)
+        [Route("createManagerAccount/{ID}/{username}/{password}")]
+        public ActionResult createManagerAccount(string ID, string username, string password)
         {
             //used for loggin information and errors
             XmlConfigurator.ConfigureAndWatch(new FileInfo(Configurations.GetConfiguration("log4netFilename")));
@@ -265,7 +322,7 @@ namespace Rest.Controllers
             try {
                 SqlConnection sqlConnection = new SqlConnection(Configurations.GetConfiguration("DBConnectionString"));
 
-                String query = $"exec dbo.createManagerAccount {personalId},{username},{password}";
+                String query = $"exec dbo.createManagerAccount {ID},{username},{password}";
 
                 sqlConnection.Open();
 
@@ -279,11 +336,11 @@ namespace Rest.Controllers
                 sqlConnection.Close();
 
                 ActionResult res = rowsAffected > 0 ? Ok() : BadRequest();
-                logger.Info($"Received Request: 'createManagerAccount/{personalId}/{password}'. Result: {res}");
+                logger.Info($"Received Request: 'createManagerAccount/{ID}/{password}'. Result: {res}");
                 return res;
             }
             catch (Exception e) {
-                logger.Error($"Received Request: 'createManagerAccount/{personalId}/{password}'. Error: {e.Message}");
+                logger.Error($"Received Request: 'createManagerAccount/{ID}/{password}'. Error: {e.Message}");
                 return BadRequest(e.Message);
             }
         }

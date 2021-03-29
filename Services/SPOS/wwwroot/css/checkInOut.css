@@ -1,0 +1,62 @@
+﻿body {
+    height: 100%;
+    margin: 0;
+}
+
+.leftArea {
+    float: left;
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    background-color: dimgray;
+}
+
+.usersArea {
+    background-color: white;
+    height: 90%;
+    width: 97%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    overflow-y: auto
+}
+
+.rightArea {
+    float: right;
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 10;
+    background-color: dimgray;
+}
+
+.userBtn {
+    font-size: 36px;
+    width: 35%;
+    background-color: black;
+    color: white;
+    border: 5px solid white;
+}
+
+.titles{
+    text-align:center;
+    font-size:36px;
+    color:white;
+}
+
+.backBtn {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    font-size:36px;
+    background-color:black;
+    color:white;
+}

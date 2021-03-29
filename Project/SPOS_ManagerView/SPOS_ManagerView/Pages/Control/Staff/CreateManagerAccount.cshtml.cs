@@ -12,7 +12,7 @@ namespace SPOS_ManagerView.Pages.Control.Staff
     public class CreateManagerAccountModel : PageModel
     {
         [BindProperty]
-        public string Personal_Id { get; set; }
+        public string ID { get; set; }
         [BindProperty]
         public string Username { get; set; }
         [BindProperty]
@@ -33,7 +33,7 @@ namespace SPOS_ManagerView.Pages.Control.Staff
             string successMessage = "";
             string errorMessage = "";
 
-            Requests.createManagerAccount(Personal_Id,Username, StaticFunctions.GetHash(Password), ref successMessage, ref errorMessage);
+            Requests.createManagerAccount(ID,Username, StaticFunctions.GetHash(Password), ref successMessage, ref errorMessage);
             ErrorMessage = errorMessage; SuccessMessage = successMessage;
 
             return Page();

@@ -1,0 +1,15 @@
+﻿body {
+    background-color:lightblue;
+}
+
+.change {
+    font-size: 32px;
+    height: 10em;
+    position: relative;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
